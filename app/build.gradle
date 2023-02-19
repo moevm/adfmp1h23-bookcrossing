@@ -1,0 +1,91 @@
+plugins {
+    id "org.jetbrains.kotlin.kapt"
+    id 'com.android.application'
+    id 'com.google.dagger.hilt.android'
+    id 'org.jetbrains.kotlin.android'
+}
+
+apply plugin: 'com.android.application'
+apply plugin: 'com.google.dagger.hilt.android'
+
+android {
+    namespace 'com.etu.bookcrossing'
+    compileSdk 33
+
+    defaultConfig {
+        applicationId "com.etu.bookcrossing"
+        minSdk 24
+        targetSdk 33
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+
+    buildFeatures {
+        viewBinding true
+    }
+}
+
+dependencies {
+    def nav_version = "2.5.3"
+    def slfj4_version = "1.7.36"
+    def kotlin_logging_version = "4.0.0-beta-11"
+    def dagger_version = "2.45"
+    def androidx_version = "1.9.0"
+    def junit_version = "5.8.2"
+    def viewbinding_version = "1.5.8"
+
+    // Viewbiding
+    implementation "com.github.kirich1409:viewbindingpropertydelegate-noreflection:$viewbinding_version"
+
+    // Navigation
+    implementation "androidx.navigation:navigation-fragment-ktx:$nav_version"
+    implementation "androidx.navigation:navigation-ui-ktx:$nav_version"
+    implementation "androidx.navigation:navigation-dynamic-features-fragment:$nav_version"
+
+    // Jetpack Compose Integration
+    implementation "androidx.navigation:navigation-compose:$nav_version"
+
+    // Logging
+    implementation "org.slf4j:slf4j-android:$slfj4_version"
+    implementation "io.github.oshai:kotlin-logging-jvm:$kotlin_logging_version"
+
+    // Dagger
+    implementation "com.google.dagger:hilt-android:$dagger_version"
+    kapt "com.google.dagger:hilt-compiler:$dagger_version"
+
+    // AndroidX
+    implementation "androidx.core:core-ktx:$androidx_version"
+
+    // For instrumentation tests
+    androidTestImplementation "com.google.dagger:hilt-android-testing:$dagger_version"
+    kaptAndroidTest "com.google.dagger:hilt-compiler:$dagger_version"
+
+    // For local unit tests
+    testImplementation "com.google.dagger:hilt-android-testing:$dagger_version"
+    kaptTest "com.google.dagger:hilt-compiler:$dagger_version"
+    testImplementation "org.junit.jupiter:junit-jupiter-api:$junit_version"
+    testRuntimeOnly "org.junit.jupiter:junit-jupiter-engine:$junit_version"
+    androidTestImplementation "androidx.navigation:navigation-testing:$nav_version"
+}
+
+kapt {
+    correctErrorTypes true
+}

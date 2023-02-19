@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">BookCrossing</string>
+    <string name="button_sign_in">Sign in</string>
+    <string name="text_email_address">Email address</string>
+    <string name="text_name">Name</string>
+    <string name="text_surname">Surname</string>
+    <string name="button_register">Register</string>
+</resources>
