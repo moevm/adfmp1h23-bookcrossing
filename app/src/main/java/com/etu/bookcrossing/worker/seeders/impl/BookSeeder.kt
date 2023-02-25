@@ -20,4 +20,6 @@ class BookSeeder @Inject constructor(private val bookRepository: IBookRepository
         bookRepository.insert(seedElement)
     }
 
+    override fun file(): SeedFile = SeedFile.BOOKS
+
 }

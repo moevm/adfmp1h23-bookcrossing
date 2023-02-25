@@ -20,4 +20,6 @@ class UserSeeder @Inject constructor(private val userRepository: IUserRepository
         userRepository.insert(seedElement)
     }
 
+    override fun file(): SeedFile = SeedFile.USERS
+
 }

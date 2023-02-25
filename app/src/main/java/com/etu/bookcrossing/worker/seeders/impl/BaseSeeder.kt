@@ -6,7 +6,8 @@ import com.google.gson.reflect.TypeToken
 import com.google.gson.stream.JsonReader
 
 abstract class BaseSeeder<T>(private val type: TypeToken<T>) : ISeeder {
-    override suspend fun seed(reader: JsonReader) {
+
+    override suspend fun apply(reader: JsonReader) {
         deserialize(reader).also { handle(it) }
     }
 

@@ -4,6 +4,7 @@ import android.content.Context
 import androidx.hilt.work.HiltWorker
 import androidx.work.CoroutineWorker
 import androidx.work.WorkerParameters
+import com.etu.bookcrossing.worker.seeders.ISeeder
 import com.google.gson.stream.JsonReader
 import dagger.assisted.Assisted
 import dagger.assisted.AssistedInject
@@ -23,7 +24,7 @@ class SeedDatabaseWorker @AssistedInject constructor(
 
     override suspend fun doWork(): Result = withContext(Dispatchers.IO) {
         try {
-            Seeders.SeedFile.values().forEach { seed(it) }
+            seeders.forEach { seed(it) }
 
             Result.success()
         } catch (ex: Exception) {
@@ -32,9 +33,9 @@ class SeedDatabaseWorker @AssistedInject constructor(
         }
     }
 
-    private suspend fun seed(file: Seeders.SeedFile) {
-        applicationContext.assets.open(file.fileName).use { inputStream ->
-            jsonReader(inputStream).also { seeders.seeder(file).seed(reader = it) }
+    private suspend fun seed(seeder: ISeeder) {
+        applicationContext.assets.open(seeder.file().fileName).use { inputStream ->
+            jsonReader(inputStream).also { seeder.apply(it) }
         }
     }
 
