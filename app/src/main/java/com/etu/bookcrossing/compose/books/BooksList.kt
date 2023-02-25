@@ -2,38 +2,32 @@ package com.etu.bookcrossing.compose.books
 
 import androidx.compose.foundation.lazy.grid.GridCells
 import androidx.compose.foundation.lazy.grid.LazyVerticalGrid
+import androidx.compose.foundation.lazy.grid.items
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.collectAsState
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.remember
+import androidx.hilt.navigation.compose.hiltViewModel
 import com.etu.bookcrossing.compose.list.ImageListItem
-import com.etu.bookcrossing.data.Book
+import com.etu.bookcrossing.database.entity.BookEntity
+import com.etu.bookcrossing.viewmodel.BookListViewModel
 
 @Composable
-fun BookItem(book: Book) {
-    ImageListItem(name = book.name) {
+fun BookItem(book: BookEntity) {
+    ImageListItem(name = book.name, imageUrl = book.imageUrl) {
 
     }
 }
 
 @Composable
-fun BooksList(books: List<Book> = BOOKS_LIST) {
+fun BooksList(viewModel: BookListViewModel = hiltViewModel()) {
+    val books by remember(viewModel) {
+        viewModel.loadBooks()
+    }.collectAsState(initial = emptyList())
+
     LazyVerticalGrid(columns = GridCells.Fixed(2)) {
-        items(
-            count = books.size,
-            key = { it }
-        ) { book ->
-            BookItem(book = books[book])
+        items(items = books) {
+            BookItem(book = it)
         }
     }
 }
-
-val BOOKS_LIST = listOf(
-    Book(
-        "It Ends with Us",
-        "Colleen Hoover",
-        "Lily hasn’t always had it easy, but that’s never stopped her from working hard for the life she wants. She’s come a long way from the small town where she grew up—she graduated from college, moved to Boston, and started her own business. And when she feels a spark with a gorgeous neurosurgeon named Ryle Kincaid, everything in Lily’s life seems too good to be true"
-    ),
-    Book(
-        "It Starts with Us",
-        "Colleen Hoover",
-        "Lily and her ex-husband, Ryle, have just settled into a civil coparenting rhythm when she suddenly bumps into her first love, Atlas, again. After nearly two years separated, she is elated that for once, time is on their side, and she immediately says yes when Atlas asks her on a date."
-    )
-)

@@ -7,12 +7,14 @@ import androidx.compose.runtime.Composable
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
-import com.etu.bookcrossing.compose.account.Account
 import com.etu.bookcrossing.compose.auth.LoginComposable
 import com.etu.bookcrossing.compose.auth.Register
 import com.etu.bookcrossing.compose.auth.RegistrationSucceed
 import com.etu.bookcrossing.compose.books.BooksList
 import com.etu.bookcrossing.compose.common.NavigationBar
+import com.etu.bookcrossing.compose.user.Account
+import com.etu.bookcrossing.compose.user.Rating
+import com.etu.bookcrossing.compose.user.TakenBooks
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
@@ -30,8 +32,8 @@ class MainActivity : ComponentActivity() {
 @Composable
 fun RoutingBase() {
     val navController = rememberNavController()
-    val onNavigationClicked: (BottomNavigationItem) -> Unit = { item ->
-        navController.navigate(item.route.name) {
+    val onNavigationClicked: (BottomNavigationItem) -> Unit = {
+        navController.navigate(it.route.name) {
 
             navController.graph.startDestinationRoute?.let { route ->
                 popUpTo(route) {
@@ -60,7 +62,9 @@ fun RoutingBase() {
 
         composable(NavigationRoute.ACCOUNT.name) {
             NavigationBar(onNavigationClicked = onNavigationClicked) {
-                Account()
+                Account(
+                    onTakenBooks = { navController.navigate(NavigationRoute.TAKEN_BOOKS.name) },
+                    onRating = { navController.navigate(NavigationRoute.RATING.name) })
             }
         }
 
@@ -70,12 +74,26 @@ fun RoutingBase() {
             }
         }
 
+        composable(NavigationRoute.RATING.name) {
+            NavigationBar(onNavigationClicked = onNavigationClicked) {
+                Rating()
+            }
+        }
+
+        composable(NavigationRoute.TAKEN_BOOKS.name) {
+            NavigationBar(onNavigationClicked = onNavigationClicked) {
+                TakenBooks(onTaken = {})
+            }
+        }
+
     }
 }
 
 enum class NavigationRoute {
     ACCOUNT,
     BOOKS,
+    TAKEN_BOOKS,
+    RATING,
     LOGIN,
     REGISTER,
     REGISTER_SUCCESS

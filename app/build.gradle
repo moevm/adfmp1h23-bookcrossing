@@ -39,6 +39,7 @@ android {
     }
 
     buildFeatures {
+        dataBinding true
         viewBinding true
         compose true
     }
@@ -46,7 +47,7 @@ android {
 
 dependencies {
     def nav_version = "2.5.3"
-    def slfj4_version = "1.7.36"
+    def logback_version = "1.2.3"
     def kotlin_logging_version = "4.0.0-beta-11"
     def dagger_version = "2.45"
     def androidx_version = "1.9.0"
@@ -55,6 +56,42 @@ dependencies {
     def material_version = "1.3.1"
     def compose_version = "1.3.3"
     def activity_compose_version = "1.6.1"
+    def worker_version = "2.8.0"
+    def room_version = "2.5.0"
+    def gson_version = "2.10.1"
+    def hilt_compose_version = "1.0.0"
+    def lifecycle_version = "2.5.1"
+    def livedata_version = "1.4.0-beta01"
+    def glide_version = "1.0.0-alpha.1"
+    def databinding_version = "7.4.1"
+
+    // Databinding
+    implementation "androidx.databinding:databinding-common:$databinding_version"
+
+    // Glide
+    implementation "com.github.bumptech.glide:compose:$glide_version"
+
+    // LiveData
+    implementation "androidx.lifecycle:lifecycle-livedata-ktx:$lifecycle_version"
+    implementation "androidx.compose.runtime:runtime-livedata:$livedata_version"
+
+    // Hilt Navigation Compose
+    implementation "androidx.hilt:hilt-navigation-compose:$hilt_compose_version"
+
+    // HiltWorkerFactory
+    implementation "androidx.hilt:hilt-work:$hilt_compose_version"
+
+    // Gson
+    implementation "com.google.code.gson:gson:$gson_version"
+
+    // RoomDatabase
+    implementation "androidx.room:room-runtime:$room_version"
+    implementation "androidx.room:room-ktx:$room_version"
+    annotationProcessor "androidx.room:room-compiler:$room_version"
+    kapt "androidx.room:room-compiler:$room_version"
+
+    // WorkManager
+    implementation "androidx.work:work-runtime-ktx:$worker_version"
 
     // Viewbiding
     implementation "com.github.kirich1409:viewbindingpropertydelegate-noreflection:$viewbinding_version"
@@ -74,12 +111,13 @@ dependencies {
     debugImplementation "androidx.compose.ui:ui-test-manifest:$compose_version"
 
     // Logging
-    implementation "org.slf4j:slf4j-android:$slfj4_version"
     implementation "io.github.oshai:kotlin-logging-jvm:$kotlin_logging_version"
+    implementation "ch.qos.logback:logback-classic:$logback_version"
 
     // Dagger
     implementation "com.google.dagger:hilt-android:$dagger_version"
     kapt "com.google.dagger:hilt-compiler:$dagger_version"
+    kapt "androidx.hilt:hilt-compiler:$hilt_compose_version"
 
     // AndroidX
     implementation "androidx.core:core-ktx:$androidx_version"
