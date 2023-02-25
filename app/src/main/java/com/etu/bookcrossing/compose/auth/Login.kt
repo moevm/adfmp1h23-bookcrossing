@@ -20,14 +20,13 @@ import androidx.compose.ui.text.input.PasswordVisualTransformation
 import androidx.compose.ui.text.input.TextFieldValue
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import androidx.navigation.NavHostController
 import com.etu.bookcrossing.R
-import com.etu.bookcrossing.compose.account.ACCOUNT_ROUTE
-
-const val SIGN_IN_ROUTE = "sign_in_screen"
 
 @Composable
-fun LoginComposable(navController: NavHostController) {
+fun LoginComposable(
+    onLogin: () -> Unit,
+    onRegister: () -> Unit
+) {
     Column(
         modifier = Modifier.padding(20.dp),
         verticalArrangement = Arrangement.Center,
@@ -59,7 +58,7 @@ fun LoginComposable(navController: NavHostController) {
         Spacer(modifier = Modifier.height(20.dp))
         Box(modifier = Modifier.padding(40.dp, 0.dp, 40.dp, 0.dp)) {
             Button(
-                onClick = { navController.navigate(ACCOUNT_ROUTE) },
+                onClick = onLogin,
                 colors = ButtonDefaults.buttonColors(
                     backgroundColor = colorResource(R.color.dark_green)
                 ),
@@ -77,7 +76,7 @@ fun LoginComposable(navController: NavHostController) {
         Spacer(modifier = Modifier.height(10.dp))
         Box(modifier = Modifier.padding(40.dp, 0.dp, 40.dp, 0.dp)) {
             Button(
-                onClick = { navController.navigate(REGISTER_ROUTE) },
+                onClick = onRegister,
                 colors = ButtonDefaults.buttonColors(
                     backgroundColor = colorResource(R.color.dark_green)
                 ),

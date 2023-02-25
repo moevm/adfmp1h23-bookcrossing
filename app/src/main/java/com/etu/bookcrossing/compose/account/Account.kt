@@ -18,8 +18,6 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.etu.bookcrossing.R
 
-const val ACCOUNT_ROUTE = "account"
-
 @Composable
 fun Account() {
     Box(
@@ -28,7 +26,6 @@ fun Account() {
             .fillMaxHeight()
             .fillMaxWidth()
     ) {
-
         Box(
             modifier = Modifier.border(BorderStroke(1.dp, SolidColor(Color(R.color.dark_green))))
         ) {
@@ -77,7 +74,5 @@ fun Account() {
                 }
             }
         }
-
     }
-
 }

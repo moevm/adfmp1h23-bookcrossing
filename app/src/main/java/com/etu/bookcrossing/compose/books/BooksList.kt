@@ -6,8 +6,6 @@ import androidx.compose.runtime.Composable
 import com.etu.bookcrossing.compose.list.ImageListItem
 import com.etu.bookcrossing.data.Book
 
-const val BOOKS_ROUTE = "books"
-
 @Composable
 fun BookItem(book: Book) {
     ImageListItem(name = book.name) {
