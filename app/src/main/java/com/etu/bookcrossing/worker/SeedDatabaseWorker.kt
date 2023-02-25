@@ -34,9 +34,17 @@ class SeedDatabaseWorker @AssistedInject constructor(
     }
 
     private suspend fun seed(seeder: ISeeder) {
-        applicationContext.assets.open(seeder.file().fileName).use { inputStream ->
-            jsonReader(inputStream).also { seeder.apply(it) }
+        stream(seeder).use { stream ->
+            jsonReader(stream).use { seeder.apply(it) }
         }
+    }
+
+    private fun stream(seeder: ISeeder): InputStream {
+        return stream(seeder.file().fileName)
+    }
+
+    private fun stream(fileName: String): InputStream {
+        return applicationContext.assets.open(fileName)
     }
 
     private fun jsonReader(stream: InputStream): JsonReader {
