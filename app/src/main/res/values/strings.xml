@@ -1,8 +1,32 @@
 <resources>
     <string name="app_name">BookCrossing</string>
-    <string name="button_sign_in">Sign in</string>
-    <string name="text_email_address">Email address</string>
-    <string name="text_name">Name</string>
-    <string name="text_surname">Surname</string>
-    <string name="button_register">Register</string>
+    <string name="map_list_addresses_top_bar_button">List</string>
+    <string name="map_navigation_top_bar_button">Map</string>
+    <string name="book_image_description">Book image</string>
+    <string name="user_photo_description">User photo</string>
+    <string name="users_rating_header">Users Rating</string>
+    <string name="show_rating_button">Show rating</string>
+    <string name="taken_books_button">Taken books</string>
+    <string name="taken_books_header">Taken Books</string>
+    <string name="return_book_button">Return book</string>
+    <string name="register_field_name">Name</string>
+    <string name="register_field_surname">Surname</string>
+    <string name="register_field_email">Email</string>
+    <string name="register_field_phone">Phone</string>
+    <string name="register_field_password">Password</string>
+    <string name="register_field_password_confirm">Password confirm</string>
+    <string name="registration_success_message">Thank you for registration!</string>
+    <string name="registration_success_button">Start using</string>
+    <string name="account_email_field">Email</string>
+    <string name="account_phone_field">Phone</string>
+    <string name="login_email_field">Email</string>
+    <string name="login_password_field">Password</string>
+    <string name="login_button">Login</string>
+    <string name="sign_up_invitation">Do not have an account yet?</string>
+    <string name="sign_up_button">Create an account</string>
+    <string name="search_field_label">Search</string>
+    <string name="clear_input_description">Clear</string>
+    <string name="build_route_dropdown">Build a route</string>
+    <string name="show_books_dropdown">Show books</string>
+    <string name="take_book_button">Take</string>
 </resources>

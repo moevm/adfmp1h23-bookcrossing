@@ -7,14 +7,20 @@ import androidx.compose.runtime.Composable
 import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.remember
+import androidx.compose.ui.res.stringResource
 import androidx.hilt.navigation.compose.hiltViewModel
-import com.etu.bookcrossing.compose.list.ImageListItem
+import com.etu.bookcrossing.R
+import com.etu.bookcrossing.compose.common.ImageListItem
 import com.etu.bookcrossing.database.entity.BookEntity
 import com.etu.bookcrossing.viewmodel.BookListViewModel
 
 @Composable
 fun BookItem(book: BookEntity) {
-    ImageListItem(name = book.name, imageUrl = book.imageUrl) {
+    ImageListItem(
+        name = book.name,
+        imageUrl = book.imageUrl,
+        imageDescription = stringResource(R.string.book_image_description)
+    ) {
 
     }
 }

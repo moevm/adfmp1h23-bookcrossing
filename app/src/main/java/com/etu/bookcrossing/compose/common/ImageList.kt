@@ -1,4 +1,4 @@
-package com.etu.bookcrossing.compose.list
+package com.etu.bookcrossing.compose.common
 
 import android.graphics.drawable.Drawable
 import androidx.compose.foundation.background
@@ -15,11 +15,12 @@ import androidx.compose.ui.graphics.ColorFilter
 import androidx.compose.ui.graphics.DefaultAlpha
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.platform.LocalInspectionMode
+import androidx.compose.ui.res.dimensionResource
 import androidx.compose.ui.text.style.TextAlign
-import androidx.compose.ui.unit.dp
 import com.bumptech.glide.integration.compose.ExperimentalGlideComposeApi
 import com.bumptech.glide.integration.compose.GlideImage
 import com.bumptech.glide.integration.compose.RequestBuilderTransform
+import com.etu.bookcrossing.R
 
 @OptIn(ExperimentalGlideComposeApi::class)
 @Composable
@@ -51,21 +52,21 @@ fun Image(
 
 @OptIn(ExperimentalMaterialApi::class)
 @Composable
-fun ImageListItem(name: String, imageUrl: String, onClick: () -> Unit) {
+fun ImageListItem(name: String, imageDescription: String, imageUrl: String, onClick: () -> Unit) {
     Card(
         onClick = onClick,
         shape = MaterialTheme.shapes.medium,
         modifier = Modifier
-            .padding(horizontal = 12.dp)
-            .padding(bottom = 24.dp)
+            .padding(horizontal = dimensionResource(id = R.dimen.card_side_margin))
+            .padding(bottom = dimensionResource(id = R.dimen.card_bottom_margin))
     ) {
         Column(Modifier.fillMaxWidth()) {
             Image(
                 model = imageUrl,
-                contentDescription = "Book image",
+                contentDescription = imageDescription,
                 Modifier
                     .fillMaxWidth()
-                    .height(95.dp),
+                    .height(dimensionResource(id = R.dimen.list_item_image_height)),
                 contentScale = ContentScale.Crop
             )
             Text(
@@ -74,7 +75,7 @@ fun ImageListItem(name: String, imageUrl: String, onClick: () -> Unit) {
                 maxLines = 1,
                 modifier = Modifier
                     .fillMaxWidth()
-                    .padding(vertical = 16.dp)
+                    .padding(vertical = dimensionResource(id = R.dimen.margin_normal))
                     .wrapContentWidth(Alignment.CenterHorizontally)
             )
         }

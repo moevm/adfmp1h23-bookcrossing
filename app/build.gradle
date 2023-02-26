@@ -64,6 +64,10 @@ dependencies {
     def livedata_version = "1.4.0-beta01"
     def glide_version = "1.0.0-alpha.1"
     def databinding_version = "7.4.1"
+    def paging_version = "1.4.0-alpha03"
+
+    // Foundation Compose
+    implementation "androidx.compose.foundation:foundation:$paging_version"
 
     // Databinding
     implementation "androidx.databinding:databinding-common:$databinding_version"

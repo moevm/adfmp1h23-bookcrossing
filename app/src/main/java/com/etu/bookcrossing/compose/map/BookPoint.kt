@@ -1,4 +1,4 @@
-package com.etu.bookcrossing.compose.user
+package com.etu.bookcrossing.compose.map
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Row
@@ -7,18 +7,14 @@ import androidx.compose.material.Button
 import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
-import androidx.compose.runtime.collectAsState
-import androidx.compose.runtime.getValue
-import androidx.compose.runtime.remember
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
-import androidx.hilt.navigation.compose.hiltViewModel
 import com.etu.bookcrossing.R
 import com.etu.bookcrossing.compose.common.RowsWithTextHeader
-import com.etu.bookcrossing.viewmodel.TakenBooksViewModel
+
 
 @Composable
-fun TakenBookItem(name: String, onReturnBook: () -> Unit) {
+fun FreeBookItem(name: String, onTakeBook: () -> Unit) {
     Row(
         modifier = Modifier.fillMaxWidth(),
         horizontalArrangement = Arrangement.SpaceBetween
@@ -30,21 +26,22 @@ fun TakenBookItem(name: String, onReturnBook: () -> Unit) {
             modifier = Modifier.weight(1f)
         )
 
-        Button(onClick = onReturnBook) {
-            Text(stringResource(R.string.return_book_button))
+        Button(onClick = onTakeBook) {
+            Text(text = stringResource(R.string.take_book_button))
         }
     }
 }
 
 @Composable
-fun TakenBooks(viewModel: TakenBooksViewModel = hiltViewModel(), onReturnBook: () -> Unit) {
-    val bookNames by remember(viewModel) {
-        viewModel.loadTakenBooksNames()
-    }.collectAsState(initial = emptyList())
+fun BookPoint(address: String, onTakeBook: () -> Unit) {
+    val books = listOf(
+        "Book 1, Author 1",
+        "Book 2, Author 1",
+        "Book 3, Author 2",
+    )
 
     RowsWithTextHeader(
-        headerText = stringResource(R.string.taken_books_header),
-        elements = bookNames,
-        consumer = { TakenBookItem(name = it, onReturnBook = onReturnBook) }
-    )
+        headerText = address,
+        elements = books,
+        consumer = { FreeBookItem(name = it, onTakeBook = onTakeBook) })
 }

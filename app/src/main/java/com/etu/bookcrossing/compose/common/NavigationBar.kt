@@ -2,21 +2,22 @@ package com.etu.bookcrossing.compose.common
 
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.padding
-import androidx.compose.material.*
+import androidx.compose.material.BottomNavigation
+import androidx.compose.material.BottomNavigationItem
+import androidx.compose.material.Icon
+import androidx.compose.material.Scaffold
+import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.res.colorResource
 import androidx.compose.ui.res.painterResource
-import com.etu.bookcrossing.BottomNavigationItem
-import com.etu.bookcrossing.R
+import com.etu.bookcrossing.compose.BottomNavigationItem
 
 @Composable
 fun NavigationBar(
     onNavigationClicked: (BottomNavigationItem) -> Unit,
     content: @Composable () -> Unit
 ) {
-
     Scaffold(
         bottomBar = { BottomNavigationBar(onNavigationClicked) },
         content = { padding ->
@@ -30,10 +31,7 @@ fun NavigationBar(
 fun BottomNavigationBar(onNavigationClicked: (BottomNavigationItem) -> Unit) {
     val items = BottomNavigationItem.values()
 
-    BottomNavigation(
-        backgroundColor = colorResource(id = R.color.dark_green),
-        contentColor = Color.White
-    ) {
+    BottomNavigation {
         items.forEach { item ->
             BottomNavigationItem(
                 icon = {
@@ -44,7 +42,6 @@ fun BottomNavigationBar(onNavigationClicked: (BottomNavigationItem) -> Unit) {
                 },
                 label = { Text(text = item.title) },
                 selectedContentColor = Color.White,
-                unselectedContentColor = Color.Black.copy(0.4f),
                 alwaysShowLabel = true,
                 selected = false,
                 onClick = { onNavigationClicked(item) }

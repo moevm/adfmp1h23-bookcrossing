@@ -2,22 +2,23 @@ package com.etu.bookcrossing.compose.user
 
 import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.border
-import androidx.compose.foundation.layout.*
+import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.Box
+import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.width
 import androidx.compose.material.Button
-import androidx.compose.material.ButtonDefaults
+import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.res.colorResource
-import androidx.compose.ui.text.TextStyle
-import androidx.compose.ui.text.font.FontFamily
+import androidx.compose.ui.res.dimensionResource
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
-import androidx.compose.ui.unit.dp
-import androidx.compose.ui.unit.sp
 import com.etu.bookcrossing.R
+import com.etu.bookcrossing.compose.common.CursiveBigText
 
 @Composable
 fun Account(onTakenBooks: () -> Unit, onRating: () -> Unit) {
@@ -26,27 +27,28 @@ fun Account(onTakenBooks: () -> Unit, onRating: () -> Unit) {
         modifier = Modifier.fillMaxSize()
     ) {
         Column(
-            verticalArrangement = Arrangement.Center,
+            verticalArrangement = Arrangement.spacedBy(dimensionResource(id = R.dimen.column_spaced_by)),
             horizontalAlignment = Alignment.CenterHorizontally
         ) {
             Box(
                 contentAlignment = Alignment.Center,
                 modifier = Modifier
-                    .border(BorderStroke(1.dp, SolidColor(Color(R.color.dark_green))))
-                    .width(250.dp)
+                    .border(
+                        BorderStroke(
+                            dimensionResource(id = R.dimen.border_big_size),
+                            SolidColor(MaterialTheme.colors.primary)
+                        )
+                    )
+                    .width(dimensionResource(id = R.dimen.centered_box_width))
             ) {
                 Column(
-                    modifier = Modifier.padding(20.dp),
-                    verticalArrangement = Arrangement.spacedBy(25.dp),
+                    verticalArrangement = Arrangement.spacedBy(dimensionResource(id = R.dimen.column_spaced_by)),
                     horizontalAlignment = Alignment.CenterHorizontally
                 ) {
 
+                    CursiveBigText(text = "Petr Petrov")
                     Text(
-                        text = "Petr Petrov",
-                        style = TextStyle(fontSize = 40.sp, fontFamily = FontFamily.Cursive)
-                    )
-                    Text(
-                        text = "Email",
+                        text = stringResource(R.string.account_email_field),
                         modifier = Modifier.align(Alignment.Start)
                     )
                     Text(
@@ -54,7 +56,7 @@ fun Account(onTakenBooks: () -> Unit, onRating: () -> Unit) {
                         modifier = Modifier.align(Alignment.Start)
                     )
                     Text(
-                        text = "Phone",
+                        text = stringResource(R.string.account_phone_field),
                         modifier = Modifier.align(Alignment.Start)
                     )
                     Text(
@@ -66,24 +68,14 @@ fun Account(onTakenBooks: () -> Unit, onRating: () -> Unit) {
                         modifier = Modifier.align(Alignment.Start)
                     )
 
-                    Button(
-                        colors = ButtonDefaults.buttonColors(
-                            backgroundColor = colorResource(R.color.dark_green)
-                        ),
-                        onClick = onTakenBooks
-                    ) {
-                        Text("Taken books")
+                    Button(onClick = onTakenBooks) {
+                        Text(stringResource(R.string.taken_books_button))
                     }
                 }
             }
 
-            Button(
-                colors = ButtonDefaults.buttonColors(
-                    backgroundColor = colorResource(R.color.dark_green)
-                ),
-                onClick = onRating
-            ) {
-                Text("Show rating")
+            Button(onClick = onRating) {
+                Text(stringResource(R.string.show_rating_button))
             }
         }
     }

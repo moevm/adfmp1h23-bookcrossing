@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- List -->
+    <dimen name="list_item_image_height">95dp</dimen>
+
+    <!-- Card -->
+    <dimen name="card_side_margin">12dp</dimen>
+    <dimen name="card_bottom_margin">26dp</dimen>
+
+    <!-- Box -->
+    <dimen name="centered_box_width">250dp</dimen>
+
+    <!-- Button -->
+    <dimen name="button_size_normal">50dp</dimen>
+
+    <!-- Row -->
+    <dimen name="row_spaced_by">10dp</dimen>
+    <dimen name="image_and_text_in_row_spacer">8dp</dimen>
+
+    <!-- Column -->
+    <dimen name="column_spaced_by">25dp</dimen>
+    <dimen name="text_in_column_spacer">4dp</dimen>
+    <dimen name="column_all_padding">100dp</dimen>
+
+    <!-- Border -->
+    <dimen name="border_normal_size">0.25dp</dimen>
+    <dimen name="border_big_size">1dp</dimen>
+
+    <!-- Text -->
+    <dimen name="text_big">40sp</dimen>
+
+    <!-- Margins -->
+    <dimen name="margin_normal">16dp</dimen>
+
+</resources>
