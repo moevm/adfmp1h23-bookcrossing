@@ -8,6 +8,8 @@ import androidx.navigation.compose.rememberNavController
 import com.etu.bookcrossing.R
 import com.etu.bookcrossing.compose.books.BooksList
 import com.etu.bookcrossing.compose.common.NavigationBar
+import com.etu.bookcrossing.compose.map.AddBookToPoint
+import com.etu.bookcrossing.compose.map.AddNewBook
 import com.etu.bookcrossing.compose.map.BookPoint
 import com.etu.bookcrossing.compose.map.MapPage
 import com.etu.bookcrossing.compose.user.Account
@@ -48,10 +50,32 @@ fun RoutingBase() {
                 onRegister = { navController.navigate(NavigationRoute.REGISTER.name) })
         }
 
+        composable("${NavigationRoute.ADD_NEW_BOOK}/{${NavigationArgument.ADDRESS}}") {
+            NavigationBar(onNavigationClicked = onNavigationClicked) {
+                it.arguments?.getString(NavigationArgument.ADDRESS.name)?.let { address ->
+                    AddNewBook(address = address, onAddBook = {})
+                }
+            }
+        }
+
+        composable("${NavigationRoute.ADD_BOOK_TO_POINT}/{${NavigationArgument.ADDRESS}}") {
+            NavigationBar(onNavigationClicked = onNavigationClicked) {
+                it.arguments?.getString(NavigationArgument.ADDRESS.name)?.let { address ->
+                    AddBookToPoint(
+                        address = address,
+                        onChoose = {},
+                        onAddNew = { navController.navigate("${NavigationRoute.ADD_NEW_BOOK}/${address}") })
+                }
+            }
+        }
+
         composable("${NavigationRoute.POINT}/{${NavigationArgument.ADDRESS}}") {
             NavigationBar(onNavigationClicked = onNavigationClicked) {
                 it.arguments?.getString(NavigationArgument.ADDRESS.name)?.let { address ->
-                    BookPoint(address = address, onTakeBook = {})
+                    BookPoint(
+                        address = address,
+                        onTakeBook = {},
+                        onAddBook = { navController.navigate("${NavigationRoute.ADD_BOOK_TO_POINT}/${address}") })
                 }
             }
         }
@@ -111,6 +135,8 @@ enum class NavigationRoute {
     LOGIN,
     MAP,
     POINT,
+    ADD_BOOK_TO_POINT,
+    ADD_NEW_BOOK,
     REGISTER,
     REGISTER_SUCCESS
 }

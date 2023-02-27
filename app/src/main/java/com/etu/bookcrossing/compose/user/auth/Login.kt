@@ -9,7 +9,6 @@ import androidx.compose.foundation.text.KeyboardOptions
 import androidx.compose.material.Button
 import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Text
-import androidx.compose.material.TextField
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
@@ -22,6 +21,7 @@ import androidx.compose.ui.text.input.PasswordVisualTransformation
 import androidx.compose.ui.text.input.TextFieldValue
 import androidx.compose.ui.text.style.TextAlign
 import com.etu.bookcrossing.R
+import com.etu.bookcrossing.compose.common.BookCrossingTextField
 import com.etu.bookcrossing.compose.common.CursiveBigText
 
 @Composable
@@ -30,7 +30,9 @@ fun LoginComposable(
     onRegister: () -> Unit
 ) {
     Column(
-        modifier = Modifier.padding(dimensionResource(id = R.dimen.column_all_padding)).fillMaxSize(),
+        modifier = Modifier
+            .padding(dimensionResource(id = R.dimen.column_all_padding))
+            .fillMaxSize(),
         verticalArrangement = Arrangement.spacedBy(dimensionResource(id = R.dimen.column_spaced_by)),
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
@@ -39,7 +41,7 @@ fun LoginComposable(
 
         CursiveBigText(text = stringResource(id = R.string.app_name))
 
-        TextField(
+        BookCrossingTextField(
             label = {
                 Text(
                     text = stringResource(R.string.login_email_field)
@@ -48,7 +50,7 @@ fun LoginComposable(
             value = email.value,
             onValueChange = { email.value = it })
 
-        TextField(
+        BookCrossingTextField(
             label = {
                 Text(
                     text = stringResource(R.string.login_password_field)

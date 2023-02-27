@@ -7,7 +7,6 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.text.KeyboardOptions
 import androidx.compose.material.Button
 import androidx.compose.material.Text
-import androidx.compose.material.TextField
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
@@ -19,6 +18,7 @@ import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.text.input.PasswordVisualTransformation
 import androidx.compose.ui.text.input.TextFieldValue
 import com.etu.bookcrossing.R
+import com.etu.bookcrossing.compose.common.BookCrossingTextField
 import com.etu.bookcrossing.compose.common.CursiveBigText
 
 @Composable
@@ -35,34 +35,34 @@ fun Register(onRegister: () -> Unit) {
         val password = remember { mutableStateOf(TextFieldValue()) }
         val passwordConfirm = remember { mutableStateOf(TextFieldValue()) }
 
-        TextField(
+        BookCrossingTextField(
             label = { Text(text = stringResource(R.string.register_field_name)) },
             value = name.value,
             onValueChange = { name.value = it }
         )
-        TextField(
+        BookCrossingTextField(
             label = { Text(text = stringResource(R.string.register_field_surname)) },
             value = surname.value,
             onValueChange = { surname.value = it }
         )
-        TextField(
+        BookCrossingTextField(
             label = { Text(text = stringResource(R.string.register_field_email)) },
             value = email.value,
             onValueChange = { email.value = it }
         )
-        TextField(
+        BookCrossingTextField(
             label = { Text(text = stringResource(R.string.register_field_phone)) },
             value = phone.value,
             onValueChange = { phone.value = it }
         )
-        TextField(
+        BookCrossingTextField(
             label = { Text(text = stringResource(R.string.register_field_password)) },
             value = password.value,
             visualTransformation = PasswordVisualTransformation(),
             keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Password),
             onValueChange = { password.value = it }
         )
-        TextField(
+        BookCrossingTextField(
             label = { Text(text = stringResource(R.string.register_field_password_confirm)) },
             value = passwordConfirm.value,
             visualTransformation = PasswordVisualTransformation(),

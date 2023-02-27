@@ -3,6 +3,7 @@ package com.etu.bookcrossing.compose.user
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.padding
 import androidx.compose.material.Button
 import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Text
@@ -11,6 +12,7 @@ import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.remember
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.res.dimensionResource
 import androidx.compose.ui.res.stringResource
 import androidx.hilt.navigation.compose.hiltViewModel
 import com.etu.bookcrossing.R
@@ -27,7 +29,9 @@ fun TakenBookItem(name: String, onReturnBook: () -> Unit) {
             text = name,
             fontSize = MaterialTheme.typography.h6.fontSize,
             color = MaterialTheme.typography.h6.color,
-            modifier = Modifier.weight(1f)
+            modifier = Modifier
+                .weight(1f)
+                .padding(horizontal = dimensionResource(id = R.dimen.padding_normal))
         )
 
         Button(onClick = onReturnBook) {

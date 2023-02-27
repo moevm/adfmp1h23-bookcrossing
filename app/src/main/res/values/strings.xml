@@ -29,4 +29,10 @@
     <string name="build_route_dropdown">Build a route</string>
     <string name="show_books_dropdown">Show books</string>
     <string name="take_book_button">Take</string>
+    <string name="add_new_book_button">Add new book</string>
+    <string name="add_new_book_invitation">Is it a new book?</string>
+    <string name="add_book_to_the_point_button">Add a book to the point</string>
+    <string name="add_book_name_textfield">Name</string>
+    <string name="add_book_author_textfield">Author</string>
+    <string name="upload_a_photo_invitation">Upload a photo of the book</string>
 </resources>
