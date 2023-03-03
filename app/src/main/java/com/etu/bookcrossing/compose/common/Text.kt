@@ -21,6 +21,7 @@ import androidx.compose.ui.text.input.VisualTransformation
 fun CursiveBigText(text: String, modifier: Modifier = Modifier) {
     Text(
         text = text,
+        modifier = modifier,
         style = TextStyle(
             fontSize = MaterialTheme.typography.h4.fontSize,
             fontFamily = FontFamily.Cursive

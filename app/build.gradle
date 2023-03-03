@@ -5,9 +5,6 @@ plugins {
     id 'org.jetbrains.kotlin.android'
 }
 
-apply plugin: 'com.android.application'
-apply plugin: 'com.google.dagger.hilt.android'
-
 android {
     namespace 'com.etu.bookcrossing'
     compileSdk 33
@@ -27,15 +24,6 @@ android {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
-    }
-
-    compileOptions {
-        sourceCompatibility JavaVersion.VERSION_1_8
-        targetCompatibility JavaVersion.VERSION_1_8
-    }
-
-    kotlinOptions {
-        jvmTarget = '1.8'
     }
 
     buildFeatures {
