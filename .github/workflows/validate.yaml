@@ -3,7 +3,7 @@ name: Validate
 on: [ push, pull_request ]
 
 jobs:
-  check:
+  Validate:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -27,7 +27,10 @@ jobs:
           arguments: test
 
       - name: Publish test reports
-        uses: mikepenz/action-junit-report@v3
+        uses: dorny/test-reporter@v1
         if: always()
         with:
-          report_paths: './**/build/test-results/**/TEST-*.xml'
+          artifact: test-results
+          name: JUnit tests
+          path: './**/build/test-results/**/TEST-*.xml'
+          reporter: java-junit
