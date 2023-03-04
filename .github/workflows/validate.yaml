@@ -1,6 +1,10 @@
 name: Validate
 
-on: [push]
+on:
+  push:
+    branches: [ $default-branch ]
+  pull_request:
+    branches: [ $default-branch ]
 
 jobs:
   check:
@@ -24,4 +28,9 @@ jobs:
       - name: Run the Gradle package task
         uses: gradle/gradle-build-action@67421db6bd0bf253fb4bd25b31ebb98943c375e1
         with:
-          arguments: test
+          arguments: build
+
+      - name: Publish test reports
+        uses: mikepenz/action-junit-report@v3
+        with:
+          report_paths: './**/build/test-results/**/TEST-*.xml'
