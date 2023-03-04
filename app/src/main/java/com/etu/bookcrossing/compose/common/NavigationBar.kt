@@ -6,6 +6,7 @@ import androidx.compose.material.BottomNavigation
 import androidx.compose.material.BottomNavigationItem
 import androidx.compose.material.Icon
 import androidx.compose.material.Scaffold
+import androidx.compose.material.ScaffoldState
 import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
@@ -16,9 +17,11 @@ import com.etu.bookcrossing.compose.BottomNavigationItem
 @Composable
 fun NavigationBar(
     onNavigationClicked: (BottomNavigationItem) -> Unit,
+    scaffoldState: ScaffoldState,
     content: @Composable () -> Unit
 ) {
     Scaffold(
+        scaffoldState = scaffoldState,
         bottomBar = { BottomNavigationBar(onNavigationClicked) },
         content = { padding ->
             Box(modifier = Modifier.padding(padding)) {

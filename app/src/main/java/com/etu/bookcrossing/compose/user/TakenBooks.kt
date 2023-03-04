@@ -16,11 +16,17 @@ import androidx.compose.ui.res.dimensionResource
 import androidx.compose.ui.res.stringResource
 import androidx.hilt.navigation.compose.hiltViewModel
 import com.etu.bookcrossing.R
+import com.etu.bookcrossing.compose.ShowSnackbar
 import com.etu.bookcrossing.compose.common.RowsWithTextHeader
 import com.etu.bookcrossing.viewmodel.TakenBooksViewModel
 
 @Composable
-fun TakenBookItem(name: String, onReturnBook: () -> Unit) {
+fun TakenBookItem(
+    name: String,
+    returnedMessage: String,
+    undoMessage: String,
+    onReturnBook: ShowSnackbar
+) {
     Row(
         modifier = Modifier.fillMaxWidth(),
         horizontalArrangement = Arrangement.SpaceBetween
@@ -34,21 +40,31 @@ fun TakenBookItem(name: String, onReturnBook: () -> Unit) {
                 .padding(horizontal = dimensionResource(id = R.dimen.padding_normal))
         )
 
-        Button(onClick = onReturnBook) {
+        Button(onClick = { onReturnBook(returnedMessage.format(name), undoMessage, {}, {}) }) {
             Text(stringResource(R.string.return_book_button))
         }
     }
 }
 
 @Composable
-fun TakenBooks(viewModel: TakenBooksViewModel = hiltViewModel(), onReturnBook: () -> Unit) {
+fun TakenBooks(viewModel: TakenBooksViewModel = hiltViewModel(), onReturnBook: ShowSnackbar) {
     val bookNames by remember(viewModel) {
         viewModel.loadTakenBooksNames()
     }.collectAsState(initial = emptyList())
 
+    val undoMessage = stringResource(id = R.string.undo)
+    val returnedMessage = stringResource(id = R.string.element_returned_message)
+
     RowsWithTextHeader(
         headerText = stringResource(R.string.taken_books_header),
         elements = bookNames,
-        consumer = { TakenBookItem(name = it, onReturnBook = onReturnBook) }
+        consumer = {
+            TakenBookItem(
+                name = it,
+                onReturnBook = onReturnBook,
+                undoMessage = undoMessage,
+                returnedMessage = returnedMessage
+            )
+        }
     )
 }

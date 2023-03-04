@@ -24,6 +24,7 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.input.TextFieldValue
 import androidx.compose.ui.tooling.preview.Preview
 import com.etu.bookcrossing.R
+import com.etu.bookcrossing.compose.ShowSnackbar
 import com.etu.bookcrossing.compose.common.BookCrossingTextField
 import com.etu.bookcrossing.compose.common.CursiveBigText
 import com.etu.bookcrossing.compose.common.TextSearchBar
@@ -35,7 +36,12 @@ val books = listOf(
 )
 
 @Composable
-fun TakeBookItem(name: String, onTakeBook: () -> Unit) {
+fun TakeBookItem(
+    name: String,
+    takenMessage: String,
+    undoMessage: String,
+    onTakeBook: ShowSnackbar
+) {
     Row(
         modifier = Modifier.fillMaxWidth(),
         horizontalArrangement = Arrangement.SpaceBetween
@@ -50,7 +56,7 @@ fun TakeBookItem(name: String, onTakeBook: () -> Unit) {
         )
 
         Button(
-            onClick = onTakeBook,
+            onClick = { onTakeBook(takenMessage.format(name), undoMessage, {}, {}) },
             modifier = Modifier.padding(horizontal = dimensionResource(id = R.dimen.padding_normal))
         ) {
             Text(text = stringResource(R.string.take_book_button))
@@ -65,7 +71,9 @@ fun AddBookItem(name: String, onChoose: (String) -> Unit) {
             text = name,
             fontSize = MaterialTheme.typography.h6.fontSize,
             color = MaterialTheme.typography.h6.color,
-            modifier = Modifier.weight(1f).padding(dimensionResource(id = R.dimen.padding_normal))
+            modifier = Modifier
+                .weight(1f)
+                .padding(dimensionResource(id = R.dimen.padding_normal))
         )
 
         IconButton(onClick = { onChoose(name) }) {
@@ -164,7 +172,10 @@ fun AddBookToPoint(address: String, onChoose: () -> Unit, onAddNew: () -> Unit) 
 }
 
 @Composable
-fun BookPoint(address: String, onTakeBook: () -> Unit, onAddBook: () -> Unit) {
+fun BookPoint(address: String, onTakeBook: ShowSnackbar, onAddBook: () -> Unit) {
+    val takenMessage = stringResource(id = R.string.element_taken_message)
+    val undoMessage = stringResource(id = R.string.undo)
+
     Box(
         modifier = Modifier.fillMaxSize(),
     ) {
@@ -181,16 +192,15 @@ fun BookPoint(address: String, onTakeBook: () -> Unit, onAddBook: () -> Unit) {
                 Text(text = stringResource(R.string.add_book_to_the_point_button))
             }
 
-            books.forEach { TakeBookItem(name = it, onTakeBook = onTakeBook) }
+            books.forEach {
+                TakeBookItem(
+                    name = it,
+                    onTakeBook = onTakeBook,
+                    takenMessage = takenMessage,
+                    undoMessage = undoMessage
+                )
+            }
         }
-    }
-}
-
-@Composable
-@Preview
-fun BookPointPreview() {
-    BookPoint(address = "Popova 6", onTakeBook = {}) {
-
     }
 }
 
