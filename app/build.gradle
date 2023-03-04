@@ -9,6 +9,12 @@ android {
     namespace 'com.etu.bookcrossing'
     compileSdk 33
 
+    testOptions {
+        unitTests.all {
+            useJUnitPlatform()
+        }
+    }
+
     defaultConfig {
         applicationId "com.etu.bookcrossing"
         minSdk 24
@@ -53,6 +59,8 @@ dependencies {
     def glide_version = "1.0.0-alpha.1"
     def databinding_version = "7.4.1"
     def paging_version = "1.4.0-alpha03"
+    def mockk_version = "1.13.4"
+    def coroutine_test_version = "1.6.4"
 
     // Foundation Compose
     implementation "androidx.compose.foundation:foundation:$paging_version"
@@ -119,11 +127,10 @@ dependencies {
     kaptAndroidTest "com.google.dagger:hilt-compiler:$dagger_version"
 
     // For local unit tests
-    testImplementation "com.google.dagger:hilt-android-testing:$dagger_version"
-    kaptTest "com.google.dagger:hilt-compiler:$dagger_version"
-    testImplementation "org.junit.jupiter:junit-jupiter-api:$junit_version"
-    testRuntimeOnly "org.junit.jupiter:junit-jupiter-engine:$junit_version"
-    androidTestImplementation "androidx.navigation:navigation-testing:$nav_version"
+    testImplementation "io.mockk:mockk:$mockk_version"
+    testImplementation("org.junit.jupiter:junit-jupiter-api:$junit_version")
+    testImplementation("org.junit.jupiter:junit-jupiter-engine:$junit_version")
+    testImplementation "org.jetbrains.kotlinx:kotlinx-coroutines-test:$coroutine_test_version"
 }
 
 kapt {
