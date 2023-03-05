@@ -22,6 +22,8 @@
     <dimen name="image_and_text_in_row_spacer">8dp</dimen>
 
     <!-- Column -->
+    <dimen name="about_column_spaced_by">40dp</dimen>
+    <dimen name="about_column_padding">60dp</dimen>
     <dimen name="column_spaced_by">25dp</dimen>
     <dimen name="text_in_column_spacer">4dp</dimen>
     <dimen name="column_all_padding">100dp</dimen>

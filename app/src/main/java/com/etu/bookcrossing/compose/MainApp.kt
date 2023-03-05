@@ -6,6 +6,7 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import com.etu.bookcrossing.R
+import com.etu.bookcrossing.compose.about.About
 import com.etu.bookcrossing.compose.books.BooksList
 import com.etu.bookcrossing.compose.common.NavigationBar
 import com.etu.bookcrossing.compose.map.AddBookToPoint
@@ -47,7 +48,9 @@ fun RoutingBase() {
     NavHost(navController, startDestination = NavigationRoute.LOGIN.name) {
         composable(NavigationRoute.LOGIN.name) {
             LoginComposable(onLogin = { navController.navigate(NavigationRoute.ACCOUNT.name) },
-                onRegister = { navController.navigate(NavigationRoute.REGISTER.name) })
+                onRegister = { navController.navigate(NavigationRoute.REGISTER.name) },
+                onAbout = { navController.navigate(NavigationRoute.ABOUT.name) }
+            )
         }
 
         composable("${NavigationRoute.ADD_NEW_BOOK}/{${NavigationArgument.ADDRESS}}") {
@@ -86,6 +89,10 @@ fun RoutingBase() {
 
         composable(NavigationRoute.REGISTER_SUCCESS.name) {
             RegistrationSucceed(onSuccess = { navController.navigate(NavigationRoute.ACCOUNT.name) })
+        }
+
+        composable(NavigationRoute.ABOUT.name) {
+            About()
         }
 
         composable(NavigationRoute.ACCOUNT.name) {
@@ -138,7 +145,8 @@ enum class NavigationRoute {
     ADD_BOOK_TO_POINT,
     ADD_NEW_BOOK,
     REGISTER,
-    REGISTER_SUCCESS
+    REGISTER_SUCCESS,
+    ABOUT,
 }
 
 enum class BottomNavigationItem(
