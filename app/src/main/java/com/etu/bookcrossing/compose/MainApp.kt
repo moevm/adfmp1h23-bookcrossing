@@ -1,12 +1,16 @@
 package com.etu.bookcrossing.compose
 
 import androidx.annotation.DrawableRes
+import androidx.compose.material.SnackbarResult
+import androidx.compose.material.rememberScaffoldState
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.rememberCoroutineScope
+import androidx.navigation.NavGraphBuilder
+import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import com.etu.bookcrossing.R
-import com.etu.bookcrossing.compose.about.About
 import com.etu.bookcrossing.compose.books.BooksList
 import com.etu.bookcrossing.compose.common.NavigationBar
 import com.etu.bookcrossing.compose.map.AddBookToPoint
@@ -20,6 +24,14 @@ import com.etu.bookcrossing.compose.user.auth.LoginComposable
 import com.etu.bookcrossing.compose.user.auth.Register
 import com.etu.bookcrossing.compose.user.auth.RegistrationSucceed
 import com.etu.bookcrossing.ui.theme.BookCrossingTheme
+import kotlinx.coroutines.launch
+
+typealias Performed = () -> Unit
+typealias Dismissed = () -> Unit
+typealias Message = String
+typealias Label = String
+typealias ShowSnackbar = (Message, Label, Performed, Dismissed) -> Unit
+typealias NestedComposable = @Composable (@Composable () -> Unit) -> Unit
 
 @Composable
 fun BookCrossingApp() {
@@ -31,6 +43,23 @@ fun BookCrossingApp() {
 @Composable
 fun RoutingBase() {
     val navController = rememberNavController()
+    val coroutineScope = rememberCoroutineScope()
+    val scaffoldState = rememberScaffoldState()
+
+    val onSnackBar: ShowSnackbar = { message, label, performed, dissmissed ->
+        coroutineScope.launch {
+            val snackbarResult = scaffoldState.snackbarHostState.showSnackbar(
+                message = message,
+                actionLabel = label
+            )
+
+            when (snackbarResult) {
+                SnackbarResult.Dismissed -> dissmissed()
+                SnackbarResult.ActionPerformed -> performed()
+            }
+        }
+    }
+
     val onNavigationClicked: (BottomNavigationItem) -> Unit = {
         navController.navigate(it.route.name) {
 
@@ -45,88 +74,109 @@ fun RoutingBase() {
         }
     }
 
+    val navigationBar: NestedComposable = {
+        NavigationBar(onNavigationClicked = onNavigationClicked, scaffoldState = scaffoldState) {
+            it()
+        }
+    }
+
     NavHost(navController, startDestination = NavigationRoute.LOGIN.name) {
-        composable(NavigationRoute.LOGIN.name) {
-            LoginComposable(onLogin = { navController.navigate(NavigationRoute.ACCOUNT.name) },
-                onRegister = { navController.navigate(NavigationRoute.REGISTER.name) },
-                onAbout = { navController.navigate(NavigationRoute.ABOUT.name) }
-            )
-        }
+        mapRoutes(navigationBar, navController, onSnackBar)
+        booksListRoutes(navigationBar)
+        accountRoutes(navigationBar, navController, onSnackBar)
+        authRoutes(navController)
+    }
+}
 
-        composable("${NavigationRoute.ADD_NEW_BOOK}/{${NavigationArgument.ADDRESS}}") {
-            NavigationBar(onNavigationClicked = onNavigationClicked) {
-                it.arguments?.getString(NavigationArgument.ADDRESS.name)?.let { address ->
-                    AddNewBook(address = address, onAddBook = {})
-                }
+fun NavGraphBuilder.booksListRoutes(navigationBar: NestedComposable) {
+    composable(NavigationRoute.BOOKS.name) {
+        navigationBar {
+            BooksList()
+        }
+    }
+}
+
+fun NavGraphBuilder.accountRoutes(
+    navigationBar: NestedComposable,
+    navController: NavHostController,
+    onSnackBar: ShowSnackbar
+) {
+
+    composable(NavigationRoute.ACCOUNT.name) {
+        navigationBar {
+            Account(
+                onTakenBooks = { navController.navigate(NavigationRoute.TAKEN_BOOKS.name) },
+                onRating = { navController.navigate(NavigationRoute.RATING.name) })
+        }
+    }
+
+    composable(NavigationRoute.RATING.name) {
+        navigationBar {
+            Rating()
+        }
+    }
+
+    composable(NavigationRoute.TAKEN_BOOKS.name) {
+        navigationBar {
+            TakenBooks(onReturnBook = onSnackBar)
+        }
+    }
+}
+
+fun NavGraphBuilder.authRoutes(navController: NavHostController) {
+    composable(NavigationRoute.LOGIN.name) {
+        LoginComposable(onLogin = { navController.navigate(NavigationRoute.ACCOUNT.name) },
+            onRegister = { navController.navigate(NavigationRoute.REGISTER.name) })
+    }
+
+    composable(NavigationRoute.REGISTER.name) {
+        Register(onRegister = { navController.navigate(NavigationRoute.REGISTER_SUCCESS.name) })
+    }
+
+    composable(NavigationRoute.REGISTER_SUCCESS.name) {
+        RegistrationSucceed(onSuccess = { navController.navigate(NavigationRoute.ACCOUNT.name) })
+    }
+}
+
+fun NavGraphBuilder.mapRoutes(
+    navigationBar: NestedComposable,
+    navController: NavHostController,
+    onSnackBar: ShowSnackbar
+) {
+    composable(NavigationRoute.MAP.name) {
+        navigationBar {
+            MapPage(onShowBooks = { navController.navigate("${NavigationRoute.POINT}/$it") })
+        }
+    }
+
+    composable("${NavigationRoute.ADD_NEW_BOOK}/{${NavigationArgument.ADDRESS}}") {
+        navigationBar {
+            it.arguments?.getString(NavigationArgument.ADDRESS.name)?.let { address ->
+                AddNewBook(address = address, onAddBook = {})
             }
         }
+    }
 
-        composable("${NavigationRoute.ADD_BOOK_TO_POINT}/{${NavigationArgument.ADDRESS}}") {
-            NavigationBar(onNavigationClicked = onNavigationClicked) {
-                it.arguments?.getString(NavigationArgument.ADDRESS.name)?.let { address ->
-                    AddBookToPoint(
-                        address = address,
-                        onChoose = {},
-                        onAddNew = { navController.navigate("${NavigationRoute.ADD_NEW_BOOK}/${address}") })
-                }
+    composable("${NavigationRoute.ADD_BOOK_TO_POINT}/{${NavigationArgument.ADDRESS}}") {
+        navigationBar {
+            it.arguments?.getString(NavigationArgument.ADDRESS.name)?.let { address ->
+                AddBookToPoint(
+                    address = address,
+                    onChoose = {},
+                    onAddNew = { navController.navigate("${NavigationRoute.ADD_NEW_BOOK}/${address}") })
             }
         }
+    }
 
-        composable("${NavigationRoute.POINT}/{${NavigationArgument.ADDRESS}}") {
-            NavigationBar(onNavigationClicked = onNavigationClicked) {
-                it.arguments?.getString(NavigationArgument.ADDRESS.name)?.let { address ->
-                    BookPoint(
-                        address = address,
-                        onTakeBook = {},
-                        onAddBook = { navController.navigate("${NavigationRoute.ADD_BOOK_TO_POINT}/${address}") })
-                }
+    composable("${NavigationRoute.POINT}/{${NavigationArgument.ADDRESS}}") {
+        navigationBar {
+            it.arguments?.getString(NavigationArgument.ADDRESS.name)?.let { address ->
+                BookPoint(
+                    address = address,
+                    onTakeBook = onSnackBar,
+                    onAddBook = { navController.navigate("${NavigationRoute.ADD_BOOK_TO_POINT}/${address}") })
             }
         }
-
-        composable(NavigationRoute.REGISTER.name) {
-            Register(onRegister = { navController.navigate(NavigationRoute.REGISTER_SUCCESS.name) })
-        }
-
-        composable(NavigationRoute.REGISTER_SUCCESS.name) {
-            RegistrationSucceed(onSuccess = { navController.navigate(NavigationRoute.ACCOUNT.name) })
-        }
-
-        composable(NavigationRoute.ABOUT.name) {
-            About()
-        }
-
-        composable(NavigationRoute.ACCOUNT.name) {
-            NavigationBar(onNavigationClicked = onNavigationClicked) {
-                Account(
-                    onTakenBooks = { navController.navigate(NavigationRoute.TAKEN_BOOKS.name) },
-                    onRating = { navController.navigate(NavigationRoute.RATING.name) })
-            }
-        }
-
-        composable(NavigationRoute.BOOKS.name) {
-            NavigationBar(onNavigationClicked = onNavigationClicked) {
-                BooksList()
-            }
-        }
-
-        composable(NavigationRoute.RATING.name) {
-            NavigationBar(onNavigationClicked = onNavigationClicked) {
-                Rating()
-            }
-        }
-
-        composable(NavigationRoute.TAKEN_BOOKS.name) {
-            NavigationBar(onNavigationClicked = onNavigationClicked) {
-                TakenBooks(onReturnBook = {})
-            }
-        }
-
-        composable(NavigationRoute.MAP.name) {
-            NavigationBar(onNavigationClicked = onNavigationClicked) {
-                MapPage(onShowBooks = { navController.navigate("${NavigationRoute.POINT}/$it") })
-            }
-        }
-
     }
 }
 
@@ -145,8 +195,7 @@ enum class NavigationRoute {
     ADD_BOOK_TO_POINT,
     ADD_NEW_BOOK,
     REGISTER,
-    REGISTER_SUCCESS,
-    ABOUT,
+    REGISTER_SUCCESS
 }
 
 enum class BottomNavigationItem(

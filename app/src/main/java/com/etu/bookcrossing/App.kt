@@ -5,8 +5,8 @@ import android.util.Log
 import androidx.hilt.work.HiltWorkerFactory
 import androidx.work.Configuration
 import dagger.hilt.android.HiltAndroidApp
-import org.slf4j.Logger
 import javax.inject.Inject
+import org.slf4j.Logger
 
 @HiltAndroidApp
 class App : Application(), Configuration.Provider {

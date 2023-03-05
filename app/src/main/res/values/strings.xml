@@ -36,4 +36,8 @@
     <string name="add_book_author_textfield">Author</string>
     <string name="upload_a_photo_invitation">Upload a photo of the book</string>
     <string name="about_clickable_text">About</string>
+    <string name="element_taken_message">%s was successfully taken</string>
+    <string name="element_returned_message">%s was successfully returned</string>
+    <string name="undo">Undo</string>
+>>>>>>> a0537a9882aaed03c67f1a75b3d66f8c3aa35dfe
 </resources>
