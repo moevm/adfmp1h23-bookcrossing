@@ -39,5 +39,9 @@
     <string name="element_taken_message">%s was successfully taken</string>
     <string name="element_returned_message">%s was successfully returned</string>
     <string name="undo">Undo</string>
->>>>>>> a0537a9882aaed03c67f1a75b3d66f8c3aa35dfe
+    <string name="developers_email">somecooldesmail@des.com</string>
+    <string name="privacy_policy">Privacy policy</string>
+    <string name="terms_of_service">Terms of service</string>
+    <string name="site_url">Site URL</string>
+    <string name="develop_by_info">\@ Developed by DES Corporation</string>
 </resources>

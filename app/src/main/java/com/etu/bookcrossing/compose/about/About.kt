@@ -28,10 +28,10 @@ fun About() {
         verticalArrangement = Arrangement.spacedBy(dimensionResource(id = R.dimen.about_column_spaced_by)),
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
-        Text(text = "somecooldesmail@des.com")
-        Text(text = "Privacy policy")
-        Text(text = "Terms of service")
-        Text(text = "Site URL")
-        Text(text = "Developed by DES Corporation")
+        Text(text = stringResource(id = R.string.developers_email))
+        Text(text = stringResource(id = R.string.privacy_policy))
+        Text(text = stringResource(id = R.string.terms_of_service))
+        Text(text = stringResource(id = R.string.site_url))
+        Text(text = stringResource(id = R.string.develop_by_info))
     }
 }
