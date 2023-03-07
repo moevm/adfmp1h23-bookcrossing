@@ -1,8 +1,9 @@
-package com.etu.bookcrossing.worker.seeders.impl
+package com.etu.bookcrossing.worker.seeders.impl.seeders
 
 import com.etu.bookcrossing.data.jsonReader
 import com.etu.bookcrossing.database.entity.BookEntity
 import com.etu.bookcrossing.database.repository.IBookRepository
+import com.etu.bookcrossing.worker.seeders.impl.BookSeeder
 import io.mockk.coVerify
 import io.mockk.impl.annotations.InjectMockKs
 import io.mockk.impl.annotations.MockK
