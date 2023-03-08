@@ -2,6 +2,7 @@ package com.etu.bookcrossing.worker.seeders.impl.viewmodel
 
 import com.etu.bookcrossing.database.repository.IBookRepository
 import com.etu.bookcrossing.viewmodel.TakenBooksViewModel
+import com.etu.bookcrossing.worker.seeders.impl.Fixtures
 import io.mockk.every
 import io.mockk.impl.annotations.InjectMockKs
 import io.mockk.impl.annotations.MockK
@@ -24,7 +25,6 @@ class TakenBooksViewModelTest {
     @InjectMockKs
     lateinit var target: TakenBooksViewModel
 
-
     @Test
     fun `when taken books names expected get it from repository and assert elements`() = runTest {
         val expected = booksNames.first()
@@ -38,13 +38,6 @@ class TakenBooksViewModelTest {
 
     companion object {
 
-        private val booksNames = flowOf(
-            listOf(
-                "Book1",
-                "Book2",
-                "Peace and war",
-                "Shrek"
-            )
-        )
+        private val booksNames = flowOf(Fixtures.booksNames)
     }
 }

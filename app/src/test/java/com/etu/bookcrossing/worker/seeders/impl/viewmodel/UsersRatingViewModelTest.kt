@@ -1,9 +1,9 @@
 package com.etu.bookcrossing.worker.seeders.impl.viewmodel
 
 import com.etu.bookcrossing.data.toUser
-import com.etu.bookcrossing.database.entity.UserEntity
 import com.etu.bookcrossing.database.repository.IUserRepository
 import com.etu.bookcrossing.viewmodel.UsersRatingViewModel
+import com.etu.bookcrossing.worker.seeders.impl.Fixtures
 import io.mockk.every
 import io.mockk.impl.annotations.InjectMockKs
 import io.mockk.impl.annotations.MockK
@@ -26,7 +26,6 @@ class UsersRatingViewModelTest {
     @InjectMockKs
     lateinit var target: UsersRatingViewModel
 
-
     @Test
     fun `when rating expected get it from repository and return to user`() = runTest {
         val expected = usersRating.first().map { user -> user.toUser() }
@@ -40,27 +39,6 @@ class UsersRatingViewModelTest {
 
     companion object {
 
-        private val usersRating = flowOf(
-            listOf(
-                UserEntity(
-                    0,
-                    "Petr",
-                    "Petrov",
-                    "email@gmail.com",
-                    "+123",
-                    "password",
-                    "some url"
-                ),
-                UserEntity(
-                    1,
-                    "Ivan",
-                    "Ivanov",
-                    "email1@gmail.com",
-                    "+123",
-                    "password 1",
-                    "some url 1"
-                )
-            )
-        )
+        private val usersRating = flowOf(Fixtures.users)
     }
 }

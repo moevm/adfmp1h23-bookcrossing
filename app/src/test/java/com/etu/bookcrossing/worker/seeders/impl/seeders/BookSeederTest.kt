@@ -1,9 +1,9 @@
 package com.etu.bookcrossing.worker.seeders.impl.seeders
 
 import com.etu.bookcrossing.data.jsonReader
-import com.etu.bookcrossing.database.entity.BookEntity
 import com.etu.bookcrossing.database.repository.IBookRepository
 import com.etu.bookcrossing.worker.seeders.impl.BookSeeder
+import com.etu.bookcrossing.worker.seeders.impl.Fixtures
 import io.mockk.coVerify
 import io.mockk.impl.annotations.InjectMockKs
 import io.mockk.impl.annotations.MockK
@@ -25,23 +25,11 @@ class BookSeederTest {
 
     @Test
     fun `when apply requested expected deserialize and pass to repository`() = runTest {
-        val expected = books
+        val expected = Fixtures.books
 
         target.apply(expected.jsonReader())
 
         coVerify { bookRepository.insert(expected) }
     }
 
-    companion object {
-
-        private val books = (0L..10).map {
-            BookEntity(
-                it,
-                it.toString(),
-                "some author",
-                "some description",
-                "some url"
-            )
-        }
-    }
 }

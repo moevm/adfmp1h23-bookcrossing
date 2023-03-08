@@ -1,9 +1,9 @@
 package com.etu.bookcrossing.worker.seeders.impl.viewmodel
 
 import com.etu.bookcrossing.data.toBook
-import com.etu.bookcrossing.database.entity.BookEntity
 import com.etu.bookcrossing.database.repository.IBookRepository
 import com.etu.bookcrossing.viewmodel.BookListViewModel
+import com.etu.bookcrossing.worker.seeders.impl.Fixtures
 import io.mockk.every
 import io.mockk.impl.annotations.InjectMockKs
 import io.mockk.impl.annotations.MockK
@@ -39,14 +39,6 @@ class BookListViewModelTest {
 
     companion object {
 
-        private val books = flowOf((0L..2).map {
-            BookEntity(
-                it,
-                it.toString(),
-                "some author",
-                "some description",
-                "some url"
-            )
-        })
+        private val books = flowOf(Fixtures.books)
     }
 }
