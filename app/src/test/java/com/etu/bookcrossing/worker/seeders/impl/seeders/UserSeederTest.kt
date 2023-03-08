@@ -35,18 +35,16 @@ class UserSeederTest {
     companion object {
 
         private fun users(size: Long): List<UserEntity> {
-            val entities = (0L..size).map {
+            return (0L..size).map {
                 UserEntity(
                     it,
-                    "Petr$it",
-                    "Petrov$it",
+                    "Petr #$it",
+                    "Petrov #$it",
                     "email@gmail.com",
                     "password",
                     "some url"
                 )
             }
-            assert(entities.size.toLong() == size + 1)
-            return entities
         }
     }
 }

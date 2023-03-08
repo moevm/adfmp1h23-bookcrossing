@@ -12,35 +12,37 @@ import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.flow.flowOf
 import kotlinx.coroutines.test.runTest
+import org.assertj.core.api.Assertions.assertThat
 import org.junit.jupiter.api.Test
 import org.junit.jupiter.api.extension.ExtendWith
 
 @ExtendWith(MockKExtension::class)
 @OptIn(ExperimentalCoroutinesApi::class)
 class BookListViewModelTest {
+
     @MockK(relaxUnitFun = true)
     lateinit var booksRepository: IBookRepository
 
     @InjectMockKs
     lateinit var target: BookListViewModel
 
-
     @Test
-    fun `when all books expected get them from repository and assert elements`() = runTest {
-        every { booksRepository.all() } returns books(2)
+    fun `when all books expected get them from repository and pass to user`() = runTest {
+        val books = books()
+        val expected = books.first()
 
-        val allBooks = target.loadBooks()
-        assert(allBooks.first().count() == 3)
-        assert(allBooks.first()[0].bookId == 0L)
-        assert(allBooks.first()[1].bookId == 1L)
-        assert(allBooks.first()[2].author == "some author")
+        every { booksRepository.all() } returns books
+
+        val actual = target.loadBooks().first()
+
+        assertThat(actual).hasSize(expected.size).containsAll(expected)
     }
 
     companion object {
 
-        private fun books(size: Long): Flow<List<BookEntity>> {
+        private fun books(): Flow<List<BookEntity>> {
             return flowOf(
-                (0L..size).map {
+                (0L..2).map {
                     BookEntity(
                         it,
                         it.toString(),

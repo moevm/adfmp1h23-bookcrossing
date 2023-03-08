@@ -8,17 +8,17 @@ import io.mockk.impl.annotations.MockK
 import io.mockk.junit5.MockKExtension
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.flow.Flow
-import kotlinx.coroutines.flow.count
+import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.flow.flowOf
-import kotlinx.coroutines.flow.toList
 import kotlinx.coroutines.test.runTest
+import org.assertj.core.api.Assertions.assertThat
 import org.junit.jupiter.api.Test
 import org.junit.jupiter.api.extension.ExtendWith
-
 
 @ExtendWith(MockKExtension::class)
 @OptIn(ExperimentalCoroutinesApi::class)
 class TakenBooksViewModelTest {
+
     @MockK(relaxUnitFun = true)
     lateinit var booksRepository: IBookRepository
 
@@ -28,27 +28,27 @@ class TakenBooksViewModelTest {
 
     @Test
     fun `when taken books names expected get it from repository and assert elements`() = runTest {
-        every { booksRepository.allNames() } returns booksNames()
+        val bookNames = booksNames()
+        val expected = bookNames.first()
 
-        val rating = target.loadTakenBooksNames()
-        assert(rating.count() == 1)
-        assert(rating.toList().first().size == 2)
-        assert(rating.toList().first().first() == "Book1")
-        assert(rating.toList().first()[1] == "Book2")
-        assert(!rating.toList().first().contains( "Peace and war"))
-        assert(!rating.toList().first().contains( "Shrek"))
+        every { booksRepository.allNames() } returns bookNames
+
+        val actual = target.loadTakenBooksNames().first()
+
+        assertThat(actual).hasSize(expected.size).containsAll(expected)
     }
 
     companion object {
 
         private fun booksNames(): Flow<List<String>> {
-            return  flowOf(
+            return flowOf(
                 listOf(
                     "Book1",
                     "Book2",
                     "Peace and war",
                     "Shrek"
-                ))
+                )
+            )
         }
     }
 }

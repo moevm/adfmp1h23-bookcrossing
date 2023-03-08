@@ -65,6 +65,7 @@ dependencies {
     def paging_version = "1.4.0-alpha03"
     def mockk_version = "1.13.4"
     def coroutine_test_version = "1.6.4"
+    def assertj_version = "3.11.1"
 
     // Foundation Compose
     implementation "androidx.compose.foundation:foundation:$paging_version"
@@ -130,9 +131,13 @@ dependencies {
     androidTestImplementation "com.google.dagger:hilt-android-testing:$dagger_version"
     kaptAndroidTest "com.google.dagger:hilt-compiler:$dagger_version"
 
+    debugImplementation "androidx.compose.ui:ui-test-manifest:$compose_version"
+    androidTestImplementation "androidx.compose.ui:ui-test-junit4:$compose_version"
+
     // For local unit tests
     testImplementation "io.mockk:mockk:$mockk_version"
     testImplementation("org.junit.jupiter:junit-jupiter-api:$junit_version")
+    testImplementation("org.assertj:assertj-core:$assertj_version")
     testImplementation("org.junit.jupiter:junit-jupiter-engine:$junit_version")
     testImplementation "org.jetbrains.kotlinx:kotlinx-coroutines-test:$coroutine_test_version"
 }
