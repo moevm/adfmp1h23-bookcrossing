@@ -8,7 +8,6 @@ import io.mockk.impl.annotations.InjectMockKs
 import io.mockk.impl.annotations.MockK
 import io.mockk.junit5.MockKExtension
 import kotlinx.coroutines.ExperimentalCoroutinesApi
-import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.flow.flowOf
 import kotlinx.coroutines.test.runTest
@@ -28,7 +27,6 @@ class BookListViewModelTest {
 
     @Test
     fun `when all books expected get them from repository and pass to user`() = runTest {
-        val books = books()
         val expected = books.first()
 
         every { booksRepository.all() } returns books
@@ -40,17 +38,14 @@ class BookListViewModelTest {
 
     companion object {
 
-        private fun books(): Flow<List<BookEntity>> {
-            return flowOf(
-                (0L..2).map {
-                    BookEntity(
-                        it,
-                        it.toString(),
-                        "some author",
-                        "some description",
-                        "some url"
-                    )
-                })
-        }
+        private val books = flowOf((0L..2).map {
+            BookEntity(
+                it,
+                it.toString(),
+                "some author",
+                "some description",
+                "some url"
+            )
+        })
     }
 }

@@ -25,7 +25,7 @@ class BookSeederTest {
 
     @Test
     fun `when apply requested expected deserialize and pass to repository`() = runTest {
-        val expected = books(10)
+        val expected = books
 
         target.apply(expected.jsonReader())
 
@@ -34,16 +34,14 @@ class BookSeederTest {
 
     companion object {
 
-        private fun books(size: Long): List<BookEntity> {
-            return (0L..size).map {
-                BookEntity(
-                    it,
-                    it.toString(),
-                    "some author",
-                    "some description",
-                    "some url"
-                )
-            }
+        private val books = (0L..10).map {
+            BookEntity(
+                it,
+                it.toString(),
+                "some author",
+                "some description",
+                "some url"
+            )
         }
     }
 }

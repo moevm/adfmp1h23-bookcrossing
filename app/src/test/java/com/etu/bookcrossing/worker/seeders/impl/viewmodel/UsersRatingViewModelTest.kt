@@ -8,7 +8,6 @@ import io.mockk.impl.annotations.InjectMockKs
 import io.mockk.impl.annotations.MockK
 import io.mockk.junit5.MockKExtension
 import kotlinx.coroutines.ExperimentalCoroutinesApi
-import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.flow.flowOf
 import kotlinx.coroutines.test.runTest
@@ -29,10 +28,9 @@ class UsersRatingViewModelTest {
 
     @Test
     fun `when rating expected get it from repository and return to user`() = runTest {
-        val rating = usersRating()
-        val expected = rating.first()
+        val expected = usersRating.first()
 
-        every { userRepository.rating() } returns rating
+        every { userRepository.rating() } returns usersRating
 
         val actual = target.loadRating().first()
 
@@ -41,27 +39,25 @@ class UsersRatingViewModelTest {
 
     companion object {
 
-        private fun usersRating(): Flow<List<UserEntity>> {
-            return flowOf(
-                listOf(
-                    UserEntity(
-                        0,
-                        "Petr",
-                        "Petrov",
-                        "email@gmail.com",
-                        "password",
-                        "some url"
-                    ),
-                    UserEntity(
-                        1,
-                        "Ivan",
-                        "Ivanov",
-                        "email1@gmail.com",
-                        "password 1",
-                        "some url 1"
-                    )
+        private val usersRating = flowOf(
+            listOf(
+                UserEntity(
+                    0,
+                    "Petr",
+                    "Petrov",
+                    "email@gmail.com",
+                    "password",
+                    "some url"
+                ),
+                UserEntity(
+                    1,
+                    "Ivan",
+                    "Ivanov",
+                    "email1@gmail.com",
+                    "password 1",
+                    "some url 1"
                 )
             )
-        }
+        )
     }
 }

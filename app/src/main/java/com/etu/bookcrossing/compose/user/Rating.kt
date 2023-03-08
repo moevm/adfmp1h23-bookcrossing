@@ -68,6 +68,11 @@ fun Rating(viewModel: UsersRatingViewModel = hiltViewModel()) {
         viewModel.loadRating()
     }.collectAsState(initial = emptyList())
 
+    Rating(rating = rating)
+}
+
+@Composable
+fun Rating(rating: List<UserEntity>) {
     RowsWithTextHeader(
         headerText = stringResource(R.string.users_rating_header),
         elements = rating,

@@ -25,7 +25,7 @@ class UserSeederTest {
 
     @Test
     fun `when apply requested expected deserialize and pass to user repository`() = runTest {
-        val expected = users(5)
+        val expected = users
 
         target.apply(expected.jsonReader())
 
@@ -34,17 +34,15 @@ class UserSeederTest {
 
     companion object {
 
-        private fun users(size: Long): List<UserEntity> {
-            return (0L..size).map {
-                UserEntity(
-                    it,
-                    "Petr #$it",
-                    "Petrov #$it",
-                    "email@gmail.com",
-                    "password",
-                    "some url"
-                )
-            }
+        private val users = (0L..5).map {
+            UserEntity(
+                it,
+                "Petr #$it",
+                "Petrov #$it",
+                "email@gmail.com",
+                "password",
+                "some url"
+            )
         }
     }
 }
