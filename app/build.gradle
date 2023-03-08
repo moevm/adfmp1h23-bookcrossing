@@ -13,6 +13,12 @@ android {
         unitTests.all {
             useJUnitPlatform()
         }
+
+        packagingOptions {
+            jniLibs {
+                useLegacyPackaging true
+            }
+        }
     }
 
     defaultConfig {
@@ -36,6 +42,10 @@ android {
         dataBinding true
         viewBinding true
         compose true
+    }
+
+    packagingOptions {
+        resources.excludes.add("META-INF/*")
     }
 
     composeOptions {
@@ -131,6 +141,7 @@ dependencies {
     androidTestImplementation "com.google.dagger:hilt-android-testing:$dagger_version"
     kaptAndroidTest "com.google.dagger:hilt-compiler:$dagger_version"
 
+    androidTestImplementation "io.mockk:mockk-android:$mockk_version"
     debugImplementation "androidx.compose.ui:ui-test-manifest:$compose_version"
     androidTestImplementation "androidx.compose.ui:ui-test-junit4:$compose_version"
 

@@ -1,5 +1,6 @@
 package com.etu.bookcrossing.worker.seeders.impl.viewmodel
 
+import com.etu.bookcrossing.data.toUser
 import com.etu.bookcrossing.database.entity.UserEntity
 import com.etu.bookcrossing.database.repository.IUserRepository
 import com.etu.bookcrossing.viewmodel.UsersRatingViewModel
@@ -28,7 +29,7 @@ class UsersRatingViewModelTest {
 
     @Test
     fun `when rating expected get it from repository and return to user`() = runTest {
-        val expected = usersRating.first()
+        val expected = usersRating.first().map { user -> user.toUser() }
 
         every { userRepository.rating() } returns usersRating
 
@@ -46,6 +47,7 @@ class UsersRatingViewModelTest {
                     "Petr",
                     "Petrov",
                     "email@gmail.com",
+                    "+123",
                     "password",
                     "some url"
                 ),
@@ -54,6 +56,7 @@ class UsersRatingViewModelTest {
                     "Ivan",
                     "Ivanov",
                     "email1@gmail.com",
+                    "+123",
                     "password 1",
                     "some url 1"
                 )

@@ -1,7 +1,8 @@
 package com.etu.bookcrossing.viewmodel
 
 import androidx.lifecycle.ViewModel
-import com.etu.bookcrossing.database.entity.UserEntity
+import com.etu.bookcrossing.data.User
+import com.etu.bookcrossing.data.toUser
 import com.etu.bookcrossing.database.repository.IUserRepository
 import dagger.hilt.android.lifecycle.HiltViewModel
 import javax.inject.Inject
@@ -13,9 +14,9 @@ class UsersRatingViewModel @Inject internal constructor(
     private var userRepository: IUserRepository
 ) : ViewModel() {
 
-    fun loadRating(): Flow<List<UserEntity>> = flow {
+    fun loadRating(): Flow<List<User>> = flow {
         userRepository.rating().collect {
-            emit(it)
+            emit(it.map { user -> user.toUser() })
         }
     }
 }

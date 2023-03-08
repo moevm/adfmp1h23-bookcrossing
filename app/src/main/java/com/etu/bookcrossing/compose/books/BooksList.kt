@@ -20,11 +20,11 @@ import androidx.hilt.navigation.compose.hiltViewModel
 import com.etu.bookcrossing.R
 import com.etu.bookcrossing.compose.common.ImageListItem
 import com.etu.bookcrossing.compose.common.TextSearchBar
-import com.etu.bookcrossing.database.entity.BookEntity
+import com.etu.bookcrossing.data.Book
 import com.etu.bookcrossing.viewmodel.BookListViewModel
 
 @Composable
-fun BookItem(book: BookEntity) {
+fun BookItem(book: Book) {
     ImageListItem(
         name = book.name,
         imageUrl = book.imageUrl,

@@ -40,6 +40,7 @@ class UserSeederTest {
                 "Petr #$it",
                 "Petrov #$it",
                 "email@gmail.com",
+                "+7 999 99 99 99 99999",
                 "password",
                 "some url"
             )

@@ -24,11 +24,11 @@ import androidx.hilt.navigation.compose.hiltViewModel
 import com.etu.bookcrossing.R
 import com.etu.bookcrossing.compose.common.Image
 import com.etu.bookcrossing.compose.common.RowsWithTextHeader
-import com.etu.bookcrossing.database.entity.UserEntity
+import com.etu.bookcrossing.data.User
 import com.etu.bookcrossing.viewmodel.UsersRatingViewModel
 
 @Composable
-fun UserRatingItem(user: UserEntity) {
+fun UserRatingItem(user: User) {
     Row(
         modifier = Modifier.fillMaxWidth(),
         horizontalArrangement = Arrangement.spacedBy(dimensionResource(id = R.dimen.row_spaced_by))
@@ -72,7 +72,7 @@ fun Rating(viewModel: UsersRatingViewModel = hiltViewModel()) {
 }
 
 @Composable
-fun Rating(rating: List<UserEntity>) {
+fun Rating(rating: List<User>) {
     RowsWithTextHeader(
         headerText = stringResource(R.string.users_rating_header),
         elements = rating,

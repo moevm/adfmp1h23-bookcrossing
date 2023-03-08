@@ -1,5 +1,6 @@
 package com.etu.bookcrossing.worker.seeders.impl.viewmodel
 
+import com.etu.bookcrossing.data.toBook
 import com.etu.bookcrossing.database.entity.BookEntity
 import com.etu.bookcrossing.database.repository.IBookRepository
 import com.etu.bookcrossing.viewmodel.BookListViewModel
@@ -27,7 +28,7 @@ class BookListViewModelTest {
 
     @Test
     fun `when all books expected get them from repository and pass to user`() = runTest {
-        val expected = books.first()
+        val expected = books.first().map { book -> book.toBook() }
 
         every { booksRepository.all() } returns books
 

@@ -19,9 +19,10 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
 import com.etu.bookcrossing.R
 import com.etu.bookcrossing.compose.common.CursiveBigText
+import com.etu.bookcrossing.data.User
 
 @Composable
-fun Account(onTakenBooks: () -> Unit, onRating: () -> Unit) {
+fun Account(user: User, onTakenBooks: () -> Unit, onRating: () -> Unit) {
     Box(
         contentAlignment = Alignment.Center,
         modifier = Modifier.fillMaxSize()
@@ -46,13 +47,13 @@ fun Account(onTakenBooks: () -> Unit, onRating: () -> Unit) {
                     horizontalAlignment = Alignment.CenterHorizontally
                 ) {
 
-                    CursiveBigText(text = "Petr Petrov")
+                    CursiveBigText(text = user.fullName())
                     Text(
                         text = stringResource(R.string.account_email_field),
                         modifier = Modifier.align(Alignment.Start)
                     )
                     Text(
-                        text = "petya@gmail.com",
+                        text = user.email,
                         modifier = Modifier.align(Alignment.Start)
                     )
                     Text(
@@ -60,7 +61,7 @@ fun Account(onTakenBooks: () -> Unit, onRating: () -> Unit) {
                         modifier = Modifier.align(Alignment.Start)
                     )
                     Text(
-                        text = "+7 999 999 99 99",
+                        text = user.phone,
                         modifier = Modifier.align(Alignment.Start)
                     )
                     Text(
@@ -79,6 +80,15 @@ fun Account(onTakenBooks: () -> Unit, onRating: () -> Unit) {
             }
         }
     }
+}
+
+@Composable
+fun Account(onTakenBooks: () -> Unit, onRating: () -> Unit) {
+    Account(
+        user = User("Petr", "Petrov", "7 999 999 99 99", "test@gmail.com", ""),
+        onTakenBooks = onTakenBooks,
+        onRating = onRating
+    )
 }
 
 @Composable
