@@ -46,6 +46,11 @@ fun BooksList(viewModel: BookListViewModel = hiltViewModel()) {
         viewModel.loadBooks()
     }.collectAsState(initial = emptyList())
 
+    BooksList(books = books)
+}
+
+@Composable
+fun BooksList(books: List<Book>) {
     val search = remember { mutableStateOf(String()) }
     val focusManager = LocalFocusManager.current
 

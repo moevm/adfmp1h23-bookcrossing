@@ -2,13 +2,14 @@ package com.etu.bookcrossing.compose.user
 
 import androidx.compose.ui.test.onNodeWithText
 import androidx.compose.ui.test.performClick
+import com.etu.bookcrossing.BaseTest
 import com.etu.bookcrossing.ExecutableTest
-import com.etu.bookcrossing.data.User
+import com.etu.bookcrossing.Fixtures.Companion.user
 import io.mockk.mockk
 import io.mockk.verify
 import org.junit.Test
 
-class AccountTest : BaseUserTest() {
+class AccountTest : BaseTest() {
 
     var onTakeBooks: ExecutableTest = mockk(relaxUnitFun = true)
 
@@ -49,10 +50,6 @@ class AccountTest : BaseUserTest() {
         composeTestRule.onNodeWithText("Taken books").performClick().assertExists()
 
         verify { onTakeBooks() }
-    }
-
-    companion object {
-        private val user = User("Petr", "Petrov", "+123", "test@gmail.com", "123")
     }
 
 }
