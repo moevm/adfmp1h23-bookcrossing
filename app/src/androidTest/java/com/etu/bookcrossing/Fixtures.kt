@@ -25,6 +25,8 @@ class Fixtures {
             )
         }
 
+        val booksNames = books.map { it.name }
+
         val user = users.first()
     }
 }

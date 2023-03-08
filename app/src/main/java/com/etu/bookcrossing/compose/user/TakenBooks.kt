@@ -52,12 +52,17 @@ fun TakenBooks(viewModel: TakenBooksViewModel = hiltViewModel(), onReturnBook: S
         viewModel.loadTakenBooksNames()
     }.collectAsState(initial = emptyList())
 
+    TakenBooks(books = bookNames, onReturnBook = onReturnBook)
+}
+
+@Composable
+fun TakenBooks(books: List<String>, onReturnBook: ShowSnackbar) {
     val undoMessage = stringResource(id = R.string.undo)
     val returnedMessage = stringResource(id = R.string.element_returned_message)
 
     RowsWithTextHeader(
         headerText = stringResource(R.string.taken_books_header),
-        elements = bookNames,
+        elements = books,
         consumer = {
             TakenBookItem(
                 name = it,
