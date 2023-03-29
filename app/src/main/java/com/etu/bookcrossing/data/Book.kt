@@ -6,10 +6,10 @@ class Book(
     val description: String,
     val imageUrl: String
 ) {
-    override fun equals(other: Any?): Boolean =
+    override fun equals(other: Any?) =
         this === other || other is Book && name == other.name && author == other.author
 
-    override fun toString(): String = "Book(name='$name', author='$author')"
+    override fun toString()= "Book(name='$name', author='$author')"
 
     override fun hashCode(): Int {
         var result = name.hashCode()

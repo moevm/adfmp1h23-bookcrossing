@@ -11,7 +11,6 @@ import kotlinx.coroutines.flow.flow
 class TakenBooksViewModel @Inject internal constructor(
     private var bookRepository: IBookRepository
 ) : ViewModel() {
-
     fun loadTakenBooksNames(): Flow<List<String>> = flow {
         bookRepository.allNames().collect {
             emit(it)

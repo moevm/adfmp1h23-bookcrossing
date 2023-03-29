@@ -21,31 +21,22 @@ const val DATABASE_NAME = "books_db"
 @InstallIn(SingletonComponent::class)
 @Module
 class DatabaseModule {
-
     @Singleton
     @Provides
-    fun provideAppDatabase(@ApplicationContext context: Context): AppDatabase {
-        return Room.databaseBuilder(context, AppDatabase::class.java, DATABASE_NAME)
+    fun provideAppDatabase(@ApplicationContext context: Context) =
+        Room.databaseBuilder(context, AppDatabase::class.java, DATABASE_NAME)
             .addCallback(SeedingCallback(context))
             .build()
-    }
 
     @Provides
     @Singleton
-    fun provideBookDao(appDatabase: AppDatabase): BookDao {
-        return appDatabase.books()
-    }
+    fun provideBookDao(appDatabase: AppDatabase) = appDatabase.books()
 
     @Provides
     @Singleton
-    fun provideBookRepository(appDatabase: AppDatabase): IBookRepository {
-        return BookRepository(appDatabase.books())
-    }
+    fun provideBookRepository(appDatabase: AppDatabase) = BookRepository(appDatabase.books())
 
     @Provides
     @Singleton
-    fun provideUserRepository(appDatabase: AppDatabase): IUserRepository {
-        return UserRepository(appDatabase.users())
-    }
-
+    fun provideUserRepository(appDatabase: AppDatabase) = UserRepository(appDatabase.users())
 }

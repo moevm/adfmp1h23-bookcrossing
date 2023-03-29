@@ -21,7 +21,6 @@ class SeedDatabaseWorker @AssistedInject constructor(
     @Assisted workerParams: WorkerParameters,
     private var seeders: Seeders
 ) : CoroutineWorker(context, workerParams) {
-
     override suspend fun doWork(): Result = withContext(Dispatchers.IO) {
         try {
             seeders.forEach { seed(it) }
@@ -39,16 +38,9 @@ class SeedDatabaseWorker @AssistedInject constructor(
         }
     }
 
-    private fun stream(seeder: ISeeder): InputStream {
-        return stream(seeder.file().fileName)
-    }
+    private fun stream(seeder: ISeeder) = stream(seeder.file().fileName)
 
-    private fun stream(fileName: String): InputStream {
-        return applicationContext.assets.open(fileName)
-    }
+    private fun stream(fileName: String) = applicationContext.assets.open(fileName)
 
-    private fun jsonReader(stream: InputStream): JsonReader {
-        return JsonReader(stream.reader())
-    }
-
+    private fun jsonReader(stream: InputStream) = JsonReader(stream.reader())
 }

@@ -16,7 +16,6 @@ private val logger = KotlinLogging.logger {}
 class BookListViewModel @Inject internal constructor(
     private var bookRepository: IBookRepository
 ) : ViewModel() {
-
     fun loadBooks(): Flow<List<Book>> = flow {
         bookRepository.all().collect {
             logger.debug { "Collected: ${it.size} books" }

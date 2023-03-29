@@ -13,7 +13,6 @@ import kotlinx.coroutines.flow.flow
 class UsersRatingViewModel @Inject internal constructor(
     private var userRepository: IUserRepository
 ) : ViewModel() {
-
     fun loadRating(): Flow<List<User>> = flow {
         userRepository.rating().collect {
             emit(it.map { user -> user.toUser() })
