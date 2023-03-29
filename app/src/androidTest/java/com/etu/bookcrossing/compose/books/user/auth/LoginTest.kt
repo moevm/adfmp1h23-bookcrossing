@@ -8,7 +8,7 @@ import com.etu.bookcrossing.compose.about.About
 import com.etu.bookcrossing.compose.user.auth.LoginComposable
 import org.junit.Test
 
-class BooksListTest : BaseTest() {
+class LoginTest : BaseTest() {
     var calledLogin = false
     var calledRegister = false
     var calledAbout = false
