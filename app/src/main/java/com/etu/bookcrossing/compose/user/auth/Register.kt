@@ -86,7 +86,6 @@ fun RegistrationSucceed(onSuccess: () -> Unit) {
         verticalArrangement = Arrangement.spacedBy(dimensionResource(id = R.dimen.column_spaced_by)),
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
-
         CursiveBigText(text = stringResource(id = R.string.app_name))
 
         Text(text = stringResource(R.string.registration_success_message))

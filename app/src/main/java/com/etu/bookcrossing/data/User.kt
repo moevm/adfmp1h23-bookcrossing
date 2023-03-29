@@ -7,36 +7,12 @@ data class User(
     val email: String,
     val photoUrl: String
 ) {
+    fun fullName() = name.plus(" ").plus(surname)
 
-    fun fullName(): String {
-        return name.plus(" ").plus(surname)
-    }
-
-    override fun equals(other: Any?): Boolean {
-        if (this === other) {
-            return true
-        }
-        if (javaClass != other?.javaClass) {
-            return false
-        }
-
-        other as User
-
-        if (name != other.name) {
-            return false
-        }
-        if (surname != other.surname) {
-            return false
-        }
-        if (phone != other.phone) {
-            return false
-        }
-        if (email != other.email) {
-            return false
-        }
-
-        return true
-    }
+    override fun equals(other: Any?) =
+        this === other ||
+                other is User && name == other.name && surname == other.surname
+                              && phone == other.phone && email == other.email
 
     override fun hashCode(): Int {
         var result = name.hashCode()
@@ -46,8 +22,6 @@ data class User(
         return result
     }
 
-    override fun toString(): String {
-        return "User(name='$name', surname='$surname', phone='$phone', email='$email')"
-    }
-
+    override fun toString() =
+        "User(name='$name', surname='$surname', phone='$phone', email='$email')"
 }

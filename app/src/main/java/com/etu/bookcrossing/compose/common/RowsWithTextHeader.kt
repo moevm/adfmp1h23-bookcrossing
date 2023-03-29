@@ -17,7 +17,6 @@ fun <T> RowsWithTextHeader(
     elements: List<T>,
     consumer: @Composable (T) -> Unit
 ) {
-
     Box(
         modifier = Modifier.fillMaxSize(),
     ) {

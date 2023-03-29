@@ -102,7 +102,6 @@ fun NavGraphBuilder.accountRoutes(
     navController: NavHostController,
     onSnackBar: ShowSnackbar
 ) {
-
     composable(NavigationRoute.ACCOUNT.name) {
         navigationBar {
             Account(
