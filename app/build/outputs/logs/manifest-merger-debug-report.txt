@@ -1,0 +1,876 @@
+-- Merging decision tree log ---
+provider#androidx.startup.InitializationProvider
+INJECTED from /Users/samvelochka/adfmp1h23-bookcrossing/app/src/main/AndroidManifest.xml:39:9-42:44
+REJECTED from [androidx.work:work-runtime:2.8.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/44e4cbd47fb2515c8cc6d09e9137a2cd/transformed/work-runtime-2.8.0/AndroidManifest.xml:29:9-37:20
+MERGED from [androidx.emoji2:emoji2:1.2.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/b9a071700ec0264a9a316b2d2b28f8fa/transformed/emoji2-1.2.0/AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.emoji2:emoji2:1.2.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/b9a071700ec0264a9a316b2d2b28f8fa/transformed/emoji2-1.2.0/AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.lifecycle:lifecycle-process:2.4.1] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/9d24f9a96ff7d74e1c9ffd000168a574/transformed/lifecycle-process-2.4.1/AndroidManifest.xml:26:9-34:20
+MERGED from [androidx.lifecycle:lifecycle-process:2.4.1] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/9d24f9a96ff7d74e1c9ffd000168a574/transformed/lifecycle-process-2.4.1/AndroidManifest.xml:26:9-34:20
+MERGED from [androidx.profileinstaller:profileinstaller:1.2.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/4c6d34ce18f264260cab15b92b04a2a5/transformed/profileinstaller-1.2.0/AndroidManifest.xml:25:9-33:20
+MERGED from [androidx.profileinstaller:profileinstaller:1.2.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/4c6d34ce18f264260cab15b92b04a2a5/transformed/profileinstaller-1.2.0/AndroidManifest.xml:25:9-33:20
+MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/09d41fba0919187ad8a2052f7c8c8fa6/transformed/startup-runtime-1.1.1/AndroidManifest.xml:26:9-30:34
+MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/09d41fba0919187ad8a2052f7c8c8fa6/transformed/startup-runtime-1.1.1/AndroidManifest.xml:26:9-30:34
+	tools:node
+		ADDED from /Users/samvelochka/adfmp1h23-bookcrossing/app/src/main/AndroidManifest.xml:42:13-32
+	android:authorities
+		INJECTED from /Users/samvelochka/adfmp1h23-bookcrossing/app/src/main/AndroidManifest.xml
+		ADDED from /Users/samvelochka/adfmp1h23-bookcrossing/app/src/main/AndroidManifest.xml:41:13-68
+	android:exported
+		ADDED from [androidx.emoji2:emoji2:1.2.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/b9a071700ec0264a9a316b2d2b28f8fa/transformed/emoji2-1.2.0/AndroidManifest.xml:27:13-37
+	android:name
+		ADDED from /Users/samvelochka/adfmp1h23-bookcrossing/app/src/main/AndroidManifest.xml:40:13-67
+manifest
+ADDED from /Users/samvelochka/adfmp1h23-bookcrossing/app/src/main/AndroidManifest.xml:2:1-45:12
+INJECTED from /Users/samvelochka/adfmp1h23-bookcrossing/app/src/main/AndroidManifest.xml:2:1-45:12
+INJECTED from /Users/samvelochka/adfmp1h23-bookcrossing/app/src/main/AndroidManifest.xml:2:1-45:12
+INJECTED from /Users/samvelochka/adfmp1h23-bookcrossing/app/src/main/AndroidManifest.xml:2:1-45:12
+MERGED from [androidx.databinding:databinding-adapters:7.4.1] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/56e46cd98099c3e07e2ff69d41792151/transformed/databinding-adapters-7.4.1/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.databinding:databinding-ktx:7.4.1] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/9bc5ce45575462ba6e3367c15338c39a/transformed/databinding-ktx-7.4.1/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.databinding:databinding-runtime:7.4.1] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/f26a42c276e357133ee78cc44ca320d1/transformed/databinding-runtime-7.4.1/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.databinding:viewbinding:7.4.1] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/ffb1d910d3568efad3a12266c4c3de7d/transformed/viewbinding-7.4.1/AndroidManifest.xml:2:1-7:12
+MERGED from [com.github.bumptech.glide:compose:1.0.0-alpha.1] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/77990c05a2bf4775d0ee0a72f3912555/transformed/compose-1.0.0-alpha.1/AndroidManifest.xml:2:1-9:12
+MERGED from [com.github.bumptech.glide:ktx:1.0.0-alpha.1] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/207cee08c6ec1e4091b5dfe756686bc7/transformed/ktx-1.0.0-alpha.1/AndroidManifest.xml:2:1-9:12
+MERGED from [androidx.room:room-ktx:2.5.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/510996c2d73c8abcc443c1929fd0b2ea/transformed/room-ktx-2.5.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.hilt:hilt-work:1.0.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/7af83debce188504478f629ace4f7ee1/transformed/hilt-work-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.work:work-runtime-ktx:2.8.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/a3b2f5055be57643f233350f8ba1f328/transformed/work-runtime-ktx-2.8.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.work:work-runtime:2.8.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/44e4cbd47fb2515c8cc6d09e9137a2cd/transformed/work-runtime-2.8.0/AndroidManifest.xml:17:1-145:12
+MERGED from [androidx.room:room-runtime:2.5.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/07d426b41e65bdc330edc7ff590edc0d/transformed/room-runtime-2.5.0/AndroidManifest.xml:17:1-31:12
+MERGED from [androidx.compose.ui:ui-tooling:1.3.3] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/2e50b8db27534ce84ff6d23762343551/transformed/ui-tooling-1.3.3/AndroidManifest.xml:17:1-28:12
+MERGED from [androidx.compose.material:material:1.3.1] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/4e53680503641919f3aafbd1a4d8a7b6/transformed/material-1.3.1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.compose.material:material-ripple:1.3.1] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/3141dd3d560f9e70e260157669a270f7/transformed/material-ripple-1.3.1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.compose.foundation:foundation:1.4.0-alpha03] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/661393c965dd53fa008a7898b1bf40e1/transformed/foundation-1.4.0-alpha03/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.compose.runtime:runtime-livedata:1.4.0-beta01] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/5975c414129e96676a75a1620af8a9eb/transformed/runtime-livedata-1.4.0-beta01/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.hilt:hilt-navigation-compose:1.0.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/1dbc684f8d85773670f38b650ae7f9f1/transformed/hilt-navigation-compose-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.navigation:navigation-compose:2.5.3] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/0b13baa054f43ee884ae816f99a90670/transformed/navigation-compose-2.5.3/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.activity:activity-compose:1.6.1] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/046c20519829d00b92480e1028bfcab5/transformed/activity-compose-1.6.1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.compose.animation:animation:1.3.3] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/53a468497537b4d46ad141f6d6d15ccf/transformed/animation-1.3.3/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.compose.ui:ui-tooling-data:1.3.3] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/c245e180532f8763c27d3cab84b77bf5/transformed/ui-tooling-data-1.3.3/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.compose.foundation:foundation-layout:1.4.0-alpha03] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/5b9b48bf4fdcd0c124a6f56c13e1f7b6/transformed/foundation-layout-1.4.0-alpha03/AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.accompanist:accompanist-drawablepainter:0.25.1] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/c259358b8b1abe32b0450d07a4d9b0bd/transformed/accompanist-drawablepainter-0.25.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-compose:2.5.1] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/7c97f67d372b588a647892ca96eac944/transformed/lifecycle-viewmodel-compose-2.5.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.compose.material:material-icons-core:1.3.1] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/0c774cfedd545c4d8c3d27176d1ce767/transformed/material-icons-core-1.3.1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.compose.animation:animation-core:1.3.3] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/85fef8c8504f8158f739ef0895fcda18/transformed/animation-core-1.3.3/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.compose.ui:ui:1.4.0-alpha03] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/0ccab5dc669aedb6ed482cb29efc1859/transformed/ui-1.4.0-alpha03/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.compose.ui:ui-tooling-preview:1.3.3] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/14e878bba98b545d2ee9c521c0f55dd0/transformed/ui-tooling-preview-1.3.3/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.compose.ui:ui-text:1.4.0-alpha03] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/97ef49521b378f80c47523bc753055a6/transformed/ui-text-1.4.0-alpha03/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.compose.runtime:runtime-saveable:1.4.0-alpha03] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/270442adc5a672450a4370eca3dd0d30/transformed/runtime-saveable-1.4.0-alpha03/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.compose.ui:ui-graphics:1.4.0-alpha03] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/6ba7ba109b6a6570187e350403e3d249/transformed/ui-graphics-1.4.0-alpha03/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.compose.ui:ui-unit:1.4.0-alpha03] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/5c36a99f16fcb1f2b99d11f2c5f84003/transformed/ui-unit-1.4.0-alpha03/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.compose.ui:ui-geometry:1.4.0-alpha03] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/25db7cefd08d42403449b592b123b8b0/transformed/ui-geometry-1.4.0-alpha03/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.compose.runtime:runtime:1.4.0-beta01] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/928c57446971cbc99603496b2f4ef1e2/transformed/runtime-1.4.0-beta01/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.hilt:hilt-navigation:1.0.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/131fee98f53abea9ed715f34fe915f84/transformed/hilt-navigation-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.dagger:hilt-android:2.45] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/e03c461224607e8c1ecab9cf4a248264/transformed/hilt-android-2.45/AndroidManifest.xml:16:1-19:12
+MERGED from [androidx.lifecycle:lifecycle-service:2.4.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/a2509ebc3eee7167fd4edfcf3599a979/transformed/lifecycle-service-2.4.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.navigation:navigation-fragment-ktx:2.5.3] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/9ad4b9e62dade72b51b18f728b6d3f44/transformed/navigation-fragment-ktx-2.5.3/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.navigation:navigation-dynamic-features-fragment:2.5.3] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/149a336323dbc3612616af1e57d5fc63/transformed/navigation-dynamic-features-fragment-2.5.3/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.navigation:navigation-fragment:2.5.3] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/5ac1d4189d3c8f8356285750ca59d000/transformed/navigation-fragment-2.5.3/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.navigation:navigation-ui-ktx:2.5.3] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/dd26a259e33b3bd2cdd60761a150d158/transformed/navigation-ui-ktx-2.5.3/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.navigation:navigation-runtime-ktx:2.5.3] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/aa68f4157b406b0d4d50cb815d24c686/transformed/navigation-runtime-ktx-2.5.3/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.navigation:navigation-ui:2.5.3] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/7c3b179f9e2b67ed74e956c6c719a5af/transformed/navigation-ui-2.5.3/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.navigation:navigation-dynamic-features-runtime:2.5.3] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/99cb2ee9e9d1d6dcb3965c638d840a1f/transformed/navigation-dynamic-features-runtime-2.5.3/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.navigation:navigation-runtime:2.5.3] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/f1fb34c85f435028aa7dd158592b5de6/transformed/navigation-runtime-2.5.3/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.fragment:fragment-ktx:1.5.4] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/3445499dbda6111b6255d2f8cc944dc0/transformed/fragment-ktx-1.5.4/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.compose.ui:ui-test-manifest:1.3.3] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/3bfa148cdd9689b188aeeb9a2dac783e/transformed/ui-test-manifest-1.3.3/AndroidManifest.xml:17:1-28:12
+MERGED from [com.github.bumptech.glide:recyclerview-integration:4.14.2] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/aa2ffd181f324f8efeb5e2f42312b424/transformed/recyclerview-integration-4.14.2/AndroidManifest.xml:2:1-11:12
+MERGED from [com.github.bumptech.glide:glide:4.14.2] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/388f1bb0f32895ea6febd3f17efe3a61/transformed/glide-4.14.2/AndroidManifest.xml:2:1-11:12
+MERGED from [com.google.android.material:material:1.4.0-beta01] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/0d47fc2cc19db2124bd7010f8e56e054/transformed/material-1.4.0-beta01/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/a0104c9a8f6cde7765cc9e9d7fd4f2cb/transformed/viewpager2-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/a8a2710ce386104364fcd20d16019dcf/transformed/constraintlayout-2.0.1/AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.appcompat:appcompat:1.2.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/3ef8a06147fa72731c93a054e975d304/transformed/appcompat-1.2.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.fragment:fragment:1.5.4] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/241142cf5f886ce7f89ed25f4cabfed9/transformed/fragment-1.5.4/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.activity:activity:1.6.1] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/d38f0606bb4105033f44faf44ee6a029/transformed/activity-1.6.1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.activity:activity-ktx:1.6.1] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/482f49e1372f5148f76009823d1218d6/transformed/activity-ktx-1.6.1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.customview:customview-poolingcontainer:1.0.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/c39393e9f9a4cdca234432fe1b4b88d2/transformed/customview-poolingcontainer-1.0.0/AndroidManifest.xml:17:1-23:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-ktx:2.6.0-beta01] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/83f1daf4ec1b90fbf3b37044a4e5f2dc/transformed/lifecycle-livedata-ktx-2.6.0-beta01/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/5db15529ca9f2bcabb8605f72fd8d7fc/transformed/dynamicanimation-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/5a41e2879338457e1f154b655947cc95/transformed/legacy-support-core-utils-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/5002571546d9d0ca5d5b930eacc665a3/transformed/loader-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.6.0-beta01] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/ecfa333d49e691607f178d2834f90a6d/transformed/lifecycle-livedata-2.6.0-beta01/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.6.0-beta01] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/d3adad7c2ebdb2d45e9795430d75d1dd/transformed/lifecycle-livedata-core-ktx-2.6.0-beta01/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.6.0-beta01] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/394899279d1176279cbdd5663b0dcd3a/transformed/lifecycle-livedata-core-2.6.0-beta01/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.navigation:navigation-common-ktx:2.5.3] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/7f0993d7b5ee9fe1b7742885bb572162/transformed/navigation-common-ktx-2.5.3/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.navigation:navigation-common:2.5.3] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/3e69326da88d2c77540cafef76ed2d88/transformed/navigation-common-2.5.3/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.0-beta01] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/c694393e1a62a65618e065e89e31cf9c/transformed/lifecycle-viewmodel-ktx-2.6.0-beta01/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.6.0-beta01] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/de6a7450fcc1664d705587d976f6a91b/transformed/lifecycle-viewmodel-2.6.0-beta01/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.6.0-beta01] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/37f6b19f0dfb29ce476ef764ac11e8ba/transformed/lifecycle-viewmodel-savedstate-2.6.0-beta01/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.core:core-ktx:1.9.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/925febe8a5129d42630b944598a62eb3/transformed/core-ktx-1.9.0/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.autofill:autofill:1.0.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/943b400e0615256824b88b03f81bb5ca/transformed/autofill-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.2.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/1687c3c6c6374bae1300fdc6e2dc6a51/transformed/slidingpanelayout-1.2.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/b404e84c4f1e053b9981a8af3e5f735f/transformed/drawerlayout-1.1.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/31a2be18bb74a1bfb4a8c86716f35d10/transformed/coordinatorlayout-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/6c10d62cf0ffed4d1234b51391c7225f/transformed/viewpager-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/04905e3a92f8dcb1c506f057fa5b544c/transformed/recyclerview-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.customview:customview:1.1.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/7f38f4b48fd70893a66618cb53c4d5d3/transformed/customview-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.emoji2:emoji2:1.2.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/b9a071700ec0264a9a316b2d2b28f8fa/transformed/emoji2-1.2.0/AndroidManifest.xml:17:1-35:12
+MERGED from [androidx.appcompat:appcompat-resources:1.2.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/0bab0a14292444226c63730624b318d7/transformed/appcompat-resources-1.2.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/ba0df38c3dae2c119d982dfb0cdcae1e/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/b385bbe590fc67872c1b690186feb16b/transformed/vectordrawable-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.transition:transition:1.4.1] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/25c9ade1f05463e1c870972cae7e034d/transformed/transition-1.4.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.window:window:1.0.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/7917d435a4e6cae9ebd258c2b02408b9/transformed/window-1.0.0/AndroidManifest.xml:17:1-33:12
+MERGED from [androidx.core:core:1.9.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/facca0faa8834fe48f33e0b7d7ce6195/transformed/core-1.9.0/AndroidManifest.xml:17:1-30:12
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.6.0-beta01] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/7fdb2cb9901d126b4baf9921eb7159ca/transformed/lifecycle-runtime-ktx-2.6.0-beta01/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-process:2.4.1] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/9d24f9a96ff7d74e1c9ffd000168a574/transformed/lifecycle-process-2.4.1/AndroidManifest.xml:17:1-37:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.6.0-beta01] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/3e886d60fc71158cc4891ddde3441b87/transformed/lifecycle-runtime-2.6.0-beta01/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.savedstate:savedstate-ktx:1.2.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/82eaae67486ff0267a8b07ae388d3854/transformed/savedstate-ktx-1.2.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.savedstate:savedstate:1.2.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/635936456aeb869c96b36f6f65f6313a/transformed/savedstate-1.2.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.test:core-ktx:1.4.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/a10dc30d6823000f63a29a88078b8bd5/transformed/core-ktx-1.4.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.test:core:1.4.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/b1a0f361c44683ff97af5edaceb8d9cf/transformed/core-1.4.0/AndroidManifest.xml:17:1-53:12
+MERGED from [androidx.sqlite:sqlite-framework:2.3.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/17b12f2e41db1cfac8f5f045db1d5d88/transformed/sqlite-framework-2.3.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.sqlite:sqlite:2.3.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/b559d8989c3cffa68d9ccd368d02ca2c/transformed/sqlite-2.3.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.profileinstaller:profileinstaller:1.2.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/4c6d34ce18f264260cab15b92b04a2a5/transformed/profileinstaller-1.2.0/AndroidManifest.xml:17:1-50:12
+MERGED from [com.github.bumptech.glide:gifdecoder:4.14.2] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/9a9a04d8567801ad1ac4f129de48c9a6/transformed/gifdecoder-4.14.2/AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.exifinterface:exifinterface:1.3.3] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/c91aa9b60b6b3990e8fa4e522397b5ee/transformed/exifinterface-1.3.3/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/09d41fba0919187ad8a2052f7c8c8fa6/transformed/startup-runtime-1.1.1/AndroidManifest.xml:17:1-33:12
+MERGED from [androidx.tracing:tracing:1.0.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/fedc8cb3b44bdd1926b3d2f0717e89e6/transformed/tracing-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.arch.core:core-runtime:2.2.0-rc01] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/a82b87dd909afc3f16d75cbd0786598d/transformed/core-runtime-2.2.0-rc01/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/aae169f014f0f42b99e307a875a75453/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/fc50950d859bdbfa760d84af8b264697/transformed/interpolator-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.cardview:cardview:1.0.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/1e2bab15e821fd1baa6adab0a2641111/transformed/cardview-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.test:monitor:1.4.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/bedd2cbf6e6d2c4ed3de091aca9890a7/transformed/monitor-1.4.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/2ac9c292a93682d249c5fdcc28e149c3/transformed/cursoradapter-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/6d3ead29b3dba3f40bebb3211fcf3419/transformed/documentfile-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/e857e0d746cd4a616ee96bf1dae4c57b/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.print:print:1.0.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/4bae9daebbc9a216686dc1622d4c1dfc/transformed/print-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.compose.ui:ui-util:1.4.0-alpha03] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/6a73593d547ddf868cfa7dcc55263f1a/transformed/ui-util-1.4.0-alpha03/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.annotation:annotation-experimental:1.3.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/8d5c0a0e38ec0316426f9f4a09d1a6df/transformed/annotation-experimental-1.3.0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.dagger:dagger-lint-aar:2.45] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/9030d503e7014610443e31f84073cb46/transformed/dagger-lint-aar-2.45/AndroidManifest.xml:16:1-19:12
+MERGED from [com.google.android.play:core:1.10.3] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/4efcbab8a64ca502ab0a2ab2d375dd33/transformed/core-1.10.3/AndroidManifest.xml:2:1-46:12
+INJECTED from /Users/samvelochka/adfmp1h23-bookcrossing/app/src/main/AndroidManifest.xml:2:1-45:12
+INJECTED from /Users/samvelochka/adfmp1h23-bookcrossing/app/src/main/AndroidManifest.xml:2:1-45:12
+INJECTED from /Users/samvelochka/adfmp1h23-bookcrossing/app/src/main/AndroidManifest.xml:2:1-45:12
+	package
+		INJECTED from /Users/samvelochka/adfmp1h23-bookcrossing/app/src/main/AndroidManifest.xml
+		ADDED from /Users/samvelochka/adfmp1h23-bookcrossing/app/src/main/AndroidManifest.xml:2:1-45:12
+		INJECTED from /Users/samvelochka/adfmp1h23-bookcrossing/app/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /Users/samvelochka/adfmp1h23-bookcrossing/app/src/main/AndroidManifest.xml
+		ADDED from /Users/samvelochka/adfmp1h23-bookcrossing/app/src/main/AndroidManifest.xml:2:1-45:12
+		INJECTED from /Users/samvelochka/adfmp1h23-bookcrossing/app/src/main/AndroidManifest.xml
+	xmlns:tools
+		ADDED from /Users/samvelochka/adfmp1h23-bookcrossing/app/src/main/AndroidManifest.xml:3:5-51
+	android:versionCode
+		INJECTED from /Users/samvelochka/adfmp1h23-bookcrossing/app/src/main/AndroidManifest.xml
+		ADDED from /Users/samvelochka/adfmp1h23-bookcrossing/app/src/main/AndroidManifest.xml:2:1-45:12
+		INJECTED from /Users/samvelochka/adfmp1h23-bookcrossing/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/samvelochka/adfmp1h23-bookcrossing/app/src/main/AndroidManifest.xml:2:11-69
+uses-permission#android.permission.INTERNET
+ADDED from /Users/samvelochka/adfmp1h23-bookcrossing/app/src/main/AndroidManifest.xml:5:5-67
+	android:name
+		ADDED from /Users/samvelochka/adfmp1h23-bookcrossing/app/src/main/AndroidManifest.xml:5:22-64
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from /Users/samvelochka/adfmp1h23-bookcrossing/app/src/main/AndroidManifest.xml:6:5-79
+MERGED from [androidx.work:work-runtime:2.8.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/44e4cbd47fb2515c8cc6d09e9137a2cd/transformed/work-runtime-2.8.0/AndroidManifest.xml:24:5-79
+MERGED from [androidx.work:work-runtime:2.8.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/44e4cbd47fb2515c8cc6d09e9137a2cd/transformed/work-runtime-2.8.0/AndroidManifest.xml:24:5-79
+	android:name
+		ADDED from /Users/samvelochka/adfmp1h23-bookcrossing/app/src/main/AndroidManifest.xml:6:22-76
+uses-permission#android.permission.POST_NOTIFICATIONS
+ADDED from /Users/samvelochka/adfmp1h23-bookcrossing/app/src/main/AndroidManifest.xml:7:5-77
+	android:name
+		ADDED from /Users/samvelochka/adfmp1h23-bookcrossing/app/src/main/AndroidManifest.xml:7:22-74
+application
+ADDED from /Users/samvelochka/adfmp1h23-bookcrossing/app/src/main/AndroidManifest.xml:9:5-43:19
+MERGED from [androidx.work:work-runtime:2.8.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/44e4cbd47fb2515c8cc6d09e9137a2cd/transformed/work-runtime-2.8.0/AndroidManifest.xml:28:5-143:19
+MERGED from [androidx.work:work-runtime:2.8.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/44e4cbd47fb2515c8cc6d09e9137a2cd/transformed/work-runtime-2.8.0/AndroidManifest.xml:28:5-143:19
+MERGED from [androidx.room:room-runtime:2.5.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/07d426b41e65bdc330edc7ff590edc0d/transformed/room-runtime-2.5.0/AndroidManifest.xml:23:5-29:19
+MERGED from [androidx.room:room-runtime:2.5.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/07d426b41e65bdc330edc7ff590edc0d/transformed/room-runtime-2.5.0/AndroidManifest.xml:23:5-29:19
+MERGED from [androidx.compose.ui:ui-tooling:1.3.3] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/2e50b8db27534ce84ff6d23762343551/transformed/ui-tooling-1.3.3/AndroidManifest.xml:22:5-26:19
+MERGED from [androidx.compose.ui:ui-tooling:1.3.3] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/2e50b8db27534ce84ff6d23762343551/transformed/ui-tooling-1.3.3/AndroidManifest.xml:22:5-26:19
+MERGED from [androidx.compose.ui:ui-test-manifest:1.3.3] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/3bfa148cdd9689b188aeeb9a2dac783e/transformed/ui-test-manifest-1.3.3/AndroidManifest.xml:22:5-26:19
+MERGED from [androidx.compose.ui:ui-test-manifest:1.3.3] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/3bfa148cdd9689b188aeeb9a2dac783e/transformed/ui-test-manifest-1.3.3/AndroidManifest.xml:22:5-26:19
+MERGED from [com.github.bumptech.glide:recyclerview-integration:4.14.2] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/aa2ffd181f324f8efeb5e2f42312b424/transformed/recyclerview-integration-4.14.2/AndroidManifest.xml:9:5-20
+MERGED from [com.github.bumptech.glide:recyclerview-integration:4.14.2] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/aa2ffd181f324f8efeb5e2f42312b424/transformed/recyclerview-integration-4.14.2/AndroidManifest.xml:9:5-20
+MERGED from [com.github.bumptech.glide:glide:4.14.2] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/388f1bb0f32895ea6febd3f17efe3a61/transformed/glide-4.14.2/AndroidManifest.xml:9:5-20
+MERGED from [com.github.bumptech.glide:glide:4.14.2] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/388f1bb0f32895ea6febd3f17efe3a61/transformed/glide-4.14.2/AndroidManifest.xml:9:5-20
+MERGED from [com.google.android.material:material:1.4.0-beta01] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/0d47fc2cc19db2124bd7010f8e56e054/transformed/material-1.4.0-beta01/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.material:material:1.4.0-beta01] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/0d47fc2cc19db2124bd7010f8e56e054/transformed/material-1.4.0-beta01/AndroidManifest.xml:22:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/a8a2710ce386104364fcd20d16019dcf/transformed/constraintlayout-2.0.1/AndroidManifest.xml:9:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/a8a2710ce386104364fcd20d16019dcf/transformed/constraintlayout-2.0.1/AndroidManifest.xml:9:5-20
+MERGED from [androidx.emoji2:emoji2:1.2.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/b9a071700ec0264a9a316b2d2b28f8fa/transformed/emoji2-1.2.0/AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.emoji2:emoji2:1.2.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/b9a071700ec0264a9a316b2d2b28f8fa/transformed/emoji2-1.2.0/AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.window:window:1.0.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/7917d435a4e6cae9ebd258c2b02408b9/transformed/window-1.0.0/AndroidManifest.xml:24:5-31:19
+MERGED from [androidx.window:window:1.0.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/7917d435a4e6cae9ebd258c2b02408b9/transformed/window-1.0.0/AndroidManifest.xml:24:5-31:19
+MERGED from [androidx.core:core:1.9.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/facca0faa8834fe48f33e0b7d7ce6195/transformed/core-1.9.0/AndroidManifest.xml:28:5-89
+MERGED from [androidx.core:core:1.9.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/facca0faa8834fe48f33e0b7d7ce6195/transformed/core-1.9.0/AndroidManifest.xml:28:5-89
+MERGED from [androidx.lifecycle:lifecycle-process:2.4.1] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/9d24f9a96ff7d74e1c9ffd000168a574/transformed/lifecycle-process-2.4.1/AndroidManifest.xml:25:5-35:19
+MERGED from [androidx.lifecycle:lifecycle-process:2.4.1] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/9d24f9a96ff7d74e1c9ffd000168a574/transformed/lifecycle-process-2.4.1/AndroidManifest.xml:25:5-35:19
+MERGED from [androidx.test:core:1.4.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/b1a0f361c44683ff97af5edaceb8d9cf/transformed/core-1.4.0/AndroidManifest.xml:26:5-51:19
+MERGED from [androidx.test:core:1.4.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/b1a0f361c44683ff97af5edaceb8d9cf/transformed/core-1.4.0/AndroidManifest.xml:26:5-51:19
+MERGED from [androidx.profileinstaller:profileinstaller:1.2.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/4c6d34ce18f264260cab15b92b04a2a5/transformed/profileinstaller-1.2.0/AndroidManifest.xml:24:5-48:19
+MERGED from [androidx.profileinstaller:profileinstaller:1.2.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/4c6d34ce18f264260cab15b92b04a2a5/transformed/profileinstaller-1.2.0/AndroidManifest.xml:24:5-48:19
+MERGED from [com.github.bumptech.glide:gifdecoder:4.14.2] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/9a9a04d8567801ad1ac4f129de48c9a6/transformed/gifdecoder-4.14.2/AndroidManifest.xml:9:5-20
+MERGED from [com.github.bumptech.glide:gifdecoder:4.14.2] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/9a9a04d8567801ad1ac4f129de48c9a6/transformed/gifdecoder-4.14.2/AndroidManifest.xml:9:5-20
+MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/09d41fba0919187ad8a2052f7c8c8fa6/transformed/startup-runtime-1.1.1/AndroidManifest.xml:25:5-31:19
+MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/09d41fba0919187ad8a2052f7c8c8fa6/transformed/startup-runtime-1.1.1/AndroidManifest.xml:25:5-31:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/aae169f014f0f42b99e307a875a75453/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/aae169f014f0f42b99e307a875a75453/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
+MERGED from [com.google.android.play:core:1.10.3] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/4efcbab8a64ca502ab0a2ab2d375dd33/transformed/core-1.10.3/AndroidManifest.xml:15:5-44:19
+MERGED from [com.google.android.play:core:1.10.3] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/4efcbab8a64ca502ab0a2ab2d375dd33/transformed/core-1.10.3/AndroidManifest.xml:15:5-44:19
+	android:appComponentFactory
+		ADDED from [androidx.core:core:1.9.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/facca0faa8834fe48f33e0b7d7ce6195/transformed/core-1.9.0/AndroidManifest.xml:28:18-86
+	android:supportsRtl
+		ADDED from /Users/samvelochka/adfmp1h23-bookcrossing/app/src/main/AndroidManifest.xml:16:9-35
+	android:label
+		ADDED from /Users/samvelochka/adfmp1h23-bookcrossing/app/src/main/AndroidManifest.xml:15:9-41
+	android:fullBackupContent
+		ADDED from /Users/samvelochka/adfmp1h23-bookcrossing/app/src/main/AndroidManifest.xml:13:9-54
+	tools:targetApi
+		ADDED from /Users/samvelochka/adfmp1h23-bookcrossing/app/src/main/AndroidManifest.xml:18:9-29
+	android:icon
+		ADDED from /Users/samvelochka/adfmp1h23-bookcrossing/app/src/main/AndroidManifest.xml:14:9-43
+	android:allowBackup
+		ADDED from /Users/samvelochka/adfmp1h23-bookcrossing/app/src/main/AndroidManifest.xml:11:9-36
+	android:theme
+		ADDED from /Users/samvelochka/adfmp1h23-bookcrossing/app/src/main/AndroidManifest.xml:17:9-50
+	android:dataExtractionRules
+		ADDED from /Users/samvelochka/adfmp1h23-bookcrossing/app/src/main/AndroidManifest.xml:12:9-65
+	android:name
+		ADDED from /Users/samvelochka/adfmp1h23-bookcrossing/app/src/main/AndroidManifest.xml:10:9-48
+meta-data#com.google.android.geo.API_KEY
+ADDED from /Users/samvelochka/adfmp1h23-bookcrossing/app/src/main/AndroidManifest.xml:24:9-26:44
+	android:value
+		ADDED from /Users/samvelochka/adfmp1h23-bookcrossing/app/src/main/AndroidManifest.xml:26:13-41
+	android:name
+		ADDED from /Users/samvelochka/adfmp1h23-bookcrossing/app/src/main/AndroidManifest.xml:25:13-58
+activity#com.etu.bookcrossing.MainActivity
+ADDED from /Users/samvelochka/adfmp1h23-bookcrossing/app/src/main/AndroidManifest.xml:28:9-37:20
+	android:label
+		ADDED from /Users/samvelochka/adfmp1h23-bookcrossing/app/src/main/AndroidManifest.xml:31:13-41
+	android:exported
+		ADDED from /Users/samvelochka/adfmp1h23-bookcrossing/app/src/main/AndroidManifest.xml:30:13-36
+	android:name
+		ADDED from /Users/samvelochka/adfmp1h23-bookcrossing/app/src/main/AndroidManifest.xml:29:13-41
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /Users/samvelochka/adfmp1h23-bookcrossing/app/src/main/AndroidManifest.xml:32:13-36:29
+action#android.intent.action.MAIN
+ADDED from /Users/samvelochka/adfmp1h23-bookcrossing/app/src/main/AndroidManifest.xml:33:17-69
+	android:name
+		ADDED from /Users/samvelochka/adfmp1h23-bookcrossing/app/src/main/AndroidManifest.xml:33:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /Users/samvelochka/adfmp1h23-bookcrossing/app/src/main/AndroidManifest.xml:35:17-77
+	android:name
+		ADDED from /Users/samvelochka/adfmp1h23-bookcrossing/app/src/main/AndroidManifest.xml:35:27-74
+uses-sdk
+INJECTED from /Users/samvelochka/adfmp1h23-bookcrossing/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/samvelochka/adfmp1h23-bookcrossing/app/src/main/AndroidManifest.xml
+INJECTED from /Users/samvelochka/adfmp1h23-bookcrossing/app/src/main/AndroidManifest.xml
+MERGED from [androidx.databinding:databinding-adapters:7.4.1] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/56e46cd98099c3e07e2ff69d41792151/transformed/databinding-adapters-7.4.1/AndroidManifest.xml:5:5-44
+MERGED from [androidx.databinding:databinding-adapters:7.4.1] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/56e46cd98099c3e07e2ff69d41792151/transformed/databinding-adapters-7.4.1/AndroidManifest.xml:5:5-44
+MERGED from [androidx.databinding:databinding-ktx:7.4.1] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/9bc5ce45575462ba6e3367c15338c39a/transformed/databinding-ktx-7.4.1/AndroidManifest.xml:5:5-44
+MERGED from [androidx.databinding:databinding-ktx:7.4.1] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/9bc5ce45575462ba6e3367c15338c39a/transformed/databinding-ktx-7.4.1/AndroidManifest.xml:5:5-44
+MERGED from [androidx.databinding:databinding-runtime:7.4.1] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/f26a42c276e357133ee78cc44ca320d1/transformed/databinding-runtime-7.4.1/AndroidManifest.xml:5:5-44
+MERGED from [androidx.databinding:databinding-runtime:7.4.1] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/f26a42c276e357133ee78cc44ca320d1/transformed/databinding-runtime-7.4.1/AndroidManifest.xml:5:5-44
+MERGED from [androidx.databinding:viewbinding:7.4.1] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/ffb1d910d3568efad3a12266c4c3de7d/transformed/viewbinding-7.4.1/AndroidManifest.xml:5:5-44
+MERGED from [androidx.databinding:viewbinding:7.4.1] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/ffb1d910d3568efad3a12266c4c3de7d/transformed/viewbinding-7.4.1/AndroidManifest.xml:5:5-44
+MERGED from [com.github.bumptech.glide:compose:1.0.0-alpha.1] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/77990c05a2bf4775d0ee0a72f3912555/transformed/compose-1.0.0-alpha.1/AndroidManifest.xml:5:5-7:41
+MERGED from [com.github.bumptech.glide:compose:1.0.0-alpha.1] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/77990c05a2bf4775d0ee0a72f3912555/transformed/compose-1.0.0-alpha.1/AndroidManifest.xml:5:5-7:41
+MERGED from [com.github.bumptech.glide:ktx:1.0.0-alpha.1] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/207cee08c6ec1e4091b5dfe756686bc7/transformed/ktx-1.0.0-alpha.1/AndroidManifest.xml:5:5-7:41
+MERGED from [com.github.bumptech.glide:ktx:1.0.0-alpha.1] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/207cee08c6ec1e4091b5dfe756686bc7/transformed/ktx-1.0.0-alpha.1/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.room:room-ktx:2.5.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/510996c2d73c8abcc443c1929fd0b2ea/transformed/room-ktx-2.5.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.room:room-ktx:2.5.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/510996c2d73c8abcc443c1929fd0b2ea/transformed/room-ktx-2.5.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.hilt:hilt-work:1.0.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/7af83debce188504478f629ace4f7ee1/transformed/hilt-work-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.hilt:hilt-work:1.0.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/7af83debce188504478f629ace4f7ee1/transformed/hilt-work-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.work:work-runtime-ktx:2.8.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/a3b2f5055be57643f233350f8ba1f328/transformed/work-runtime-ktx-2.8.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.work:work-runtime-ktx:2.8.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/a3b2f5055be57643f233350f8ba1f328/transformed/work-runtime-ktx-2.8.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.work:work-runtime:2.8.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/44e4cbd47fb2515c8cc6d09e9137a2cd/transformed/work-runtime-2.8.0/AndroidManifest.xml:21:5-44
+MERGED from [androidx.work:work-runtime:2.8.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/44e4cbd47fb2515c8cc6d09e9137a2cd/transformed/work-runtime-2.8.0/AndroidManifest.xml:21:5-44
+MERGED from [androidx.room:room-runtime:2.5.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/07d426b41e65bdc330edc7ff590edc0d/transformed/room-runtime-2.5.0/AndroidManifest.xml:21:5-44
+MERGED from [androidx.room:room-runtime:2.5.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/07d426b41e65bdc330edc7ff590edc0d/transformed/room-runtime-2.5.0/AndroidManifest.xml:21:5-44
+MERGED from [androidx.compose.ui:ui-tooling:1.3.3] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/2e50b8db27534ce84ff6d23762343551/transformed/ui-tooling-1.3.3/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.ui:ui-tooling:1.3.3] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/2e50b8db27534ce84ff6d23762343551/transformed/ui-tooling-1.3.3/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.material:material:1.3.1] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/4e53680503641919f3aafbd1a4d8a7b6/transformed/material-1.3.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.material:material:1.3.1] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/4e53680503641919f3aafbd1a4d8a7b6/transformed/material-1.3.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.material:material-ripple:1.3.1] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/3141dd3d560f9e70e260157669a270f7/transformed/material-ripple-1.3.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.material:material-ripple:1.3.1] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/3141dd3d560f9e70e260157669a270f7/transformed/material-ripple-1.3.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.foundation:foundation:1.4.0-alpha03] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/661393c965dd53fa008a7898b1bf40e1/transformed/foundation-1.4.0-alpha03/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.foundation:foundation:1.4.0-alpha03] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/661393c965dd53fa008a7898b1bf40e1/transformed/foundation-1.4.0-alpha03/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.runtime:runtime-livedata:1.4.0-beta01] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/5975c414129e96676a75a1620af8a9eb/transformed/runtime-livedata-1.4.0-beta01/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.runtime:runtime-livedata:1.4.0-beta01] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/5975c414129e96676a75a1620af8a9eb/transformed/runtime-livedata-1.4.0-beta01/AndroidManifest.xml:20:5-44
+MERGED from [androidx.hilt:hilt-navigation-compose:1.0.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/1dbc684f8d85773670f38b650ae7f9f1/transformed/hilt-navigation-compose-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.hilt:hilt-navigation-compose:1.0.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/1dbc684f8d85773670f38b650ae7f9f1/transformed/hilt-navigation-compose-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-compose:2.5.3] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/0b13baa054f43ee884ae816f99a90670/transformed/navigation-compose-2.5.3/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-compose:2.5.3] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/0b13baa054f43ee884ae816f99a90670/transformed/navigation-compose-2.5.3/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity-compose:1.6.1] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/046c20519829d00b92480e1028bfcab5/transformed/activity-compose-1.6.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity-compose:1.6.1] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/046c20519829d00b92480e1028bfcab5/transformed/activity-compose-1.6.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.animation:animation:1.3.3] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/53a468497537b4d46ad141f6d6d15ccf/transformed/animation-1.3.3/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.animation:animation:1.3.3] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/53a468497537b4d46ad141f6d6d15ccf/transformed/animation-1.3.3/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.ui:ui-tooling-data:1.3.3] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/c245e180532f8763c27d3cab84b77bf5/transformed/ui-tooling-data-1.3.3/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.ui:ui-tooling-data:1.3.3] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/c245e180532f8763c27d3cab84b77bf5/transformed/ui-tooling-data-1.3.3/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.foundation:foundation-layout:1.4.0-alpha03] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/5b9b48bf4fdcd0c124a6f56c13e1f7b6/transformed/foundation-layout-1.4.0-alpha03/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.foundation:foundation-layout:1.4.0-alpha03] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/5b9b48bf4fdcd0c124a6f56c13e1f7b6/transformed/foundation-layout-1.4.0-alpha03/AndroidManifest.xml:20:5-44
+MERGED from [com.google.accompanist:accompanist-drawablepainter:0.25.1] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/c259358b8b1abe32b0450d07a4d9b0bd/transformed/accompanist-drawablepainter-0.25.1/AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.accompanist:accompanist-drawablepainter:0.25.1] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/c259358b8b1abe32b0450d07a4d9b0bd/transformed/accompanist-drawablepainter-0.25.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-compose:2.5.1] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/7c97f67d372b588a647892ca96eac944/transformed/lifecycle-viewmodel-compose-2.5.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-compose:2.5.1] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/7c97f67d372b588a647892ca96eac944/transformed/lifecycle-viewmodel-compose-2.5.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.compose.material:material-icons-core:1.3.1] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/0c774cfedd545c4d8c3d27176d1ce767/transformed/material-icons-core-1.3.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.material:material-icons-core:1.3.1] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/0c774cfedd545c4d8c3d27176d1ce767/transformed/material-icons-core-1.3.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.animation:animation-core:1.3.3] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/85fef8c8504f8158f739ef0895fcda18/transformed/animation-core-1.3.3/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.animation:animation-core:1.3.3] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/85fef8c8504f8158f739ef0895fcda18/transformed/animation-core-1.3.3/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.ui:ui:1.4.0-alpha03] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/0ccab5dc669aedb6ed482cb29efc1859/transformed/ui-1.4.0-alpha03/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.ui:ui:1.4.0-alpha03] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/0ccab5dc669aedb6ed482cb29efc1859/transformed/ui-1.4.0-alpha03/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.ui:ui-tooling-preview:1.3.3] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/14e878bba98b545d2ee9c521c0f55dd0/transformed/ui-tooling-preview-1.3.3/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.ui:ui-tooling-preview:1.3.3] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/14e878bba98b545d2ee9c521c0f55dd0/transformed/ui-tooling-preview-1.3.3/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.ui:ui-text:1.4.0-alpha03] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/97ef49521b378f80c47523bc753055a6/transformed/ui-text-1.4.0-alpha03/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.ui:ui-text:1.4.0-alpha03] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/97ef49521b378f80c47523bc753055a6/transformed/ui-text-1.4.0-alpha03/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.runtime:runtime-saveable:1.4.0-alpha03] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/270442adc5a672450a4370eca3dd0d30/transformed/runtime-saveable-1.4.0-alpha03/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.runtime:runtime-saveable:1.4.0-alpha03] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/270442adc5a672450a4370eca3dd0d30/transformed/runtime-saveable-1.4.0-alpha03/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.ui:ui-graphics:1.4.0-alpha03] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/6ba7ba109b6a6570187e350403e3d249/transformed/ui-graphics-1.4.0-alpha03/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.ui:ui-graphics:1.4.0-alpha03] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/6ba7ba109b6a6570187e350403e3d249/transformed/ui-graphics-1.4.0-alpha03/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.ui:ui-unit:1.4.0-alpha03] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/5c36a99f16fcb1f2b99d11f2c5f84003/transformed/ui-unit-1.4.0-alpha03/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.ui:ui-unit:1.4.0-alpha03] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/5c36a99f16fcb1f2b99d11f2c5f84003/transformed/ui-unit-1.4.0-alpha03/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.ui:ui-geometry:1.4.0-alpha03] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/25db7cefd08d42403449b592b123b8b0/transformed/ui-geometry-1.4.0-alpha03/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.ui:ui-geometry:1.4.0-alpha03] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/25db7cefd08d42403449b592b123b8b0/transformed/ui-geometry-1.4.0-alpha03/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.runtime:runtime:1.4.0-beta01] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/928c57446971cbc99603496b2f4ef1e2/transformed/runtime-1.4.0-beta01/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.runtime:runtime:1.4.0-beta01] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/928c57446971cbc99603496b2f4ef1e2/transformed/runtime-1.4.0-beta01/AndroidManifest.xml:20:5-44
+MERGED from [androidx.hilt:hilt-navigation:1.0.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/131fee98f53abea9ed715f34fe915f84/transformed/hilt-navigation-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.hilt:hilt-navigation:1.0.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/131fee98f53abea9ed715f34fe915f84/transformed/hilt-navigation-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.dagger:hilt-android:2.45] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/e03c461224607e8c1ecab9cf4a248264/transformed/hilt-android-2.45/AndroidManifest.xml:18:3-42
+MERGED from [com.google.dagger:hilt-android:2.45] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/e03c461224607e8c1ecab9cf4a248264/transformed/hilt-android-2.45/AndroidManifest.xml:18:3-42
+MERGED from [androidx.lifecycle:lifecycle-service:2.4.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/a2509ebc3eee7167fd4edfcf3599a979/transformed/lifecycle-service-2.4.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-service:2.4.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/a2509ebc3eee7167fd4edfcf3599a979/transformed/lifecycle-service-2.4.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-fragment-ktx:2.5.3] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/9ad4b9e62dade72b51b18f728b6d3f44/transformed/navigation-fragment-ktx-2.5.3/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-fragment-ktx:2.5.3] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/9ad4b9e62dade72b51b18f728b6d3f44/transformed/navigation-fragment-ktx-2.5.3/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-dynamic-features-fragment:2.5.3] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/149a336323dbc3612616af1e57d5fc63/transformed/navigation-dynamic-features-fragment-2.5.3/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-dynamic-features-fragment:2.5.3] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/149a336323dbc3612616af1e57d5fc63/transformed/navigation-dynamic-features-fragment-2.5.3/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-fragment:2.5.3] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/5ac1d4189d3c8f8356285750ca59d000/transformed/navigation-fragment-2.5.3/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-fragment:2.5.3] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/5ac1d4189d3c8f8356285750ca59d000/transformed/navigation-fragment-2.5.3/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-ui-ktx:2.5.3] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/dd26a259e33b3bd2cdd60761a150d158/transformed/navigation-ui-ktx-2.5.3/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-ui-ktx:2.5.3] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/dd26a259e33b3bd2cdd60761a150d158/transformed/navigation-ui-ktx-2.5.3/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-runtime-ktx:2.5.3] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/aa68f4157b406b0d4d50cb815d24c686/transformed/navigation-runtime-ktx-2.5.3/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-runtime-ktx:2.5.3] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/aa68f4157b406b0d4d50cb815d24c686/transformed/navigation-runtime-ktx-2.5.3/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-ui:2.5.3] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/7c3b179f9e2b67ed74e956c6c719a5af/transformed/navigation-ui-2.5.3/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-ui:2.5.3] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/7c3b179f9e2b67ed74e956c6c719a5af/transformed/navigation-ui-2.5.3/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-dynamic-features-runtime:2.5.3] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/99cb2ee9e9d1d6dcb3965c638d840a1f/transformed/navigation-dynamic-features-runtime-2.5.3/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-dynamic-features-runtime:2.5.3] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/99cb2ee9e9d1d6dcb3965c638d840a1f/transformed/navigation-dynamic-features-runtime-2.5.3/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-runtime:2.5.3] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/f1fb34c85f435028aa7dd158592b5de6/transformed/navigation-runtime-2.5.3/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-runtime:2.5.3] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/f1fb34c85f435028aa7dd158592b5de6/transformed/navigation-runtime-2.5.3/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment-ktx:1.5.4] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/3445499dbda6111b6255d2f8cc944dc0/transformed/fragment-ktx-1.5.4/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment-ktx:1.5.4] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/3445499dbda6111b6255d2f8cc944dc0/transformed/fragment-ktx-1.5.4/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.compose.ui:ui-test-manifest:1.3.3] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/3bfa148cdd9689b188aeeb9a2dac783e/transformed/ui-test-manifest-1.3.3/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.ui:ui-test-manifest:1.3.3] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/3bfa148cdd9689b188aeeb9a2dac783e/transformed/ui-test-manifest-1.3.3/AndroidManifest.xml:20:5-44
+MERGED from [com.github.bumptech.glide:recyclerview-integration:4.14.2] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/aa2ffd181f324f8efeb5e2f42312b424/transformed/recyclerview-integration-4.14.2/AndroidManifest.xml:5:5-7:41
+MERGED from [com.github.bumptech.glide:recyclerview-integration:4.14.2] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/aa2ffd181f324f8efeb5e2f42312b424/transformed/recyclerview-integration-4.14.2/AndroidManifest.xml:5:5-7:41
+MERGED from [com.github.bumptech.glide:glide:4.14.2] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/388f1bb0f32895ea6febd3f17efe3a61/transformed/glide-4.14.2/AndroidManifest.xml:5:5-7:41
+MERGED from [com.github.bumptech.glide:glide:4.14.2] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/388f1bb0f32895ea6febd3f17efe3a61/transformed/glide-4.14.2/AndroidManifest.xml:5:5-7:41
+MERGED from [com.google.android.material:material:1.4.0-beta01] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/0d47fc2cc19db2124bd7010f8e56e054/transformed/material-1.4.0-beta01/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.material:material:1.4.0-beta01] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/0d47fc2cc19db2124bd7010f8e56e054/transformed/material-1.4.0-beta01/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/a0104c9a8f6cde7765cc9e9d7fd4f2cb/transformed/viewpager2-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/a0104c9a8f6cde7765cc9e9d7fd4f2cb/transformed/viewpager2-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/a8a2710ce386104364fcd20d16019dcf/transformed/constraintlayout-2.0.1/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/a8a2710ce386104364fcd20d16019dcf/transformed/constraintlayout-2.0.1/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.appcompat:appcompat:1.2.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/3ef8a06147fa72731c93a054e975d304/transformed/appcompat-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat:1.2.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/3ef8a06147fa72731c93a054e975d304/transformed/appcompat-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.5.4] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/241142cf5f886ce7f89ed25f4cabfed9/transformed/fragment-1.5.4/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.5.4] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/241142cf5f886ce7f89ed25f4cabfed9/transformed/fragment-1.5.4/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.6.1] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/d38f0606bb4105033f44faf44ee6a029/transformed/activity-1.6.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity:1.6.1] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/d38f0606bb4105033f44faf44ee6a029/transformed/activity-1.6.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity-ktx:1.6.1] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/482f49e1372f5148f76009823d1218d6/transformed/activity-ktx-1.6.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity-ktx:1.6.1] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/482f49e1372f5148f76009823d1218d6/transformed/activity-ktx-1.6.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview-poolingcontainer:1.0.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/c39393e9f9a4cdca234432fe1b4b88d2/transformed/customview-poolingcontainer-1.0.0/AndroidManifest.xml:20:5-21:38
+MERGED from [androidx.customview:customview-poolingcontainer:1.0.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/c39393e9f9a4cdca234432fe1b4b88d2/transformed/customview-poolingcontainer-1.0.0/AndroidManifest.xml:20:5-21:38
+MERGED from [androidx.lifecycle:lifecycle-livedata-ktx:2.6.0-beta01] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/83f1daf4ec1b90fbf3b37044a4e5f2dc/transformed/lifecycle-livedata-ktx-2.6.0-beta01/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-ktx:2.6.0-beta01] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/83f1daf4ec1b90fbf3b37044a4e5f2dc/transformed/lifecycle-livedata-ktx-2.6.0-beta01/AndroidManifest.xml:20:5-44
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/5db15529ca9f2bcabb8605f72fd8d7fc/transformed/dynamicanimation-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/5db15529ca9f2bcabb8605f72fd8d7fc/transformed/dynamicanimation-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/5a41e2879338457e1f154b655947cc95/transformed/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/5a41e2879338457e1f154b655947cc95/transformed/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/5002571546d9d0ca5d5b930eacc665a3/transformed/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/5002571546d9d0ca5d5b930eacc665a3/transformed/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.6.0-beta01] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/ecfa333d49e691607f178d2834f90a6d/transformed/lifecycle-livedata-2.6.0-beta01/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.6.0-beta01] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/ecfa333d49e691607f178d2834f90a6d/transformed/lifecycle-livedata-2.6.0-beta01/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.6.0-beta01] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/d3adad7c2ebdb2d45e9795430d75d1dd/transformed/lifecycle-livedata-core-ktx-2.6.0-beta01/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.6.0-beta01] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/d3adad7c2ebdb2d45e9795430d75d1dd/transformed/lifecycle-livedata-core-ktx-2.6.0-beta01/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.6.0-beta01] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/394899279d1176279cbdd5663b0dcd3a/transformed/lifecycle-livedata-core-2.6.0-beta01/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.6.0-beta01] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/394899279d1176279cbdd5663b0dcd3a/transformed/lifecycle-livedata-core-2.6.0-beta01/AndroidManifest.xml:20:5-44
+MERGED from [androidx.navigation:navigation-common-ktx:2.5.3] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/7f0993d7b5ee9fe1b7742885bb572162/transformed/navigation-common-ktx-2.5.3/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-common-ktx:2.5.3] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/7f0993d7b5ee9fe1b7742885bb572162/transformed/navigation-common-ktx-2.5.3/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-common:2.5.3] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/3e69326da88d2c77540cafef76ed2d88/transformed/navigation-common-2.5.3/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-common:2.5.3] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/3e69326da88d2c77540cafef76ed2d88/transformed/navigation-common-2.5.3/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.0-beta01] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/c694393e1a62a65618e065e89e31cf9c/transformed/lifecycle-viewmodel-ktx-2.6.0-beta01/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.0-beta01] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/c694393e1a62a65618e065e89e31cf9c/transformed/lifecycle-viewmodel-ktx-2.6.0-beta01/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.6.0-beta01] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/de6a7450fcc1664d705587d976f6a91b/transformed/lifecycle-viewmodel-2.6.0-beta01/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.6.0-beta01] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/de6a7450fcc1664d705587d976f6a91b/transformed/lifecycle-viewmodel-2.6.0-beta01/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.6.0-beta01] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/37f6b19f0dfb29ce476ef764ac11e8ba/transformed/lifecycle-viewmodel-savedstate-2.6.0-beta01/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.6.0-beta01] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/37f6b19f0dfb29ce476ef764ac11e8ba/transformed/lifecycle-viewmodel-savedstate-2.6.0-beta01/AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core-ktx:1.9.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/925febe8a5129d42630b944598a62eb3/transformed/core-ktx-1.9.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.core:core-ktx:1.9.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/925febe8a5129d42630b944598a62eb3/transformed/core-ktx-1.9.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.autofill:autofill:1.0.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/943b400e0615256824b88b03f81bb5ca/transformed/autofill-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.autofill:autofill:1.0.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/943b400e0615256824b88b03f81bb5ca/transformed/autofill-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.2.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/1687c3c6c6374bae1300fdc6e2dc6a51/transformed/slidingpanelayout-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.2.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/1687c3c6c6374bae1300fdc6e2dc6a51/transformed/slidingpanelayout-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/b404e84c4f1e053b9981a8af3e5f735f/transformed/drawerlayout-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/b404e84c4f1e053b9981a8af3e5f735f/transformed/drawerlayout-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/31a2be18bb74a1bfb4a8c86716f35d10/transformed/coordinatorlayout-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/31a2be18bb74a1bfb4a8c86716f35d10/transformed/coordinatorlayout-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/6c10d62cf0ffed4d1234b51391c7225f/transformed/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/6c10d62cf0ffed4d1234b51391c7225f/transformed/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/04905e3a92f8dcb1c506f057fa5b544c/transformed/recyclerview-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/04905e3a92f8dcb1c506f057fa5b544c/transformed/recyclerview-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.customview:customview:1.1.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/7f38f4b48fd70893a66618cb53c4d5d3/transformed/customview-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.customview:customview:1.1.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/7f38f4b48fd70893a66618cb53c4d5d3/transformed/customview-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.emoji2:emoji2:1.2.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/b9a071700ec0264a9a316b2d2b28f8fa/transformed/emoji2-1.2.0/AndroidManifest.xml:21:5-44
+MERGED from [androidx.emoji2:emoji2:1.2.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/b9a071700ec0264a9a316b2d2b28f8fa/transformed/emoji2-1.2.0/AndroidManifest.xml:21:5-44
+MERGED from [androidx.appcompat:appcompat-resources:1.2.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/0bab0a14292444226c63730624b318d7/transformed/appcompat-resources-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat-resources:1.2.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/0bab0a14292444226c63730624b318d7/transformed/appcompat-resources-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/ba0df38c3dae2c119d982dfb0cdcae1e/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/ba0df38c3dae2c119d982dfb0cdcae1e/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/b385bbe590fc67872c1b690186feb16b/transformed/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/b385bbe590fc67872c1b690186feb16b/transformed/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.transition:transition:1.4.1] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/25c9ade1f05463e1c870972cae7e034d/transformed/transition-1.4.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.transition:transition:1.4.1] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/25c9ade1f05463e1c870972cae7e034d/transformed/transition-1.4.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.window:window:1.0.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/7917d435a4e6cae9ebd258c2b02408b9/transformed/window-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.window:window:1.0.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/7917d435a4e6cae9ebd258c2b02408b9/transformed/window-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.9.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/facca0faa8834fe48f33e0b7d7ce6195/transformed/core-1.9.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.9.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/facca0faa8834fe48f33e0b7d7ce6195/transformed/core-1.9.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.6.0-beta01] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/7fdb2cb9901d126b4baf9921eb7159ca/transformed/lifecycle-runtime-ktx-2.6.0-beta01/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.6.0-beta01] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/7fdb2cb9901d126b4baf9921eb7159ca/transformed/lifecycle-runtime-ktx-2.6.0-beta01/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-process:2.4.1] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/9d24f9a96ff7d74e1c9ffd000168a574/transformed/lifecycle-process-2.4.1/AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.lifecycle:lifecycle-process:2.4.1] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/9d24f9a96ff7d74e1c9ffd000168a574/transformed/lifecycle-process-2.4.1/AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.6.0-beta01] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/3e886d60fc71158cc4891ddde3441b87/transformed/lifecycle-runtime-2.6.0-beta01/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.6.0-beta01] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/3e886d60fc71158cc4891ddde3441b87/transformed/lifecycle-runtime-2.6.0-beta01/AndroidManifest.xml:5:5-44
+MERGED from [androidx.savedstate:savedstate-ktx:1.2.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/82eaae67486ff0267a8b07ae388d3854/transformed/savedstate-ktx-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate-ktx:1.2.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/82eaae67486ff0267a8b07ae388d3854/transformed/savedstate-ktx-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.2.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/635936456aeb869c96b36f6f65f6313a/transformed/savedstate-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.2.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/635936456aeb869c96b36f6f65f6313a/transformed/savedstate-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.test:core-ktx:1.4.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/a10dc30d6823000f63a29a88078b8bd5/transformed/core-ktx-1.4.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.test:core-ktx:1.4.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/a10dc30d6823000f63a29a88078b8bd5/transformed/core-ktx-1.4.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.test:core:1.4.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/b1a0f361c44683ff97af5edaceb8d9cf/transformed/core-1.4.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.test:core:1.4.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/b1a0f361c44683ff97af5edaceb8d9cf/transformed/core-1.4.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.sqlite:sqlite-framework:2.3.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/17b12f2e41db1cfac8f5f045db1d5d88/transformed/sqlite-framework-2.3.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.sqlite:sqlite-framework:2.3.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/17b12f2e41db1cfac8f5f045db1d5d88/transformed/sqlite-framework-2.3.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.sqlite:sqlite:2.3.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/b559d8989c3cffa68d9ccd368d02ca2c/transformed/sqlite-2.3.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.sqlite:sqlite:2.3.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/b559d8989c3cffa68d9ccd368d02ca2c/transformed/sqlite-2.3.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.profileinstaller:profileinstaller:1.2.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/4c6d34ce18f264260cab15b92b04a2a5/transformed/profileinstaller-1.2.0/AndroidManifest.xml:21:5-22:38
+MERGED from [androidx.profileinstaller:profileinstaller:1.2.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/4c6d34ce18f264260cab15b92b04a2a5/transformed/profileinstaller-1.2.0/AndroidManifest.xml:21:5-22:38
+MERGED from [com.github.bumptech.glide:gifdecoder:4.14.2] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/9a9a04d8567801ad1ac4f129de48c9a6/transformed/gifdecoder-4.14.2/AndroidManifest.xml:5:5-7:41
+MERGED from [com.github.bumptech.glide:gifdecoder:4.14.2] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/9a9a04d8567801ad1ac4f129de48c9a6/transformed/gifdecoder-4.14.2/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.exifinterface:exifinterface:1.3.3] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/c91aa9b60b6b3990e8fa4e522397b5ee/transformed/exifinterface-1.3.3/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.exifinterface:exifinterface:1.3.3] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/c91aa9b60b6b3990e8fa4e522397b5ee/transformed/exifinterface-1.3.3/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/09d41fba0919187ad8a2052f7c8c8fa6/transformed/startup-runtime-1.1.1/AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/09d41fba0919187ad8a2052f7c8c8fa6/transformed/startup-runtime-1.1.1/AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.tracing:tracing:1.0.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/fedc8cb3b44bdd1926b3d2f0717e89e6/transformed/tracing-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.tracing:tracing:1.0.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/fedc8cb3b44bdd1926b3d2f0717e89e6/transformed/tracing-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.arch.core:core-runtime:2.2.0-rc01] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/a82b87dd909afc3f16d75cbd0786598d/transformed/core-runtime-2.2.0-rc01/AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.2.0-rc01] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/a82b87dd909afc3f16d75cbd0786598d/transformed/core-runtime-2.2.0-rc01/AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/aae169f014f0f42b99e307a875a75453/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/aae169f014f0f42b99e307a875a75453/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/fc50950d859bdbfa760d84af8b264697/transformed/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/fc50950d859bdbfa760d84af8b264697/transformed/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/1e2bab15e821fd1baa6adab0a2641111/transformed/cardview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/1e2bab15e821fd1baa6adab0a2641111/transformed/cardview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.test:monitor:1.4.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/bedd2cbf6e6d2c4ed3de091aca9890a7/transformed/monitor-1.4.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.test:monitor:1.4.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/bedd2cbf6e6d2c4ed3de091aca9890a7/transformed/monitor-1.4.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/2ac9c292a93682d249c5fdcc28e149c3/transformed/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/2ac9c292a93682d249c5fdcc28e149c3/transformed/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/6d3ead29b3dba3f40bebb3211fcf3419/transformed/documentfile-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/6d3ead29b3dba3f40bebb3211fcf3419/transformed/documentfile-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/e857e0d746cd4a616ee96bf1dae4c57b/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/e857e0d746cd4a616ee96bf1dae4c57b/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/4bae9daebbc9a216686dc1622d4c1dfc/transformed/print-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/4bae9daebbc9a216686dc1622d4c1dfc/transformed/print-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.ui:ui-util:1.4.0-alpha03] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/6a73593d547ddf868cfa7dcc55263f1a/transformed/ui-util-1.4.0-alpha03/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.ui:ui-util:1.4.0-alpha03] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/6a73593d547ddf868cfa7dcc55263f1a/transformed/ui-util-1.4.0-alpha03/AndroidManifest.xml:20:5-44
+MERGED from [androidx.annotation:annotation-experimental:1.3.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/8d5c0a0e38ec0316426f9f4a09d1a6df/transformed/annotation-experimental-1.3.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.annotation:annotation-experimental:1.3.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/8d5c0a0e38ec0316426f9f4a09d1a6df/transformed/annotation-experimental-1.3.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.dagger:dagger-lint-aar:2.45] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/9030d503e7014610443e31f84073cb46/transformed/dagger-lint-aar-2.45/AndroidManifest.xml:18:3-42
+MERGED from [com.google.dagger:dagger-lint-aar:2.45] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/9030d503e7014610443e31f84073cb46/transformed/dagger-lint-aar-2.45/AndroidManifest.xml:18:3-42
+MERGED from [com.google.android.play:core:1.10.3] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/4efcbab8a64ca502ab0a2ab2d375dd33/transformed/core-1.10.3/AndroidManifest.xml:7:5-9:41
+MERGED from [com.google.android.play:core:1.10.3] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/4efcbab8a64ca502ab0a2ab2d375dd33/transformed/core-1.10.3/AndroidManifest.xml:7:5-9:41
+INJECTED from /Users/samvelochka/adfmp1h23-bookcrossing/app/src/main/AndroidManifest.xml
+INJECTED from /Users/samvelochka/adfmp1h23-bookcrossing/app/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /Users/samvelochka/adfmp1h23-bookcrossing/app/src/main/AndroidManifest.xml
+		ADDED from /Users/samvelochka/adfmp1h23-bookcrossing/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/samvelochka/adfmp1h23-bookcrossing/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/samvelochka/adfmp1h23-bookcrossing/app/src/main/AndroidManifest.xml
+		ADDED from /Users/samvelochka/adfmp1h23-bookcrossing/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/samvelochka/adfmp1h23-bookcrossing/app/src/main/AndroidManifest.xml
+uses-permission#android.permission.WAKE_LOCK
+ADDED from [androidx.work:work-runtime:2.8.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/44e4cbd47fb2515c8cc6d09e9137a2cd/transformed/work-runtime-2.8.0/AndroidManifest.xml:23:5-68
+	android:name
+		ADDED from [androidx.work:work-runtime:2.8.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/44e4cbd47fb2515c8cc6d09e9137a2cd/transformed/work-runtime-2.8.0/AndroidManifest.xml:23:22-65
+uses-permission#android.permission.RECEIVE_BOOT_COMPLETED
+ADDED from [androidx.work:work-runtime:2.8.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/44e4cbd47fb2515c8cc6d09e9137a2cd/transformed/work-runtime-2.8.0/AndroidManifest.xml:25:5-81
+	android:name
+		ADDED from [androidx.work:work-runtime:2.8.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/44e4cbd47fb2515c8cc6d09e9137a2cd/transformed/work-runtime-2.8.0/AndroidManifest.xml:25:22-78
+uses-permission#android.permission.FOREGROUND_SERVICE
+ADDED from [androidx.work:work-runtime:2.8.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/44e4cbd47fb2515c8cc6d09e9137a2cd/transformed/work-runtime-2.8.0/AndroidManifest.xml:26:5-77
+MERGED from [com.google.android.play:core:1.10.3] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/4efcbab8a64ca502ab0a2ab2d375dd33/transformed/core-1.10.3/AndroidManifest.xml:13:5-77
+MERGED from [com.google.android.play:core:1.10.3] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/4efcbab8a64ca502ab0a2ab2d375dd33/transformed/core-1.10.3/AndroidManifest.xml:13:5-77
+	android:name
+		ADDED from [androidx.work:work-runtime:2.8.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/44e4cbd47fb2515c8cc6d09e9137a2cd/transformed/work-runtime-2.8.0/AndroidManifest.xml:26:22-74
+service#androidx.work.impl.background.systemalarm.SystemAlarmService
+ADDED from [androidx.work:work-runtime:2.8.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/44e4cbd47fb2515c8cc6d09e9137a2cd/transformed/work-runtime-2.8.0/AndroidManifest.xml:39:9-45:35
+	android:enabled
+		ADDED from [androidx.work:work-runtime:2.8.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/44e4cbd47fb2515c8cc6d09e9137a2cd/transformed/work-runtime-2.8.0/AndroidManifest.xml:42:13-72
+	android:exported
+		ADDED from [androidx.work:work-runtime:2.8.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/44e4cbd47fb2515c8cc6d09e9137a2cd/transformed/work-runtime-2.8.0/AndroidManifest.xml:43:13-37
+	tools:ignore
+		ADDED from [androidx.work:work-runtime:2.8.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/44e4cbd47fb2515c8cc6d09e9137a2cd/transformed/work-runtime-2.8.0/AndroidManifest.xml:44:13-60
+	tools:targetApi
+		ADDED from [androidx.work:work-runtime:2.8.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/44e4cbd47fb2515c8cc6d09e9137a2cd/transformed/work-runtime-2.8.0/AndroidManifest.xml:45:13-32
+	android:directBootAware
+		ADDED from [androidx.work:work-runtime:2.8.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/44e4cbd47fb2515c8cc6d09e9137a2cd/transformed/work-runtime-2.8.0/AndroidManifest.xml:41:13-44
+	android:name
+		ADDED from [androidx.work:work-runtime:2.8.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/44e4cbd47fb2515c8cc6d09e9137a2cd/transformed/work-runtime-2.8.0/AndroidManifest.xml:40:13-88
+service#androidx.work.impl.background.systemjob.SystemJobService
+ADDED from [androidx.work:work-runtime:2.8.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/44e4cbd47fb2515c8cc6d09e9137a2cd/transformed/work-runtime-2.8.0/AndroidManifest.xml:46:9-52:35
+	android:enabled
+		ADDED from [androidx.work:work-runtime:2.8.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/44e4cbd47fb2515c8cc6d09e9137a2cd/transformed/work-runtime-2.8.0/AndroidManifest.xml:49:13-70
+	android:exported
+		ADDED from [androidx.work:work-runtime:2.8.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/44e4cbd47fb2515c8cc6d09e9137a2cd/transformed/work-runtime-2.8.0/AndroidManifest.xml:50:13-36
+	android:permission
+		ADDED from [androidx.work:work-runtime:2.8.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/44e4cbd47fb2515c8cc6d09e9137a2cd/transformed/work-runtime-2.8.0/AndroidManifest.xml:51:13-69
+	tools:targetApi
+		ADDED from [androidx.work:work-runtime:2.8.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/44e4cbd47fb2515c8cc6d09e9137a2cd/transformed/work-runtime-2.8.0/AndroidManifest.xml:52:13-32
+	android:directBootAware
+		ADDED from [androidx.work:work-runtime:2.8.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/44e4cbd47fb2515c8cc6d09e9137a2cd/transformed/work-runtime-2.8.0/AndroidManifest.xml:48:13-44
+	android:name
+		ADDED from [androidx.work:work-runtime:2.8.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/44e4cbd47fb2515c8cc6d09e9137a2cd/transformed/work-runtime-2.8.0/AndroidManifest.xml:47:13-84
+service#androidx.work.impl.foreground.SystemForegroundService
+ADDED from [androidx.work:work-runtime:2.8.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/44e4cbd47fb2515c8cc6d09e9137a2cd/transformed/work-runtime-2.8.0/AndroidManifest.xml:53:9-59:35
+	android:enabled
+		ADDED from [androidx.work:work-runtime:2.8.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/44e4cbd47fb2515c8cc6d09e9137a2cd/transformed/work-runtime-2.8.0/AndroidManifest.xml:56:13-77
+	android:exported
+		ADDED from [androidx.work:work-runtime:2.8.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/44e4cbd47fb2515c8cc6d09e9137a2cd/transformed/work-runtime-2.8.0/AndroidManifest.xml:57:13-37
+	tools:ignore
+		ADDED from [androidx.work:work-runtime:2.8.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/44e4cbd47fb2515c8cc6d09e9137a2cd/transformed/work-runtime-2.8.0/AndroidManifest.xml:58:13-60
+	tools:targetApi
+		ADDED from [androidx.work:work-runtime:2.8.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/44e4cbd47fb2515c8cc6d09e9137a2cd/transformed/work-runtime-2.8.0/AndroidManifest.xml:59:13-32
+	android:directBootAware
+		ADDED from [androidx.work:work-runtime:2.8.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/44e4cbd47fb2515c8cc6d09e9137a2cd/transformed/work-runtime-2.8.0/AndroidManifest.xml:55:13-44
+	android:name
+		ADDED from [androidx.work:work-runtime:2.8.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/44e4cbd47fb2515c8cc6d09e9137a2cd/transformed/work-runtime-2.8.0/AndroidManifest.xml:54:13-81
+receiver#androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver
+ADDED from [androidx.work:work-runtime:2.8.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/44e4cbd47fb2515c8cc6d09e9137a2cd/transformed/work-runtime-2.8.0/AndroidManifest.xml:61:9-66:35
+	android:enabled
+		ADDED from [androidx.work:work-runtime:2.8.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/44e4cbd47fb2515c8cc6d09e9137a2cd/transformed/work-runtime-2.8.0/AndroidManifest.xml:64:13-35
+	android:exported
+		ADDED from [androidx.work:work-runtime:2.8.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/44e4cbd47fb2515c8cc6d09e9137a2cd/transformed/work-runtime-2.8.0/AndroidManifest.xml:65:13-37
+	tools:targetApi
+		ADDED from [androidx.work:work-runtime:2.8.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/44e4cbd47fb2515c8cc6d09e9137a2cd/transformed/work-runtime-2.8.0/AndroidManifest.xml:66:13-32
+	android:directBootAware
+		ADDED from [androidx.work:work-runtime:2.8.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/44e4cbd47fb2515c8cc6d09e9137a2cd/transformed/work-runtime-2.8.0/AndroidManifest.xml:63:13-44
+	android:name
+		ADDED from [androidx.work:work-runtime:2.8.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/44e4cbd47fb2515c8cc6d09e9137a2cd/transformed/work-runtime-2.8.0/AndroidManifest.xml:62:13-88
+receiver#androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy
+ADDED from [androidx.work:work-runtime:2.8.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/44e4cbd47fb2515c8cc6d09e9137a2cd/transformed/work-runtime-2.8.0/AndroidManifest.xml:67:9-77:20
+	android:enabled
+		ADDED from [androidx.work:work-runtime:2.8.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/44e4cbd47fb2515c8cc6d09e9137a2cd/transformed/work-runtime-2.8.0/AndroidManifest.xml:70:13-36
+	android:exported
+		ADDED from [androidx.work:work-runtime:2.8.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/44e4cbd47fb2515c8cc6d09e9137a2cd/transformed/work-runtime-2.8.0/AndroidManifest.xml:71:13-37
+	tools:targetApi
+		ADDED from [androidx.work:work-runtime:2.8.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/44e4cbd47fb2515c8cc6d09e9137a2cd/transformed/work-runtime-2.8.0/AndroidManifest.xml:72:13-32
+	android:directBootAware
+		ADDED from [androidx.work:work-runtime:2.8.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/44e4cbd47fb2515c8cc6d09e9137a2cd/transformed/work-runtime-2.8.0/AndroidManifest.xml:69:13-44
+	android:name
+		ADDED from [androidx.work:work-runtime:2.8.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/44e4cbd47fb2515c8cc6d09e9137a2cd/transformed/work-runtime-2.8.0/AndroidManifest.xml:68:13-106
+intent-filter#action:name:android.intent.action.ACTION_POWER_CONNECTED+action:name:android.intent.action.ACTION_POWER_DISCONNECTED
+ADDED from [androidx.work:work-runtime:2.8.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/44e4cbd47fb2515c8cc6d09e9137a2cd/transformed/work-runtime-2.8.0/AndroidManifest.xml:73:13-76:29
+action#android.intent.action.ACTION_POWER_CONNECTED
+ADDED from [androidx.work:work-runtime:2.8.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/44e4cbd47fb2515c8cc6d09e9137a2cd/transformed/work-runtime-2.8.0/AndroidManifest.xml:74:17-87
+	android:name
+		ADDED from [androidx.work:work-runtime:2.8.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/44e4cbd47fb2515c8cc6d09e9137a2cd/transformed/work-runtime-2.8.0/AndroidManifest.xml:74:25-84
+action#android.intent.action.ACTION_POWER_DISCONNECTED
+ADDED from [androidx.work:work-runtime:2.8.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/44e4cbd47fb2515c8cc6d09e9137a2cd/transformed/work-runtime-2.8.0/AndroidManifest.xml:75:17-90
+	android:name
+		ADDED from [androidx.work:work-runtime:2.8.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/44e4cbd47fb2515c8cc6d09e9137a2cd/transformed/work-runtime-2.8.0/AndroidManifest.xml:75:25-87
+receiver#androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy
+ADDED from [androidx.work:work-runtime:2.8.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/44e4cbd47fb2515c8cc6d09e9137a2cd/transformed/work-runtime-2.8.0/AndroidManifest.xml:78:9-88:20
+	android:enabled
+		ADDED from [androidx.work:work-runtime:2.8.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/44e4cbd47fb2515c8cc6d09e9137a2cd/transformed/work-runtime-2.8.0/AndroidManifest.xml:81:13-36
+	android:exported
+		ADDED from [androidx.work:work-runtime:2.8.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/44e4cbd47fb2515c8cc6d09e9137a2cd/transformed/work-runtime-2.8.0/AndroidManifest.xml:82:13-37
+	tools:targetApi
+		ADDED from [androidx.work:work-runtime:2.8.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/44e4cbd47fb2515c8cc6d09e9137a2cd/transformed/work-runtime-2.8.0/AndroidManifest.xml:83:13-32
+	android:directBootAware
+		ADDED from [androidx.work:work-runtime:2.8.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/44e4cbd47fb2515c8cc6d09e9137a2cd/transformed/work-runtime-2.8.0/AndroidManifest.xml:80:13-44
+	android:name
+		ADDED from [androidx.work:work-runtime:2.8.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/44e4cbd47fb2515c8cc6d09e9137a2cd/transformed/work-runtime-2.8.0/AndroidManifest.xml:79:13-104
+intent-filter#action:name:android.intent.action.BATTERY_LOW+action:name:android.intent.action.BATTERY_OKAY
+ADDED from [androidx.work:work-runtime:2.8.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/44e4cbd47fb2515c8cc6d09e9137a2cd/transformed/work-runtime-2.8.0/AndroidManifest.xml:84:13-87:29
+action#android.intent.action.BATTERY_OKAY
+ADDED from [androidx.work:work-runtime:2.8.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/44e4cbd47fb2515c8cc6d09e9137a2cd/transformed/work-runtime-2.8.0/AndroidManifest.xml:85:17-77
+	android:name
+		ADDED from [androidx.work:work-runtime:2.8.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/44e4cbd47fb2515c8cc6d09e9137a2cd/transformed/work-runtime-2.8.0/AndroidManifest.xml:85:25-74
+action#android.intent.action.BATTERY_LOW
+ADDED from [androidx.work:work-runtime:2.8.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/44e4cbd47fb2515c8cc6d09e9137a2cd/transformed/work-runtime-2.8.0/AndroidManifest.xml:86:17-76
+	android:name
+		ADDED from [androidx.work:work-runtime:2.8.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/44e4cbd47fb2515c8cc6d09e9137a2cd/transformed/work-runtime-2.8.0/AndroidManifest.xml:86:25-73
+receiver#androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy
+ADDED from [androidx.work:work-runtime:2.8.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/44e4cbd47fb2515c8cc6d09e9137a2cd/transformed/work-runtime-2.8.0/AndroidManifest.xml:89:9-99:20
+	android:enabled
+		ADDED from [androidx.work:work-runtime:2.8.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/44e4cbd47fb2515c8cc6d09e9137a2cd/transformed/work-runtime-2.8.0/AndroidManifest.xml:92:13-36
+	android:exported
+		ADDED from [androidx.work:work-runtime:2.8.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/44e4cbd47fb2515c8cc6d09e9137a2cd/transformed/work-runtime-2.8.0/AndroidManifest.xml:93:13-37
+	tools:targetApi
+		ADDED from [androidx.work:work-runtime:2.8.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/44e4cbd47fb2515c8cc6d09e9137a2cd/transformed/work-runtime-2.8.0/AndroidManifest.xml:94:13-32
+	android:directBootAware
+		ADDED from [androidx.work:work-runtime:2.8.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/44e4cbd47fb2515c8cc6d09e9137a2cd/transformed/work-runtime-2.8.0/AndroidManifest.xml:91:13-44
+	android:name
+		ADDED from [androidx.work:work-runtime:2.8.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/44e4cbd47fb2515c8cc6d09e9137a2cd/transformed/work-runtime-2.8.0/AndroidManifest.xml:90:13-104
+intent-filter#action:name:android.intent.action.DEVICE_STORAGE_LOW+action:name:android.intent.action.DEVICE_STORAGE_OK
+ADDED from [androidx.work:work-runtime:2.8.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/44e4cbd47fb2515c8cc6d09e9137a2cd/transformed/work-runtime-2.8.0/AndroidManifest.xml:95:13-98:29
+action#android.intent.action.DEVICE_STORAGE_LOW
+ADDED from [androidx.work:work-runtime:2.8.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/44e4cbd47fb2515c8cc6d09e9137a2cd/transformed/work-runtime-2.8.0/AndroidManifest.xml:96:17-83
+	android:name
+		ADDED from [androidx.work:work-runtime:2.8.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/44e4cbd47fb2515c8cc6d09e9137a2cd/transformed/work-runtime-2.8.0/AndroidManifest.xml:96:25-80
+action#android.intent.action.DEVICE_STORAGE_OK
+ADDED from [androidx.work:work-runtime:2.8.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/44e4cbd47fb2515c8cc6d09e9137a2cd/transformed/work-runtime-2.8.0/AndroidManifest.xml:97:17-82
+	android:name
+		ADDED from [androidx.work:work-runtime:2.8.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/44e4cbd47fb2515c8cc6d09e9137a2cd/transformed/work-runtime-2.8.0/AndroidManifest.xml:97:25-79
+receiver#androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy
+ADDED from [androidx.work:work-runtime:2.8.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/44e4cbd47fb2515c8cc6d09e9137a2cd/transformed/work-runtime-2.8.0/AndroidManifest.xml:100:9-109:20
+	android:enabled
+		ADDED from [androidx.work:work-runtime:2.8.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/44e4cbd47fb2515c8cc6d09e9137a2cd/transformed/work-runtime-2.8.0/AndroidManifest.xml:103:13-36
+	android:exported
+		ADDED from [androidx.work:work-runtime:2.8.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/44e4cbd47fb2515c8cc6d09e9137a2cd/transformed/work-runtime-2.8.0/AndroidManifest.xml:104:13-37
+	tools:targetApi
+		ADDED from [androidx.work:work-runtime:2.8.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/44e4cbd47fb2515c8cc6d09e9137a2cd/transformed/work-runtime-2.8.0/AndroidManifest.xml:105:13-32
+	android:directBootAware
+		ADDED from [androidx.work:work-runtime:2.8.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/44e4cbd47fb2515c8cc6d09e9137a2cd/transformed/work-runtime-2.8.0/AndroidManifest.xml:102:13-44
+	android:name
+		ADDED from [androidx.work:work-runtime:2.8.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/44e4cbd47fb2515c8cc6d09e9137a2cd/transformed/work-runtime-2.8.0/AndroidManifest.xml:101:13-103
+intent-filter#action:name:android.net.conn.CONNECTIVITY_CHANGE
+ADDED from [androidx.work:work-runtime:2.8.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/44e4cbd47fb2515c8cc6d09e9137a2cd/transformed/work-runtime-2.8.0/AndroidManifest.xml:106:13-108:29
+action#android.net.conn.CONNECTIVITY_CHANGE
+ADDED from [androidx.work:work-runtime:2.8.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/44e4cbd47fb2515c8cc6d09e9137a2cd/transformed/work-runtime-2.8.0/AndroidManifest.xml:107:17-79
+	android:name
+		ADDED from [androidx.work:work-runtime:2.8.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/44e4cbd47fb2515c8cc6d09e9137a2cd/transformed/work-runtime-2.8.0/AndroidManifest.xml:107:25-76
+receiver#androidx.work.impl.background.systemalarm.RescheduleReceiver
+ADDED from [androidx.work:work-runtime:2.8.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/44e4cbd47fb2515c8cc6d09e9137a2cd/transformed/work-runtime-2.8.0/AndroidManifest.xml:110:9-121:20
+	android:enabled
+		ADDED from [androidx.work:work-runtime:2.8.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/44e4cbd47fb2515c8cc6d09e9137a2cd/transformed/work-runtime-2.8.0/AndroidManifest.xml:113:13-36
+	android:exported
+		ADDED from [androidx.work:work-runtime:2.8.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/44e4cbd47fb2515c8cc6d09e9137a2cd/transformed/work-runtime-2.8.0/AndroidManifest.xml:114:13-37
+	tools:targetApi
+		ADDED from [androidx.work:work-runtime:2.8.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/44e4cbd47fb2515c8cc6d09e9137a2cd/transformed/work-runtime-2.8.0/AndroidManifest.xml:115:13-32
+	android:directBootAware
+		ADDED from [androidx.work:work-runtime:2.8.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/44e4cbd47fb2515c8cc6d09e9137a2cd/transformed/work-runtime-2.8.0/AndroidManifest.xml:112:13-44
+	android:name
+		ADDED from [androidx.work:work-runtime:2.8.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/44e4cbd47fb2515c8cc6d09e9137a2cd/transformed/work-runtime-2.8.0/AndroidManifest.xml:111:13-88
+intent-filter#action:name:android.intent.action.BOOT_COMPLETED+action:name:android.intent.action.TIMEZONE_CHANGED+action:name:android.intent.action.TIME_SET
+ADDED from [androidx.work:work-runtime:2.8.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/44e4cbd47fb2515c8cc6d09e9137a2cd/transformed/work-runtime-2.8.0/AndroidManifest.xml:116:13-120:29
+action#android.intent.action.BOOT_COMPLETED
+ADDED from [androidx.work:work-runtime:2.8.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/44e4cbd47fb2515c8cc6d09e9137a2cd/transformed/work-runtime-2.8.0/AndroidManifest.xml:117:17-79
+	android:name
+		ADDED from [androidx.work:work-runtime:2.8.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/44e4cbd47fb2515c8cc6d09e9137a2cd/transformed/work-runtime-2.8.0/AndroidManifest.xml:117:25-76
+action#android.intent.action.TIME_SET
+ADDED from [androidx.work:work-runtime:2.8.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/44e4cbd47fb2515c8cc6d09e9137a2cd/transformed/work-runtime-2.8.0/AndroidManifest.xml:118:17-73
+	android:name
+		ADDED from [androidx.work:work-runtime:2.8.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/44e4cbd47fb2515c8cc6d09e9137a2cd/transformed/work-runtime-2.8.0/AndroidManifest.xml:118:25-70
+action#android.intent.action.TIMEZONE_CHANGED
+ADDED from [androidx.work:work-runtime:2.8.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/44e4cbd47fb2515c8cc6d09e9137a2cd/transformed/work-runtime-2.8.0/AndroidManifest.xml:119:17-81
+	android:name
+		ADDED from [androidx.work:work-runtime:2.8.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/44e4cbd47fb2515c8cc6d09e9137a2cd/transformed/work-runtime-2.8.0/AndroidManifest.xml:119:25-78
+receiver#androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver
+ADDED from [androidx.work:work-runtime:2.8.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/44e4cbd47fb2515c8cc6d09e9137a2cd/transformed/work-runtime-2.8.0/AndroidManifest.xml:122:9-131:20
+	android:enabled
+		ADDED from [androidx.work:work-runtime:2.8.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/44e4cbd47fb2515c8cc6d09e9137a2cd/transformed/work-runtime-2.8.0/AndroidManifest.xml:125:13-72
+	android:exported
+		ADDED from [androidx.work:work-runtime:2.8.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/44e4cbd47fb2515c8cc6d09e9137a2cd/transformed/work-runtime-2.8.0/AndroidManifest.xml:126:13-37
+	tools:targetApi
+		ADDED from [androidx.work:work-runtime:2.8.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/44e4cbd47fb2515c8cc6d09e9137a2cd/transformed/work-runtime-2.8.0/AndroidManifest.xml:127:13-32
+	android:directBootAware
+		ADDED from [androidx.work:work-runtime:2.8.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/44e4cbd47fb2515c8cc6d09e9137a2cd/transformed/work-runtime-2.8.0/AndroidManifest.xml:124:13-44
+	android:name
+		ADDED from [androidx.work:work-runtime:2.8.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/44e4cbd47fb2515c8cc6d09e9137a2cd/transformed/work-runtime-2.8.0/AndroidManifest.xml:123:13-99
+intent-filter#action:name:androidx.work.impl.background.systemalarm.UpdateProxies
+ADDED from [androidx.work:work-runtime:2.8.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/44e4cbd47fb2515c8cc6d09e9137a2cd/transformed/work-runtime-2.8.0/AndroidManifest.xml:128:13-130:29
+action#androidx.work.impl.background.systemalarm.UpdateProxies
+ADDED from [androidx.work:work-runtime:2.8.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/44e4cbd47fb2515c8cc6d09e9137a2cd/transformed/work-runtime-2.8.0/AndroidManifest.xml:129:17-98
+	android:name
+		ADDED from [androidx.work:work-runtime:2.8.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/44e4cbd47fb2515c8cc6d09e9137a2cd/transformed/work-runtime-2.8.0/AndroidManifest.xml:129:25-95
+receiver#androidx.work.impl.diagnostics.DiagnosticsReceiver
+ADDED from [androidx.work:work-runtime:2.8.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/44e4cbd47fb2515c8cc6d09e9137a2cd/transformed/work-runtime-2.8.0/AndroidManifest.xml:132:9-142:20
+	android:enabled
+		ADDED from [androidx.work:work-runtime:2.8.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/44e4cbd47fb2515c8cc6d09e9137a2cd/transformed/work-runtime-2.8.0/AndroidManifest.xml:135:13-35
+	android:exported
+		ADDED from [androidx.work:work-runtime:2.8.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/44e4cbd47fb2515c8cc6d09e9137a2cd/transformed/work-runtime-2.8.0/AndroidManifest.xml:136:13-36
+	android:permission
+		ADDED from [androidx.work:work-runtime:2.8.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/44e4cbd47fb2515c8cc6d09e9137a2cd/transformed/work-runtime-2.8.0/AndroidManifest.xml:137:13-57
+	tools:targetApi
+		ADDED from [androidx.work:work-runtime:2.8.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/44e4cbd47fb2515c8cc6d09e9137a2cd/transformed/work-runtime-2.8.0/AndroidManifest.xml:138:13-32
+	android:directBootAware
+		ADDED from [androidx.work:work-runtime:2.8.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/44e4cbd47fb2515c8cc6d09e9137a2cd/transformed/work-runtime-2.8.0/AndroidManifest.xml:134:13-44
+	android:name
+		ADDED from [androidx.work:work-runtime:2.8.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/44e4cbd47fb2515c8cc6d09e9137a2cd/transformed/work-runtime-2.8.0/AndroidManifest.xml:133:13-78
+intent-filter#action:name:androidx.work.diagnostics.REQUEST_DIAGNOSTICS
+ADDED from [androidx.work:work-runtime:2.8.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/44e4cbd47fb2515c8cc6d09e9137a2cd/transformed/work-runtime-2.8.0/AndroidManifest.xml:139:13-141:29
+action#androidx.work.diagnostics.REQUEST_DIAGNOSTICS
+ADDED from [androidx.work:work-runtime:2.8.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/44e4cbd47fb2515c8cc6d09e9137a2cd/transformed/work-runtime-2.8.0/AndroidManifest.xml:140:17-88
+	android:name
+		ADDED from [androidx.work:work-runtime:2.8.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/44e4cbd47fb2515c8cc6d09e9137a2cd/transformed/work-runtime-2.8.0/AndroidManifest.xml:140:25-85
+service#androidx.room.MultiInstanceInvalidationService
+ADDED from [androidx.room:room-runtime:2.5.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/07d426b41e65bdc330edc7ff590edc0d/transformed/room-runtime-2.5.0/AndroidManifest.xml:24:9-28:63
+	android:exported
+		ADDED from [androidx.room:room-runtime:2.5.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/07d426b41e65bdc330edc7ff590edc0d/transformed/room-runtime-2.5.0/AndroidManifest.xml:27:13-37
+	tools:ignore
+		ADDED from [androidx.room:room-runtime:2.5.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/07d426b41e65bdc330edc7ff590edc0d/transformed/room-runtime-2.5.0/AndroidManifest.xml:28:13-60
+	android:directBootAware
+		ADDED from [androidx.room:room-runtime:2.5.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/07d426b41e65bdc330edc7ff590edc0d/transformed/room-runtime-2.5.0/AndroidManifest.xml:26:13-43
+	android:name
+		ADDED from [androidx.room:room-runtime:2.5.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/07d426b41e65bdc330edc7ff590edc0d/transformed/room-runtime-2.5.0/AndroidManifest.xml:25:13-74
+activity#androidx.compose.ui.tooling.PreviewActivity
+ADDED from [androidx.compose.ui:ui-tooling:1.3.3] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/2e50b8db27534ce84ff6d23762343551/transformed/ui-tooling-1.3.3/AndroidManifest.xml:23:9-25:39
+	android:exported
+		ADDED from [androidx.compose.ui:ui-tooling:1.3.3] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/2e50b8db27534ce84ff6d23762343551/transformed/ui-tooling-1.3.3/AndroidManifest.xml:25:13-36
+	android:name
+		ADDED from [androidx.compose.ui:ui-tooling:1.3.3] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/2e50b8db27534ce84ff6d23762343551/transformed/ui-tooling-1.3.3/AndroidManifest.xml:24:13-71
+activity#androidx.activity.ComponentActivity
+ADDED from [androidx.compose.ui:ui-test-manifest:1.3.3] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/3bfa148cdd9689b188aeeb9a2dac783e/transformed/ui-test-manifest-1.3.3/AndroidManifest.xml:23:9-25:39
+	android:exported
+		ADDED from [androidx.compose.ui:ui-test-manifest:1.3.3] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/3bfa148cdd9689b188aeeb9a2dac783e/transformed/ui-test-manifest-1.3.3/AndroidManifest.xml:25:13-36
+	android:name
+		ADDED from [androidx.compose.ui:ui-test-manifest:1.3.3] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/3bfa148cdd9689b188aeeb9a2dac783e/transformed/ui-test-manifest-1.3.3/AndroidManifest.xml:24:13-63
+meta-data#androidx.emoji2.text.EmojiCompatInitializer
+ADDED from [androidx.emoji2:emoji2:1.2.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/b9a071700ec0264a9a316b2d2b28f8fa/transformed/emoji2-1.2.0/AndroidManifest.xml:29:13-31:52
+	android:value
+		ADDED from [androidx.emoji2:emoji2:1.2.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/b9a071700ec0264a9a316b2d2b28f8fa/transformed/emoji2-1.2.0/AndroidManifest.xml:31:17-49
+	android:name
+		ADDED from [androidx.emoji2:emoji2:1.2.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/b9a071700ec0264a9a316b2d2b28f8fa/transformed/emoji2-1.2.0/AndroidManifest.xml:30:17-75
+uses-library#androidx.window.extensions
+ADDED from [androidx.window:window:1.0.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/7917d435a4e6cae9ebd258c2b02408b9/transformed/window-1.0.0/AndroidManifest.xml:25:9-27:40
+	android:required
+		ADDED from [androidx.window:window:1.0.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/7917d435a4e6cae9ebd258c2b02408b9/transformed/window-1.0.0/AndroidManifest.xml:27:13-37
+	android:name
+		ADDED from [androidx.window:window:1.0.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/7917d435a4e6cae9ebd258c2b02408b9/transformed/window-1.0.0/AndroidManifest.xml:26:13-54
+uses-library#androidx.window.sidecar
+ADDED from [androidx.window:window:1.0.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/7917d435a4e6cae9ebd258c2b02408b9/transformed/window-1.0.0/AndroidManifest.xml:28:9-30:40
+	android:required
+		ADDED from [androidx.window:window:1.0.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/7917d435a4e6cae9ebd258c2b02408b9/transformed/window-1.0.0/AndroidManifest.xml:30:13-37
+	android:name
+		ADDED from [androidx.window:window:1.0.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/7917d435a4e6cae9ebd258c2b02408b9/transformed/window-1.0.0/AndroidManifest.xml:29:13-51
+permission#${applicationId}.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.9.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/facca0faa8834fe48f33e0b7d7ce6195/transformed/core-1.9.0/AndroidManifest.xml:22:5-24:47
+	android:protectionLevel
+		ADDED from [androidx.core:core:1.9.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/facca0faa8834fe48f33e0b7d7ce6195/transformed/core-1.9.0/AndroidManifest.xml:24:9-44
+	android:name
+		ADDED from [androidx.core:core:1.9.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/facca0faa8834fe48f33e0b7d7ce6195/transformed/core-1.9.0/AndroidManifest.xml:23:9-81
+permission#com.etu.bookcrossing.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.9.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/facca0faa8834fe48f33e0b7d7ce6195/transformed/core-1.9.0/AndroidManifest.xml:22:5-24:47
+	android:protectionLevel
+		ADDED from [androidx.core:core:1.9.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/facca0faa8834fe48f33e0b7d7ce6195/transformed/core-1.9.0/AndroidManifest.xml:24:9-44
+	android:name
+		ADDED from [androidx.core:core:1.9.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/facca0faa8834fe48f33e0b7d7ce6195/transformed/core-1.9.0/AndroidManifest.xml:23:9-81
+uses-permission#${applicationId}.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.9.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/facca0faa8834fe48f33e0b7d7ce6195/transformed/core-1.9.0/AndroidManifest.xml:26:5-97
+	android:name
+		ADDED from [androidx.core:core:1.9.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/facca0faa8834fe48f33e0b7d7ce6195/transformed/core-1.9.0/AndroidManifest.xml:26:22-94
+uses-permission#com.etu.bookcrossing.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.9.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/facca0faa8834fe48f33e0b7d7ce6195/transformed/core-1.9.0/AndroidManifest.xml:26:5-97
+	android:name
+		ADDED from [androidx.core:core:1.9.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/facca0faa8834fe48f33e0b7d7ce6195/transformed/core-1.9.0/AndroidManifest.xml:26:22-94
+meta-data#androidx.lifecycle.ProcessLifecycleInitializer
+ADDED from [androidx.lifecycle:lifecycle-process:2.4.1] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/9d24f9a96ff7d74e1c9ffd000168a574/transformed/lifecycle-process-2.4.1/AndroidManifest.xml:31:13-33:52
+	android:value
+		ADDED from [androidx.lifecycle:lifecycle-process:2.4.1] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/9d24f9a96ff7d74e1c9ffd000168a574/transformed/lifecycle-process-2.4.1/AndroidManifest.xml:33:17-49
+	android:name
+		ADDED from [androidx.lifecycle:lifecycle-process:2.4.1] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/9d24f9a96ff7d74e1c9ffd000168a574/transformed/lifecycle-process-2.4.1/AndroidManifest.xml:32:17-78
+uses-permission#android.permission.REORDER_TASKS
+ADDED from [androidx.test:core:1.4.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/b1a0f361c44683ff97af5edaceb8d9cf/transformed/core-1.4.0/AndroidManifest.xml:24:5-72
+	android:name
+		ADDED from [androidx.test:core:1.4.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/b1a0f361c44683ff97af5edaceb8d9cf/transformed/core-1.4.0/AndroidManifest.xml:24:22-69
+activity#androidx.test.core.app.InstrumentationActivityInvoker$BootstrapActivity
+ADDED from [androidx.test:core:1.4.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/b1a0f361c44683ff97af5edaceb8d9cf/transformed/core-1.4.0/AndroidManifest.xml:27:9-34:20
+	android:exported
+		ADDED from [androidx.test:core:1.4.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/b1a0f361c44683ff97af5edaceb8d9cf/transformed/core-1.4.0/AndroidManifest.xml:29:13-36
+	android:theme
+		ADDED from [androidx.test:core:1.4.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/b1a0f361c44683ff97af5edaceb8d9cf/transformed/core-1.4.0/AndroidManifest.xml:30:13-49
+	android:name
+		ADDED from [androidx.test:core:1.4.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/b1a0f361c44683ff97af5edaceb8d9cf/transformed/core-1.4.0/AndroidManifest.xml:28:13-99
+intent-filter#action:name:android.intent.action.MAIN
+ADDED from [androidx.test:core:1.4.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/b1a0f361c44683ff97af5edaceb8d9cf/transformed/core-1.4.0/AndroidManifest.xml:31:13-33:29
+activity#androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity
+ADDED from [androidx.test:core:1.4.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/b1a0f361c44683ff97af5edaceb8d9cf/transformed/core-1.4.0/AndroidManifest.xml:35:9-42:20
+	android:exported
+		ADDED from [androidx.test:core:1.4.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/b1a0f361c44683ff97af5edaceb8d9cf/transformed/core-1.4.0/AndroidManifest.xml:37:13-36
+	android:theme
+		ADDED from [androidx.test:core:1.4.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/b1a0f361c44683ff97af5edaceb8d9cf/transformed/core-1.4.0/AndroidManifest.xml:38:13-49
+	android:name
+		ADDED from [androidx.test:core:1.4.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/b1a0f361c44683ff97af5edaceb8d9cf/transformed/core-1.4.0/AndroidManifest.xml:36:13-95
+activity#androidx.test.core.app.InstrumentationActivityInvoker$EmptyFloatingActivity
+ADDED from [androidx.test:core:1.4.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/b1a0f361c44683ff97af5edaceb8d9cf/transformed/core-1.4.0/AndroidManifest.xml:43:9-50:20
+	android:exported
+		ADDED from [androidx.test:core:1.4.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/b1a0f361c44683ff97af5edaceb8d9cf/transformed/core-1.4.0/AndroidManifest.xml:45:13-36
+	android:theme
+		ADDED from [androidx.test:core:1.4.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/b1a0f361c44683ff97af5edaceb8d9cf/transformed/core-1.4.0/AndroidManifest.xml:46:13-56
+	android:name
+		ADDED from [androidx.test:core:1.4.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/b1a0f361c44683ff97af5edaceb8d9cf/transformed/core-1.4.0/AndroidManifest.xml:44:13-103
+meta-data#androidx.profileinstaller.ProfileInstallerInitializer
+ADDED from [androidx.profileinstaller:profileinstaller:1.2.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/4c6d34ce18f264260cab15b92b04a2a5/transformed/profileinstaller-1.2.0/AndroidManifest.xml:30:13-32:52
+	android:value
+		ADDED from [androidx.profileinstaller:profileinstaller:1.2.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/4c6d34ce18f264260cab15b92b04a2a5/transformed/profileinstaller-1.2.0/AndroidManifest.xml:32:17-49
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.2.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/4c6d34ce18f264260cab15b92b04a2a5/transformed/profileinstaller-1.2.0/AndroidManifest.xml:31:17-85
+receiver#androidx.profileinstaller.ProfileInstallReceiver
+ADDED from [androidx.profileinstaller:profileinstaller:1.2.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/4c6d34ce18f264260cab15b92b04a2a5/transformed/profileinstaller-1.2.0/AndroidManifest.xml:35:9-47:20
+	android:enabled
+		ADDED from [androidx.profileinstaller:profileinstaller:1.2.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/4c6d34ce18f264260cab15b92b04a2a5/transformed/profileinstaller-1.2.0/AndroidManifest.xml:38:13-35
+	android:exported
+		ADDED from [androidx.profileinstaller:profileinstaller:1.2.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/4c6d34ce18f264260cab15b92b04a2a5/transformed/profileinstaller-1.2.0/AndroidManifest.xml:39:13-36
+	android:permission
+		ADDED from [androidx.profileinstaller:profileinstaller:1.2.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/4c6d34ce18f264260cab15b92b04a2a5/transformed/profileinstaller-1.2.0/AndroidManifest.xml:40:13-57
+	android:directBootAware
+		ADDED from [androidx.profileinstaller:profileinstaller:1.2.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/4c6d34ce18f264260cab15b92b04a2a5/transformed/profileinstaller-1.2.0/AndroidManifest.xml:37:13-44
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.2.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/4c6d34ce18f264260cab15b92b04a2a5/transformed/profileinstaller-1.2.0/AndroidManifest.xml:36:13-76
+intent-filter#action:name:androidx.profileinstaller.action.INSTALL_PROFILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.2.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/4c6d34ce18f264260cab15b92b04a2a5/transformed/profileinstaller-1.2.0/AndroidManifest.xml:41:13-43:29
+action#androidx.profileinstaller.action.INSTALL_PROFILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.2.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/4c6d34ce18f264260cab15b92b04a2a5/transformed/profileinstaller-1.2.0/AndroidManifest.xml:42:17-91
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.2.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/4c6d34ce18f264260cab15b92b04a2a5/transformed/profileinstaller-1.2.0/AndroidManifest.xml:42:25-88
+intent-filter#action:name:androidx.profileinstaller.action.SKIP_FILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.2.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/4c6d34ce18f264260cab15b92b04a2a5/transformed/profileinstaller-1.2.0/AndroidManifest.xml:44:13-46:29
+action#androidx.profileinstaller.action.SKIP_FILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.2.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/4c6d34ce18f264260cab15b92b04a2a5/transformed/profileinstaller-1.2.0/AndroidManifest.xml:45:17-85
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.2.0] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/4c6d34ce18f264260cab15b92b04a2a5/transformed/profileinstaller-1.2.0/AndroidManifest.xml:45:25-82
+activity#com.google.android.play.core.missingsplits.PlayCoreMissingSplitsActivity
+ADDED from [com.google.android.play:core:1.10.3] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/4efcbab8a64ca502ab0a2ab2d375dd33/transformed/core-1.10.3/AndroidManifest.xml:18:9-24:45
+	android:process
+		ADDED from [com.google.android.play:core:1.10.3] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/4efcbab8a64ca502ab0a2ab2d375dd33/transformed/core-1.10.3/AndroidManifest.xml:23:13-64
+	android:enabled
+		ADDED from [com.google.android.play:core:1.10.3] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/4efcbab8a64ca502ab0a2ab2d375dd33/transformed/core-1.10.3/AndroidManifest.xml:20:13-36
+	android:stateNotNeeded
+		ADDED from [com.google.android.play:core:1.10.3] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/4efcbab8a64ca502ab0a2ab2d375dd33/transformed/core-1.10.3/AndroidManifest.xml:24:13-42
+	android:launchMode
+		ADDED from [com.google.android.play:core:1.10.3] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/4efcbab8a64ca502ab0a2ab2d375dd33/transformed/core-1.10.3/AndroidManifest.xml:22:13-48
+	android:exported
+		ADDED from [com.google.android.play:core:1.10.3] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/4efcbab8a64ca502ab0a2ab2d375dd33/transformed/core-1.10.3/AndroidManifest.xml:21:13-37
+	android:name
+		ADDED from [com.google.android.play:core:1.10.3] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/4efcbab8a64ca502ab0a2ab2d375dd33/transformed/core-1.10.3/AndroidManifest.xml:19:13-100
+activity#com.google.android.play.core.common.PlayCoreDialogWrapperActivity
+ADDED from [com.google.android.play:core:1.10.3] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/4efcbab8a64ca502ab0a2ab2d375dd33/transformed/core-1.10.3/AndroidManifest.xml:25:9-29:65
+	android:stateNotNeeded
+		ADDED from [com.google.android.play:core:1.10.3] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/4efcbab8a64ca502ab0a2ab2d375dd33/transformed/core-1.10.3/AndroidManifest.xml:28:13-42
+	android:exported
+		ADDED from [com.google.android.play:core:1.10.3] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/4efcbab8a64ca502ab0a2ab2d375dd33/transformed/core-1.10.3/AndroidManifest.xml:27:13-37
+	android:theme
+		ADDED from [com.google.android.play:core:1.10.3] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/4efcbab8a64ca502ab0a2ab2d375dd33/transformed/core-1.10.3/AndroidManifest.xml:29:13-62
+	android:name
+		ADDED from [com.google.android.play:core:1.10.3] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/4efcbab8a64ca502ab0a2ab2d375dd33/transformed/core-1.10.3/AndroidManifest.xml:26:13-93
+service#com.google.android.play.core.assetpacks.AssetPackExtractionService
+ADDED from [com.google.android.play:core:1.10.3] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/4efcbab8a64ca502ab0a2ab2d375dd33/transformed/core-1.10.3/AndroidManifest.xml:32:9-39:19
+	android:enabled
+		ADDED from [com.google.android.play:core:1.10.3] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/4efcbab8a64ca502ab0a2ab2d375dd33/transformed/core-1.10.3/AndroidManifest.xml:34:13-36
+	android:exported
+		ADDED from [com.google.android.play:core:1.10.3] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/4efcbab8a64ca502ab0a2ab2d375dd33/transformed/core-1.10.3/AndroidManifest.xml:35:13-36
+	android:name
+		ADDED from [com.google.android.play:core:1.10.3] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/4efcbab8a64ca502ab0a2ab2d375dd33/transformed/core-1.10.3/AndroidManifest.xml:33:13-94
+meta-data#com.google.android.play.core.assetpacks.versionCode
+ADDED from [com.google.android.play:core:1.10.3] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/4efcbab8a64ca502ab0a2ab2d375dd33/transformed/core-1.10.3/AndroidManifest.xml:36:13-38:41
+	android:value
+		ADDED from [com.google.android.play:core:1.10.3] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/4efcbab8a64ca502ab0a2ab2d375dd33/transformed/core-1.10.3/AndroidManifest.xml:38:17-38
+	android:name
+		ADDED from [com.google.android.play:core:1.10.3] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/4efcbab8a64ca502ab0a2ab2d375dd33/transformed/core-1.10.3/AndroidManifest.xml:37:17-83
+service#com.google.android.play.core.assetpacks.ExtractionForegroundService
+ADDED from [com.google.android.play:core:1.10.3] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/4efcbab8a64ca502ab0a2ab2d375dd33/transformed/core-1.10.3/AndroidManifest.xml:40:9-43:40
+	android:enabled
+		ADDED from [com.google.android.play:core:1.10.3] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/4efcbab8a64ca502ab0a2ab2d375dd33/transformed/core-1.10.3/AndroidManifest.xml:42:13-36
+	android:exported
+		ADDED from [com.google.android.play:core:1.10.3] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/4efcbab8a64ca502ab0a2ab2d375dd33/transformed/core-1.10.3/AndroidManifest.xml:43:13-37
+	android:name
+		ADDED from [com.google.android.play:core:1.10.3] /Users/samvelochka/adfmp1h23-bookcrossing/gradle/caches/transforms-3/4efcbab8a64ca502ab0a2ab2d375dd33/transformed/core-1.10.3/AndroidManifest.xml:41:13-95

@@ -13,25 +13,8 @@ class BookEntity(
     val description: String,
     @field:SerializedName("image_url") val imageUrl: String
 ) {
-    override fun equals(other: Any?): Boolean {
-        if (this === other) {
-            return true
-        }
+    override fun equals(other: Any?) =
+        this === other || other is BookEntity && bookId == other.bookId
 
-        if (javaClass != other?.javaClass) {
-            return false
-        }
-
-        other as BookEntity
-
-        if (bookId != other.bookId) {
-            return false
-        }
-
-        return true
-    }
-
-    override fun hashCode(): Int {
-        return bookId.hashCode()
-    }
+    override fun hashCode() = bookId.hashCode()
 }
