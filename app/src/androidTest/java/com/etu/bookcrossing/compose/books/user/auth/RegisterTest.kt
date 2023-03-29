@@ -8,8 +8,6 @@ import org.junit.Test
 
 class RegisterTest : BaseTest() {
     var calledOnRegister = false
-    var calledRegister = false
-    var calledAbout = false
 
     @Test
     fun getAboutScreen() {
