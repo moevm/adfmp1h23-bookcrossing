@@ -18,5 +18,5 @@ class UserEntity(
     override fun equals(other: Any?) =
         this === other || other is UserEntity && userId == other.userId
 
-    override fun hashCode() = return userId.hashCode()
+    override fun hashCode() = userId.hashCode()
 }
