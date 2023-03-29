@@ -10,7 +10,7 @@ class RegisterTest : BaseTest() {
     var calledOnRegister = false
 
     @Test
-    fun getAboutScreen() {
+    fun trySignUp() {
         composeTestRule.setContent {
             Register(onRegister = { calledOnRegister = true })
         }

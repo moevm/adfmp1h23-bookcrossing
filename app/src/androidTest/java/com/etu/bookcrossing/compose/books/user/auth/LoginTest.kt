@@ -14,7 +14,7 @@ class LoginTest : BaseTest() {
     var calledAbout = false
 
     @Test
-    fun getAboutScreen() {
+    fun clickAllButtons() {
         composeTestRule.setContent {
             LoginComposable(
                 onLogin = { calledLogin = true },

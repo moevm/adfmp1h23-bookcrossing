@@ -16,7 +16,7 @@ class BookPointTest : BaseTest() {
     }
 
     @Test
-    fun getAboutScreen() {
+    fun takeBook() {
         composeTestRule.setContent {
             TakeBookItem("name!", "takenMessage!", "undoMessage!", ::onTakeBook)
         }
