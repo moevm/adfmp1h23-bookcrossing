@@ -10,7 +10,6 @@ import io.mockk.verify
 import org.junit.Test
 
 class AccountTest : BaseTest() {
-
     var onTakeBooks: ExecutableTest = mockk(relaxUnitFun = true)
 
     var onRating: ExecutableTest = mockk(relaxUnitFun = true)

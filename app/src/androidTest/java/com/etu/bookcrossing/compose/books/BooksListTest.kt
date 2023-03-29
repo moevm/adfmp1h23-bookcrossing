@@ -6,7 +6,6 @@ import com.etu.bookcrossing.data.Book
 import org.junit.Test
 
 class BooksListTest : BaseTest() {
-
     fun assertPresent(book: Book) {
         assertText(book.name)
         assertNoText(book.author)

@@ -6,7 +6,6 @@ import com.etu.bookcrossing.data.User
 import org.junit.Test
 
 class RatingTest : BaseTest() {
-
     fun assertPresent(user: User) {
         assertText(user.name)
         assertNoText(user.surname)

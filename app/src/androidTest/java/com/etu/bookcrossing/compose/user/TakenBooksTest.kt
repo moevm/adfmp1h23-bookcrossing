@@ -10,7 +10,6 @@ import io.mockk.verify
 import org.junit.Test
 
 class TakenBooksTest : BaseTest() {
-
     var onReturn: ShowSnackBarTest = mockk(relaxUnitFun = true)
 
     @Test
